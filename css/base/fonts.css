@@ -1,0 +1,36 @@
+@font-face {
+	font-family: "Inter-Bold";
+	src: "../../assets/fonts/Inter/Inter-Bold.ttf";
+}
+
+@font-face {
+	font-family: "Inter-Semibold";
+	src: "../../assets/fonts/Inter/Inter-SemiBold.ttf";
+}
+
+@font-face {
+	font-family: "Inter-Medium";
+	src: "../../assets/fonts/Inter/Inter-Medium.ttf";
+}
+
+@font-face {
+	font-family: "Inter-Regular";
+	src: "../../assets/fonts/Inter/Inter-Regular.ttf";
+}
+
+@font-face {
+	font-family: "Inter-Light";
+	src: "../../assets/fonts/Inter/Inter-Light.ttf";
+}
+
+.text-header {
+}
+
+.text-subheader {
+}
+
+.text-main {
+}
+
+.text-regular {
+}
