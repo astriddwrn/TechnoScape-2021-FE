@@ -10,23 +10,23 @@ Repo Frontend Branch Structure:
 │  
 ├─── develop
 |
-=====├──── Technoscape
-===========├───── Home
-==================├───── Section/Landing
-===========├───── 404
-==================├───── Section/404
+=====├──── develop/Home
+===========├───── develop/Home/Landing
+===========├───── develop/Home/About
+===========├───── develop/Home/....
+=====├───── develop/404
 |
 =====├──── DeveloperWorkshop
-===========├───── Home
-==================├───── Section/Landing
+===========├───── DeveloperWorkshop/Home
+==================├───── DeveloperWorkshop/Home/Landing
 |
 =====├──── VirtualConference
-===========├───── Home
-==================├───── Section/Landing
+===========├───── VirtualConference/Home
+==================├───── VirtualConference/Home/Landing
 |
 =====├──── Hackathon
-===========├───── Home
-==================├───── Section/Landing
+===========├───── Hackathon/Home
+==================├───── Hackathon/Home/Landing
 
 Repo Backend Branch Structure:
 │ master
@@ -34,15 +34,15 @@ Repo Backend Branch Structure:
 ├─── develop
 |
 =====├──── Technoscape
-===========├───── Feature/Subscription
+===========├───── Technoscape/Feature/Subscription
 |
 =====├──── DeveloperWorkshop
-===========├───── Feature/Subscription
+===========├───── DeveloperWorkshop/Feature/Subscription
 |
 =====├──── VirtualConference
-===========├───── Feature/Subscription
+===========├───── VirtualConference/Feature/Subscription
 |
 =====├──── Hackathon
-===========├───── Feature/Subscription
+===========├───── Hackathon/Feature/Subscription
 
 NOTES: Kalo ketemu error, silakan chat pengurus.
