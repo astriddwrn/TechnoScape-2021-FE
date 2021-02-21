@@ -1,3 +1,14 @@
 :root {
 	--black: #000;
+	--landing-bg: linear-gradient(151.12deg, #73bcf9 19.15%, #7a96f8 91.38%);
+	--navbar-bg: linear-gradient(
+		180deg,
+		#181a39 0%,
+		rgba(29, 31, 68, 0.651042) 57.81%,
+		rgba(38, 40, 89, 0) 100%
+	);
+	--white: #f4f4f4;
+	--blue: #262859;
+	--text-blue: #4d6ba0;
+	--btn-bg: linear-gradient(180deg, #ebaf8d -22.64%, #d1534b 91.54%);
 }

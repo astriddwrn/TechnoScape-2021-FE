@@ -1,36 +1,49 @@
 @font-face {
-	font-family: "Inter-Bold";
+	font-family: "Inter-Bold", sans-serif;
 	src: "../../assets/fonts/Inter/Inter-Bold.ttf";
 }
 
 @font-face {
-	font-family: "Inter-Semibold";
+	font-family: "Inter-Semibold", sans-serif;
 	src: "../../assets/fonts/Inter/Inter-SemiBold.ttf";
 }
 
 @font-face {
-	font-family: "Inter-Medium";
+	font-family: "Inter-Medium", sans-serif;
 	src: "../../assets/fonts/Inter/Inter-Medium.ttf";
 }
 
 @font-face {
-	font-family: "Inter-Regular";
+	font-family: "Inter-Regular", sans-serif;
 	src: "../../assets/fonts/Inter/Inter-Regular.ttf";
 }
 
 @font-face {
-	font-family: "Inter-Light";
+	font-family: "Inter-Light", sans-serif;
 	src: "../../assets/fonts/Inter/Inter-Light.ttf";
 }
 
+.text-super {
+	font-family: "Inter-Bold";
+	font-size: 6rem;
+}
+
 .text-header {
+	font-family: "Inter-Semibold";
+	font-size: 3rem;
 }
 
 .text-subheader {
+	font-family: "Inter-Medium";
+	font-size: 1.5rem;
 }
 
 .text-main {
+	font-family: "Inter-Medium";
+	font-size: 1.15rem;
 }
 
 .text-regular {
+	font-family: "Inter-Regular";
+	font-size: 1rem;
 }
