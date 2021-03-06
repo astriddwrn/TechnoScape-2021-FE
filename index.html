@@ -7,7 +7,7 @@
     <title>Technoscape</title>
   </head>
   <body>
-    <section class="video vh-100 py-5">
+    <section id="video" class="video vh-100 py-5">
       <div class="container justify-content-center">
         <p class="text-regular">
           Check out <i>Techno<b>Scape</b></i> promotional video
@@ -20,17 +20,30 @@
             <div class="carousel-card" id="card-4"></div>
             <div class="carousel-card" id="card-5"></div>
           </div>
-		  <div class="floating-planet">
-			  <img id="green-planet" src="assets/img/Planet hijau.svg" alt="">
-			  <img id="orange-planet" src="assets/img/Planet oren.svg" alt="">
-			  <img id="purple-planet" src="assets/img/Planet purple.svg" alt="">
-		  </div>
-          <div id="play-button" class="play-button zindex-modal" onclick="playVideo()">
+          <div class="floating-planet">
+            <img id="decor-1" src="assets/img/Decor.svg" alt="" />
+            <img id="decor-2" src="assets/img/Decor.svg" alt="" />
+            <img id="green-planet" src="assets/img/Planet hijau.svg" alt="" />
+            <img id="orange-planet" src="assets/img/Planet oren.svg" alt="" />
+            <img id="purple-planet" src="assets/img/Planet purple.svg" alt="" />
+            <img id="blue-planet" src="assets/img/Planet biru.svg" alt="" />
+          </div>
+          <div
+            id="play-button"
+            class="play-button zindex-modal"
+            onclick="playVideo()"
+          >
             <div class="triangle"></div>
           </div>
-		  <iframe id="vid" src="https://www.youtube.com/embed/EjspPVMznkE?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe
+            id="vid"
+            src="https://www.youtube.com/embed/EjspPVMznkE?rel=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
+    </section>
     <script src="assets/lib/jquery/jquery.min.js"></script>
     <script src="assets/lib/bootstrap/js/bootstrap.js"></script>
     <script src="js/pages/home.js"></script>

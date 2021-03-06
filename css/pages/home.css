@@ -1,5 +1,10 @@
 @import './../base/base.css';
 
+:root {
+  --top-position: 0%;
+  --bottom-position: 0%;
+}
+
 .video {
   background-color: var(--background);
   color: white;
@@ -79,22 +84,40 @@
   position: absolute;
 }
 
+.video .floating-planet img#decor-1 {
+  left: -20%;
+  bottom: -60%;
+  width: 70%;
+}
+
+.video .floating-planet img#decor-2 {
+  right: -20%;
+  top: -50%;
+  width: 70%;
+}
+
 .video .floating-planet img#green-planet {
   left: 5%;
-  top: 15%;
+  top: calc(15% + var(--top-position));
   width: 8rem;
 }
 
 .video .floating-planet img#orange-planet {
-  right: 0;
-  bottom: 0;
+  right: 0%;
+  bottom: calc(0% + var(--bottom-position));
   width: 15rem;
 }
 
 .video .floating-planet img#purple-planet {
   right: 15%;
-  top: 10%;
-  width: 3rem;
+  top: calc(10% + var(--top-position));
+  width: 4rem;
+}
+
+.video .floating-planet img#blue-planet {
+  left: 15%;
+  bottom: calc(15% + var(--bottom-position));
+  width: 5rem;
 }
 
 .video .play-button {
