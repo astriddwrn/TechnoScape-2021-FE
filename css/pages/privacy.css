@@ -1,0 +1,61 @@
+@import "./../base/base.css";
+
+.navbar {
+  background: var(--technoscape);
+  padding: 1.5vw 6vw;
+}
+
+.nav-img {
+  width: 10rem;
+  filter: invert(1);
+}
+
+body {
+  background-color: var(--blue);
+  font-family: "Inter-Regular";
+  color: var(--white);
+}
+
+.container {
+  overflow: hidden;
+}
+
+.tab-divider {
+  height: auto;
+  width: 0.25rem;
+  background: var(--fading-white);
+}
+
+.tab-heading {
+  color: var(--pale-blue);
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: 0.05em;
+  line-height: 61px;
+  font-family: "Inter-Bold";
+}
+
+.tab-subheading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.nav-pills {
+  color: transparent;
+  letter-spacing: 0.05em;
+}
+
+.nav-link {
+  color: var(--white);
+}
+
+.nav-link:hover {
+  color: var(--white);
+}
+
+.nav-link.active {
+  background-color: transparent !important;
+  color: var(--pale-blue) !important;
+}
