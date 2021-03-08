@@ -7,6 +7,12 @@
 		<title>Technoscape</title>
 	</head>
 	<body>
+		<div class="container">
+			<!-- <img
+				class="img-fluid star"
+				src="assets/img/home/Logo/Illustrations/Star.svg"
+			/> -->
+		</div>
 		<section class="landing" id="landing">
 			<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
 				<div class="container">
@@ -17,7 +23,7 @@
 							width="50"
 					/></a>
 					<button
-						class="navbar-toggler"
+						class="navbar-toggler d-block"
 						type="button"
 						data-toggle="collapse"
 						data-target="#navbarSupportedContent"
@@ -25,7 +31,9 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon"></span>
+						<div class="navbar-toggler-icon toggle-btn">
+							<img src="assets/img/home/Logo/Logo/menu.png" alt="" />
+						</div>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
@@ -48,9 +56,6 @@
 					</div>
 				</div>
 			</nav>
-			<div class="container">
-				<img class="star" src="assets/img/home/Logo/Illustrations/Star.svg" />
-			</div>
 			<div class="landing-wrapper container">
 				<div class="landing-content">
 					<div class="technoscape-collab">
@@ -59,19 +64,21 @@
 							src="/assets/img/home/Logo/TechnoScape/TechnoScape_Horizontal_W.png"
 							alt="technoscape 2021"
 						/>
-						X
+						<span class="text-med-light">X</span>
 						<img
 							class="collab-logo"
 							src="/assets/img/home/Logo/TechnoScape/TechnoScape_Horizontal_W.png"
 							alt="technoscape 2021"
 						/>
 					</div>
-					<p class="technoscape-content">
-						<span>TechnoScape:</span> The Biggest Annual Technology Event
-						<span>Held by BNCC</span>
-					</p>
-					<p class="technoscape-description">
+					<p class="technoscape-title text-super">TECHNOSCAPE</p>
+					<p class="technoscape-description text-big-regular">
 						Empowering Technological Knowledge to Produce Innovative Works
+					</p>
+					<p class="technoscape-content text-med-light">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+						facilisis libero in pellentesque magna malesuada porta parturient
+						dignissim. Sit tortor et quis ultrices ornare.
 					</p>
 					<button class="btn talk-btn">Let's Talk!</button>
 				</div>
@@ -86,15 +93,83 @@
 			/>
 		</div>
 
-		<section class="h-100">
-			adsfadfsasdl Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-			labore, commodi doloribus nemo ipsam aliquam maiores accusamus magnam eos
-			inventore quam laboriosam voluptatibus quos aperiam, assumenda sapiente
-			voluptate amet aspernatur?
+		<section class="about" id="about">
+			<div class="about-wrapper container">
+				<div class="about-content row d-flex align-items-center">
+					<div class="about-content-text col-md-6">
+						<h1 class="text-header-bold">
+							About <br />
+							Technoscape
+						</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius
+							massa ultricies enim feugiat sed. Morbi mattis tellus eget lectus
+							ut. Quam elementum facilisi vestibulum mattis porta aenean eget
+							quis tincidunt. Amet phasellus in neque lobortis tortor ut cursus.
+						</p>
+					</div>
+					<div class="col-md-6 cards d-flex justify-content-center">
+						<div class="glass-card card-1 d-flex" style="width: 16rem">
+							<img
+								src="/assets/img/home/Logo/TechnoScape/Logo-Technoscape.png"
+								class="card-img"
+								alt="technoscape"
+							/>
+						</div>
+						<div class="glass-card card-2 d-flex" style="width: 16rem">
+							<img
+								src="/assets/img/home/Logo/TechnoScape/Logo-Technoscape.png"
+								class="card-img"
+								alt="technoscape"
+							/>
+						</div>
+
+						<img
+							class="planet planet-orange"
+							src="./assets/img/home/Logo/Illustrations/Planet oren.png"
+							alt="technoscape"
+						/>
+						<img
+							class="planet planet-purple"
+							src="./assets/img/home/Logo/Illustrations/Planet purple.png"
+							alt="technoscape"
+						/>
+						<img
+							class="planet planet-green"
+							src="./assets/img/home/Logo/Illustrations/Planet hijau.png"
+							alt="technoscape"
+						/>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section class="h-100"></section>
+		<!-- <section class="h-100"></section> -->
 		<script src="assets/lib/jquery/jquery.min.js"></script>
 		<script src="assets/lib/bootstrap/js/bootstrap.js"></script>
 		<script src="js/pages/home.js"></script>
+		<script>
+			let cards = document.querySelector(".cards");
+			let card1 = document.querySelector(".card-1");
+			let card2 = document.querySelector(".card-2");
+			cards.addEventListener("mouseenter", function (e) {
+				if (
+					card1.classList.contains("card1-move-up") ||
+					card2.classList.contains("card2-move-down")
+				) {
+					card1.classList.remove("card1-move-up");
+					card2.classList.remove("card2-move-down");
+				}
+				card1.classList.add("card1-move-down");
+				card2.classList.add("card2-move-up");
+				// card1.classList.toggle("move-down");
+				// card2.classList.toggle("move-up");
+			});
+			cards.addEventListener("mouseleave", function (e) {
+				card1.classList.add("card1-move-up");
+				card1.classList.remove("card1-move-down");
+				card2.classList.add("card2-move-down");
+				card2.classList.remove("card2-move-up");
+			});
+		</script>
 	</body>
 </html>

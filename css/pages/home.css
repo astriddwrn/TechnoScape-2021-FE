@@ -7,6 +7,13 @@
 	background: var(--landing-bg);
 }
 
+.about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
 /* NAVBAR */
 .navbar {
 	background: transparent;
@@ -42,12 +49,6 @@
 	padding-right: 2rem !important;
 }
 
-/* .landing-content {
-	background: url(../../assets/img/home/Logo/Illustrations/Star.svg);
-	background-size: cover;
-	background-repeat: no-repeat;
-} */
-
 /* WAVE */
 .wave {
 	height: 100px;
@@ -61,34 +62,32 @@
 }
 
 .landing-wrapper {
+	position: relative;
+	z-index: 1;
 	padding-top: 4rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	height: calc(100vh - 4rem);
+	height: 100vh;
 	color: var(--white);
 }
 
-/* fonts foldering problem */
-.technoscape-content {
-	font-size: 4.5rem;
-	letter-spacing: 0.1rem;
-	font-weight: 700;
-	margin: 0;
-}
-.technoscape-description {
-	font-size: 1.5rem;
-	color: var(--pale-blue);
-	margin: 1rem 0;
-}
-
-.technoscape-content span {
-	background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
+.technoscape-title {
+	letter-spacing: 1rem;
+	background: var(--heading-orange);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	margin: 0;
 }
-
+.technoscape-content {
+	color: var(--pale-blue);
+	margin: 2rem 0;
+	padding: 0 10rem;
+}
+.technoscape-description {
+	letter-spacing: 0.1rem;
+}
 .talk-btn {
 	background: var(--btn-orange);
 	border: none;
@@ -111,25 +110,156 @@
 }
 
 .star {
-	position: absolute;
+	position: fixed;
 	top: 100px;
-	z-index: 5;
-	max-width: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 75%;
+	z-index: 1;
+	max-width: 100%;
 }
 
-.technoscape-collab,
-.technoscape-content,
-.technoscape-description,
-.talk-btn {
-	position: relative;
+.navbar-toggler {
+	visibility: hidden;
+}
+.toggle-btn img {
+	width: 100%;
+}
+
+/* ABOUT */
+/* .about-content */
+.about-content-text h1 {
+	background: var(--heading-orange);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 1rem;
+}
+
+.about-content-text p {
+	color: var(--white);
+	/* 30px =  1.9rem */
+	line-height: 1.9rem;
+}
+
+.glass-card {
+	height: 25rem;
+	background: radial-gradient(
+		88.77% 88.77% at 25.41% 9.11%,
+		rgba(255, 255, 255, 0.4) 0%,
+		rgba(255, 255, 255, 0) 130%
+	);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 32px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-card:nth-child(2)::before {
+	content: "TechnoScape";
+	font-family: "Inter-Regular";
+	font-style: italic;
+	font-size: 1.5rem;
+	color: var(--white);
+	position: absolute;
+	left: 20%;
+	bottom: 50%;
+	z-index: 2;
+}
+.glass-card:nth-child(1) {
+	z-index: 2;
+}
+.glass-card:nth-child(2) {
 	z-index: 1;
+	transform: translate(-100px, 60px);
+}
+
+.card1-move-down {
+	z-index: 1 !important;
+	transform: translateY(60px);
+	transition: transform 1.5s;
+}
+.card1-move-up {
+	z-index: 2 !important;
+	transform: translateY(0px);
+	transition: transform 1.5s;
+}
+.card2-move-down {
+	z-index: 2 !important;
+	transform: translateY(-100px, 0px) !important;
+	transition: transform 1.5s;
+}
+.card2-move-up {
+	z-index: 1 !important;
+	transform: translate(-100px, -60px) !important;
+	transition: transform 1.5s;
+}
+
+.cards .planet {
+	position: absolute;
+	width: 30%;
+	z-index: 3;
+}
+
+.cards .planet-purple {
+	top: -50px;
+	left: -100px;
+	width: 25%;
+	max-width: 100%;
+}
+
+.cards .planet-orange {
+	bottom: -100px;
+	left: -100px;
+	width: 45%;
+	max-width: 100%;
+}
+
+.cards .planet-green {
+	top: 50%;
+	right: 50px;
+	width: 10%;
+	max-width: 100%;
+}
+.glass-card .card-img {
+	margin: auto;
+	max-width: 50%;
+	filter: blur(1px);
 }
 
 @media screen and (max-width: 428px) {
-	.technoscape-collab .collab-logo {
-		max-width: 35%;
+	.navbar-brand {
+		display: none;
 	}
+	.landing-wrapper {
+		height: auto;
+	}
+	.technoscape-collab {
+		font-size: 1rem;
+		margin: 3.75rem 0 1.5rem 0;
+	}
+	.technoscape-collab .collab-logo {
+		max-width: 30%;
+		margin: 0;
+	}
+	.technoscape-title {
+		letter-spacing: 3px;
+	}
+
 	.technoscape-content {
 		font-size: 2rem;
+		margin: 1rem 0;
+	}
+	.technoscape-description {
+		letter-spacing: 0;
+	}
+	.talk-btn {
+		padding: 10px 60px;
+	}
+	.wave img {
+		bottom: 0;
+	}
+	.star {
+		width: 100%;
+		margin: 0 1rem;
 	}
 }
