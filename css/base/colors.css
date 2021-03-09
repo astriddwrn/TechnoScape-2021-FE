@@ -5,6 +5,11 @@
     #73bcf9 19.15%,
     rgba(122, 150, 248, 0) 91.38%
   );
+  --landing-bg-reverse: linear-gradient(
+    -28.88deg,
+    #73bcf9 19.15%,
+    rgba(122, 150, 248, 0) 91.38%
+  );
   --navbar-bg: linear-gradient(
     180deg,
     #181a39 0%,
