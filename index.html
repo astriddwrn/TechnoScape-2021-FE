@@ -21,7 +21,14 @@
           <div class="row">
             <div class="contact-left col-md-6">
               <h1>Have a Question in Mind?</h1>
-              <button class="btn talk-btn">Let's Talk!</button>
+              <button
+                type="button"
+                class="btn talk-btn"
+                data-toggle="modal"
+                data-target="#talkForm"
+              >
+                Let's Talk!
+              </button>
             </div>
             <div class="col-md-1">
               <div class="contact-divider"></div>
@@ -108,6 +115,93 @@
         </div>
       </div>
     </section>
+    <div
+      class="modal fade"
+      id="talkForm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="talkFormTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container">
+              <div class="modal-wrapper row">
+                <div class="modal-left col-md-5">
+                  <div class="modal-left-text">
+                    <h3>Contact Person</h3>
+                    <p>
+                      If you have any other problem, feel free to contact one of
+                      the following contact person
+                    </p>
+                  </div>
+                  <div class="modal-left-contact">
+                    <h4>Ramen</h4>
+                    <a href="">
+                      <img
+                        src="./assets/img/home/Logo/Logo/whatsapp.png"
+                        alt=""
+                      />
+                      <p>62853xxxx0000</p>
+                    </a>
+                    <a href="">
+                      <img src="./assets/img/home/Logo/Logo/line.png" alt="" />
+                      <p>ichiraku_ramen</p>
+                    </a>
+                  </div>
+                  <div class="modal-left-contact">
+                    <h4>Ramen</h4>
+                    <a href="">
+                      <img
+                        src="./assets/img/home/Logo/Logo/whatsapp.png"
+                        alt=""
+                      />
+                      <p>62853xxxx0000</p>
+                    </a>
+                    <a href="">
+                      <img src="./assets/img/home/Logo/Logo/line.png" alt="" />
+                      <p>ichiraku_ramen</p>
+                    </a>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="close close-btn"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&#x2715;</span>
+                </button>
+                <div class="modal-right col-md-7">
+                  <h1>Let's Talk</h1>
+                  <form class="modal-form" action="">
+                    <div class="input-box">
+                      <input type="text" name="username" />
+                      <label for="username">Username*</label>
+                    </div>
+                    <div class="input-box">
+                      <input type="text" name="email" />
+                      <label for="email">Email*</label>
+                    </div>
+                    <div class="input-box">
+                      <input type="text" />
+                      <label for="">Subject*</label>
+                    </div>
+                    <div class="input-box">
+                      <textarea name="" id="" cols="30" rows="5"></textarea>
+                      <label for="">Message*</label>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./assets/lib/jquery/jquery.min.js"></script>
     <script src="./assets/lib/bootstrap/js/bootstrap.js"></script>
     <script src="./js/pages/home.js"></script>

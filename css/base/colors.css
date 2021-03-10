@@ -17,6 +17,7 @@
     rgba(38, 40, 89, 0) 100%
   );
   --white: #f4f4f4;
+  --white-dark: #9d9d9d;
   --blue: #262859;
   --text-blue: #4d6ba0;
   --btn-orange: linear-gradient(180deg, #ebaf8d -22.64%, #d1534b 91.54%);
