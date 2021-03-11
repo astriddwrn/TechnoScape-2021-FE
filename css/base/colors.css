@@ -23,6 +23,7 @@
   --btn-orange: linear-gradient(180deg, #ebaf8d -22.64%, #d1534b 91.54%);
   --heading-orange: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
   --pale-blue: #b5cffc;
+  --pale-blue-light: #b5cffc;
   --technoscape: linear-gradient(151.12deg, #73bcf9 19.15%, #7a96f8 91.38%);
   --fading-white: rgba(255, 255, 255, 0.4);
 }

@@ -177,20 +177,51 @@
                   <h1>Let's Talk</h1>
                   <form class="modal-form" action="">
                     <div class="input-box">
-                      <input type="text" name="username" />
-                      <label for="username">Username*</label>
+                      <input
+                        type="text"
+                        name="username"
+                        placeholder=" "
+                        onfocus="setBlue(this)"
+                        onBlur="setWhiteWhenFilled(this)"
+                        required
+                      />
+                      <label for="">Username</label>
                     </div>
                     <div class="input-box">
-                      <input type="text" name="email" />
-                      <label for="email">Email*</label>
+                      <input
+                        type="text"
+                        name="email"
+                        placeholder=" "
+                        onfocus="setBlue(this)"
+                        onBlur="setWhiteWhenFilled(this)"
+                        onChange="validateEmail(this)"
+                        required
+                      />
+                      <label for="">Email</label>
+                      <div class="invalid-feedback">
+                        Please provide a valid email
+                      </div>
                     </div>
                     <div class="input-box">
-                      <input type="text" />
-                      <label for="">Subject*</label>
+                      <input
+                        type="text"
+                        placeholder=" "
+                        onfocus="setBlue(this)"
+                        onBlur="setWhiteWhenFilled(this)"
+                        required
+                      />
+                      <label for="">Subject</label>
                     </div>
                     <div class="input-box">
-                      <textarea name="" id="" cols="30" rows="5"></textarea>
-                      <label for="">Message*</label>
+                      <textarea
+                        cols="30"
+                        rows="5"
+                        placeholder=" "
+                        onfocus="setBlue(this)"
+                        onBlur="setWhiteWhenFilled(this)"
+                        required
+                      ></textarea>
+                      <label for="">Message</label>
                     </div>
 
                     <button type="submit">Submit</button>

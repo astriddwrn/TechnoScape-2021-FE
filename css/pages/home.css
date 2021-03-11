@@ -288,7 +288,7 @@
   font-size: 36px;
   letter-spacing: 0.05rem;
   color: var(--pale-blue);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .modal-form {
@@ -302,7 +302,7 @@
   box-shadow: none;
   outline: none;
   border-bottom: 2px solid var(--white-dark);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   color: var(--white);
   width: 100%;
 }
@@ -323,7 +323,7 @@
   background: var(--btn-orange);
   border: none;
   border-radius: 32px;
-  padding: 15px;
+  padding: 12px;
   color: var(--white);
   letter-spacing: 0.1rem;
   font-weight: 600;
@@ -347,16 +347,49 @@
   position: absolute;
 }
 
+.modal-form input:not(:placeholder-shown),
+.modal-form input:focus {
+  border-bottom: 2px solid var(--pale-blue-light);
+}
+
+.modal-form input:not(:placeholder-shown) + label,
 .modal-form input:focus + label {
   transform: translateY(-20px);
   font-size: 12px;
   font-style: normal;
+  color: var(--pale-blue-light);
 }
 
+.modal-form textarea:not(:placeholder-shown),
+.modal-form textarea:focus {
+  border-bottom: 2px solid var(--pale-blue-light);
+}
+
+.modal-form textarea:not(:placeholder-shown) + label,
 .modal-form textarea:focus + label {
   transform: translateY(-20px);
   font-size: 12px;
   font-style: normal;
+  color: var(--pale-blue-light);
+}
+
+.set-text-white {
+  color: var(--white-dark) !important;
+}
+
+.set-border-white {
+  border-bottom: 2px solid var(--white-dark) !important;
+}
+
+.is-invalid {
+  border-bottom: 2px solid red !important;
+}
+
+.invalid-feedback {
+  position: absolute;
+  text-align: right;
+  margin-top: 30px;
+  right: 64px;
 }
 
 .close-btn {
