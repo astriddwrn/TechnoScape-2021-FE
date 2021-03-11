@@ -121,6 +121,10 @@
   margin-bottom: 0.75rem;
 }
 
+.contact-icon a:hover {
+  text-decoration: none;
+}
+
 .contact-icon a > img {
   width: 40px;
   margin-right: 1rem;
@@ -405,4 +409,14 @@
 
 .close-btn:hover {
   color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+  .modal-left {
+    border-radius: 32px 32px 0 0;
+  }
+
+  .modal-right {
+    border-radius: 0 0 32px 32px;
+  }
 }
