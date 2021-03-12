@@ -7,14 +7,26 @@
 		<title>Technoscape</title>
 	</head>
 	<body>
-		<div class="container">
-			<!-- <img
+		<!-- <div class="container-fluid container-star">
+			<img
 				class="img-fluid star"
+				onmousemove="moveStar(event)"
 				src="assets/img/home/Logo/Illustrations/Star.svg"
-			/> -->
-		</div>
+			/>
+		</div> -->
 		<section class="landing" id="landing">
 			<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
 				<div class="container">
 					<a class="navbar-brand" href="#landing"
 						><img
@@ -22,19 +34,6 @@
 							alt="Technoscape 2021"
 							width="50"
 					/></a>
-					<button
-						class="navbar-toggler d-block"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<div class="navbar-toggler-icon toggle-btn">
-							<img src="assets/img/home/Logo/Logo/menu.png" alt="" />
-						</div>
-					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item mx-md-4">
@@ -56,7 +55,73 @@
 					</div>
 				</div>
 			</nav>
-			<div class="landing-wrapper container">
+			<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#">Navbar</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#"
+								>Home <span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Dropdown
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Disabled</a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input
+							class="form-control mr-sm-2"
+							type="search"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+							Search
+						</button>
+					</form>
+				</div>
+			</nav> -->
+			<!-- <div class="container star-container">
+				<img
+					class="img-fluid star"
+					src="assets/img/home/Logo/Illustrations/Star.svg"
+				/>
+			</div> -->
+			<!-- <div class="landing-wrapper container">
 				<div class="landing-content">
 					<div class="technoscape-collab">
 						<img
@@ -64,7 +129,7 @@
 							src="/assets/img/home/Logo/TechnoScape/TechnoScape_Horizontal_W.png"
 							alt="technoscape 2021"
 						/>
-						<span class="text-med-light">X</span>
+						<span class="text-med-light">&#x2715;</span>
 						<img
 							class="collab-logo"
 							src="/assets/img/home/Logo/TechnoScape/TechnoScape_Horizontal_W.png"
@@ -82,21 +147,21 @@
 					</p>
 					<button class="btn talk-btn">Let's Talk!</button>
 				</div>
-			</div>
+			</div> -->
 		</section>
 
-		<div class="wave">
+		<!-- <div class="wave">
 			<img
 				class="img-fluid wave-img"
 				src="assets/img/home/Logo/Illustrations/Wave.png"
 				alt="wave"
 			/>
-		</div>
+		</div> -->
 
-		<section class="about" id="about">
+		<!-- <section class="about" id="about">
 			<div class="about-wrapper container">
 				<div class="about-content row d-flex align-items-center">
-					<div class="about-content-text col-md-6">
+					<div class="about-content-text col-xl-6 col-md-5">
 						<h1 class="text-header-bold">
 							About <br />
 							Technoscape
@@ -108,15 +173,15 @@
 							quis tincidunt. Amet phasellus in neque lobortis tortor ut cursus.
 						</p>
 					</div>
-					<div class="col-md-6 cards d-flex justify-content-center">
-						<div class="glass-card card-1 d-flex" style="width: 16rem">
+					<div class="col-xl-6 col-md-7 cards d-flex justify-content-center">
+						<div class="glass-card card-1 d-flex">
 							<img
 								src="/assets/img/home/Logo/TechnoScape/Logo-Technoscape.png"
 								class="card-img"
 								alt="technoscape"
 							/>
 						</div>
-						<div class="glass-card card-2 d-flex" style="width: 16rem">
+						<div class="glass-card card-2 d-flex">
 							<img
 								src="/assets/img/home/Logo/TechnoScape/Logo-Technoscape.png"
 								class="card-img"
@@ -142,33 +207,39 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- <section class="h-100"></section> -->
+		</section> -->
+		<section class="h-100"></section>
 		<script src="assets/lib/jquery/jquery.min.js"></script>
 		<script src="assets/lib/bootstrap/js/bootstrap.js"></script>
 		<script src="js/pages/home.js"></script>
 		<script>
-			let cards = document.querySelector(".cards");
-			let card1 = document.querySelector(".card-1");
-			let card2 = document.querySelector(".card-2");
-			cards.addEventListener("mouseenter", function (e) {
-				if (
-					card1.classList.contains("card1-move-up") ||
-					card2.classList.contains("card2-move-down")
-				) {
-					card1.classList.remove("card1-move-up");
-					card2.classList.remove("card2-move-down");
-				}
-				card1.classList.add("card1-move-down");
-				card2.classList.add("card2-move-up");
-				// card1.classList.toggle("move-down");
-				// card2.classList.toggle("move-up");
+			$("body").mousemove((e) => {
+				let x = (e.pageX * -1) / 50;
+				let y = (e.pageY * -1) / 50;
+				$(".star").css(
+					"transform",
+					"translate(" + x + 750 + "px, " + y + 100 + "px)",
+					// "translateY(" + y + 100 + "px)",
+				);
+				// $(".star").css("left", x + 750 + "px");
+				// $(".star").css("top", y + 100 + "px");
 			});
-			cards.addEventListener("mouseleave", function (e) {
-				card1.classList.add("card1-move-up");
-				card1.classList.remove("card1-move-down");
-				card2.classList.add("card2-move-down");
-				card2.classList.remove("card2-move-up");
+			$(".cards").mouseenter((e) => {
+				if (
+					$(".card-1").hasClass("card1-move-up") ||
+					$(".card-2").hasClass("card2-move-up")
+				) {
+					$(".card-1").removeClass("card1-move-up");
+					$(".card-2").removeClass("card2-move-up");
+				}
+				$(".card-1").addClass("card1-move-down");
+				$(".card-2").addClass("card2-move-up");
+			});
+			$(".cards").mouseleave((e) => {
+				$(".card-1").addClass("card1-move-up");
+				$(".card-1").removeClass("card1-move-down");
+				$(".card-2").addClass("card2-move-down");
+				$(".card-2").removeClass("card2-move-up");
 			});
 		</script>
 	</body>
