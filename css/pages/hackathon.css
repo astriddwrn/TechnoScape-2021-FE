@@ -4,7 +4,34 @@
 	min-width: 100%;
 	min-height: 100%;
 	overflow-x: hidden;
-	background: var(--landing-bg); 
+	background: var(--hackathon-landing-bg); 
+}
+
+.text-orange{
+    background-image: var(--heading-orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent
+}
+
+.button-orange{
+    background-image: var(--btn-orange);
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 75px;
+    border-radius: 32px;
+
+    letter-spacing: 0.1em;
+    color: white;
+    text-align: center;
+}
+
+.text-med-light{
+    color: var(--white);
 }
 
 /* NAVBAR */
@@ -25,7 +52,7 @@
 	top: 0px;
 }
 .navbar.change-bg .nav-link.active {
-	background: var(--landing-bg);
+	background: var(--hackathon-landing-bg);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -42,3 +69,4 @@
 	padding-right: 2rem !important;
 }
 
+/*  */
