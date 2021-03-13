@@ -86,23 +86,17 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-}
-
-.champion .box-container{
-	max-width: 400px;
-	min-width: 300px;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.1) 100%);
-	border-radius: 20px;
-	padding: 2px;
-	overflow: hidden;
-}
+}	
 
 .champion .box{
+	max-width: 400px;
+	min-width: 300px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	color: var(--white);
+
 	border-radius: 20px;
 	background: radial-gradient(88.77% 88.77% at 25.41% 9.11%, rgba(255, 255, 255, 0.4) 0%, #262859 100%);
 	background-position: center;
@@ -110,6 +104,9 @@
 	padding: 80px 0;
 	outline: none;
 	
+	overflow: hidden;
+	border: 2px solid rgba(255, 255, 255, 0.18);
+	border-radius: 20px;
 
 }
 
@@ -123,28 +120,28 @@
 }
 
 @media screen and (max-width:1200px){
-	.champion .box-container{
+	.champion .box{
 		width: 300px;
 	}
 }
 @media screen and (max-width:992px){
 
-	.champion .box-container{
+	.champion .box{
 		margin: 0 20px;
 		width: 40vw;
 		max-width: 400px;
 		min-width: 300px;
 	}
-	.champion .box-container:nth-child(3){
+	.champion .box:nth-child(3){
 		margin-top: 50px;
 	}
 	
 }
 @media screen and (max-width:762px){
-	.champion .box-container:nth-child(3){
+	.champion .box:nth-child(3){
 		margin-top: 25px;
 	}
-	.champion .box-container{
+	.champion .box{
 		margin: 25px 0;
 		width: 60vw;
 		max-width: 500px;
