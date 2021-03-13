@@ -62,13 +62,45 @@
 	font-family: "Inter-Light";
 	font-size: 1.25rem;
 }
-
+@media screen and (max-width: 1200px) {
+	.text-super {
+		font-size: 4.5rem;
+	}
+}
+@media screen and (max-width: 992px) {
+	.text-header-bold {
+		font-size: 2.6rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.text-super {
+		font-size: 4rem;
+	}
+	.text-big-regular {
+		font-family: "Inter-Regular";
+		font-size: 1.25rem;
+	}
+}
+@media screen and (max-width: 576px) {
+	.text-super {
+		font-size: 3rem;
+	}
+	.text-big-regular {
+		font-family: "Inter-Regular";
+		font-size: 1.15rem;
+	}
+	.text-med-light {
+		font-family: "Inter-Light";
+		font-size: 1.25rem;
+	}
+}
 @media screen and (max-width: 428px) {
 	.text-super {
 		font-size: 2.5rem;
 	}
 
-	.text-header {
+	.text-header,
+	.text-header-bold {
 		font-size: 2rem;
 	}
 
@@ -89,6 +121,6 @@
 	}
 
 	.text-med-light {
-		font-size: 1.25rem;
+		font-size: 1rem;
 	}
 }
