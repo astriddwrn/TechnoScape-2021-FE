@@ -160,10 +160,17 @@
     padding: 14px 55px;
     letter-spacing: 0.1rem;
   }
+  .wave-img {
+		bottom: -90px;
+	}
 }
 
 @media screen and (max-width: 992px) {
 
+  .hackathon-content {
+		padding: 0 2rem;
+	}
+
   .star {
     top: 100px;
     left: 50%;
@@ -181,12 +188,18 @@
   }
   
   .wave-img {
-    bottom: -70px;
-  }
+		bottom: -70px;
+	}
   
 }
 
 @media screen and (max-width: 768px) {
+  .hackathon-title {
+    letter-spacing: 10px;
+  }
+  .hackathon-description {
+		font-size: 1.6rem;
+	}
   .star {
     top: 100px;
     left: 50%;
@@ -204,8 +217,8 @@
   }
   
   .wave-img {
-    bottom: -50px;
-  }
+		bottom: -55px;
+	}
   
 }
 
@@ -214,8 +227,8 @@
     letter-spacing: 0.8rem;
   }
   .hackathon-description {
-    font-size: 1.2rem;
-    padding-bottom: 2rem;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
   }
   .hackathon-content {
     font-size: 1rem;
@@ -240,21 +253,30 @@
   }
 
   .wave-img {
-    bottom: -30px;
-  }
+		bottom: -45px;
+	}
 }
 
 @media screen and (max-width: 428px) {
+  .landing-wrapper {
+		padding-top: 0;
+	}
+  .collab-logo {
+		margin: 0 0.2rem;
+		max-width: 40%;
+	}
   .hackathon-title {
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.5rem;
   }
   .hackathon-description {
     font-size: 1.2rem;
-    padding: 0 6rem;
+    padding: 0 5rem;
+    letter-spacing: 0;
   }
   .hackathon-content {
     font-size: 1rem;
-    padding: 0 5rem;
+    margin-bottom: 2rem;
+    padding: 0 4rem;
     padding-bottom: 2rem;
   }
   .talk-btn {
