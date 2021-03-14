@@ -70,3 +70,13 @@
 }
 
 /*TIMELINE*/
+.timeline {
+	width: 100%;
+	padding: 100px 3vw;
+}
+
+.timeline .text-orange {
+	width: fit-content;
+	margin: 0 auto 100px auto;
+	text-align: center;
+}
