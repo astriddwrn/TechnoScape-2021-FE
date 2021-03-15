@@ -1,54 +1,54 @@
-@import './../base/base.css';
+@import "./../base/base.css";
 
 .sponsors {
-  background-color: var(--background);
-  min-height: 100vh;
-  color: white;
-  text-align: center;
+	background-color: var(--background);
+	min-height: 100vh;
+	color: white;
+	text-align: center;
 }
 
 .sponsors .text-header {
-  background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .sponsors .sponsors-content {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .sponsors .sponsors-content .sponsors-content-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--background);
-  backdrop-filter: blur(10px);
-  border-radius: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--background);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .sponsors .sponsors-content#platinum .sponsors-content-item {
-  width: 22rem;
-  height: 13rem;
+	width: 22rem;
+	height: 13rem;
 }
 
 .sponsors .sponsors-content#gold .sponsors-content-item {
-  width: 16rem;
-  height: 10rem;
+	width: 16rem;
+	height: 10rem;
 }
 
 .sponsors .sponsors-content#silver .sponsors-content-item {
-  width: 13rem;
-  height: 9rem;
+	width: 13rem;
+	height: 9rem;
 }
 
 .sponsors .sponsors-content#medpar .sponsors-content-item {
-  width: 12rem;
-  height: 9rem;
+	width: 12rem;
+	height: 9rem;
 }
 
 .sponsors .sponsors-content .sponsors-content-item img {
-  width: 90%;
+	width: 90%;
 }
