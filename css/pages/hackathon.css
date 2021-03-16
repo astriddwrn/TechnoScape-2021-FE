@@ -284,4 +284,7 @@
     padding: 8px 45px;
     letter-spacing: 0.1rem;
   }
+  .wave-img {
+		bottom: -35px;
+	}
 }
