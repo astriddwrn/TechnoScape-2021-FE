@@ -2,7 +2,7 @@
 
 .wave-img {
   position: absolute;
-  top: -180px;
+  margin-top: -12rem;
   z-index: 0;
   border: none;
   transform: matrix(-1, 0, 0, 1, 0, 0) rotate(180deg);
@@ -10,13 +10,14 @@
 
 .footer {
   min-width: 100%;
-  min-height: 100%;
+  min-height: 125%;
   /* overflow-x: hidden; */
   background: var(--landing-bg-reverse);
   color: var(--white);
   font-family: "Inter-Regular";
   font-size: 1rem;
   letter-spacing: 0.05rem;
+  padding-top: 12rem;
 }
 
 .footer-wrapper {
