@@ -1,0 +1,64 @@
+@import "./../base/base.css";
+
+.not-found {
+	background-color: var(--background);
+	min-height: 100vh;
+	color: white;
+}
+
+.glass-container {
+	background: var(--glass);
+	backdrop-filter: blur(40px);
+	border-radius: 32px;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	width: 90%;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 3rem;
+}
+.content p {
+	margin: 1.5rem 0;
+}
+.content .return-btn {
+	margin-top: 2rem;
+}
+.content a {
+	text-decoration: none;
+	color: var(--white);
+	border: 2px solid var(--white);
+	border-radius: 32px;
+	padding: 12px 40px;
+}
+.illustration {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.illustration img {
+	display: flex;
+	max-height: 90%;
+}
+
+@media screen and (max-width: 992px) {
+	.glass-container {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.illustration {
+		order: -1;
+	}
+	.illustration img {
+		max-height: 75%;
+	}
+	.content {
+		text-align: center;
+		padding-left: 15px;
+		margin: 2rem 0;
+	}
+}

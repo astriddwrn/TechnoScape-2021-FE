@@ -1,3 +1,36 @@
 :root {
 	--black: #000;
+	--background: rgba(38, 40, 89, 1);
+	--white: #f4f4f4;
+	--landing-bg: linear-gradient(
+		151.12deg,
+		#73bcf9 19.15%,
+		rgba(122, 150, 248, 0) 91.38%
+	);
+	--landing-bg-reverse: linear-gradient(
+		151.12deg,
+		rgba(122, 150, 248, 0) 19.15%,
+		#73bcf9 91.38%
+	);
+	--navbar-bg: linear-gradient(
+		180deg,
+		#181a39 0%,
+		rgba(29, 31, 68, 0.651042) 57.81%,
+		rgba(38, 40, 89, 0) 100%
+	);
+	--white: #f4f4f4;
+	--white-dark: #9d9d9d;
+	--blue: #262859;
+	--text-blue: #4d6ba0;
+	--btn-orange: linear-gradient(180deg, #ebaf8d -22.64%, #d1534b 91.54%);
+	--heading-orange: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
+	--pale-blue: #b5cffc;
+	--pale-blue-light: #b5cffc;
+	--technoscape: linear-gradient(151.12deg, #73bcf9 19.15%, #7a96f8 91.38%);
+	--fading-white: rgba(255, 255, 255, 0.4);
+	--glass: radial-gradient(
+		88.77% 88.77% at 25.41% 9.11%,
+		rgba(255, 255, 255, 0.4) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
 }
