@@ -7,13 +7,12 @@
 		<title>Technoscape</title>
 	</head>
 	<body>
-		<!-- <div class="container-fluid container-star">
+		<div class="container star-container">
 			<img
 				class="img-fluid star"
-				onmousemove="moveStar(event)"
 				src="assets/img/home/Logo/Illustrations/Star.svg"
 			/>
-		</div> -->
+		</div>
 		<section class="landing" id="landing">
 			<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
 				<button
@@ -37,7 +36,7 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item mx-md-4">
-								<a class="nav-link active" href="#">Virtual Conference</a>
+								<a class="nav-link" href="#">Virtual Conference</a>
 							</li>
 							<li class="nav-item mx-md-4">
 								<a class="nav-link" href="#">Developer Workshop</a>
@@ -55,73 +54,7 @@
 					</div>
 				</div>
 			</nav>
-			<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="#">Navbar</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#"
-								>Home <span class="sr-only">(current)</span></a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="navbarDropdown"
-								role="button"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false"
-							>
-								Dropdown
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Something else here</a>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link disabled" href="#">Disabled</a>
-						</li>
-					</ul>
-					<form class="form-inline my-2 my-lg-0">
-						<input
-							class="form-control mr-sm-2"
-							type="search"
-							placeholder="Search"
-							aria-label="Search"
-						/>
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-							Search
-						</button>
-					</form>
-				</div>
-			</nav> -->
-			<!-- <div class="container star-container">
-				<img
-					class="img-fluid star"
-					src="assets/img/home/Logo/Illustrations/Star.svg"
-				/>
-			</div> -->
-			<!-- <div class="landing-wrapper container">
+			<div class="landing-wrapper container">
 				<div class="landing-content">
 					<div class="technoscape-collab">
 						<img
@@ -147,18 +80,18 @@
 					</p>
 					<button class="btn talk-btn">Let's Talk!</button>
 				</div>
-			</div> -->
+			</div>
 		</section>
 
-		<!-- <div class="wave">
+		<div class="wave">
 			<img
 				class="img-fluid wave-img"
 				src="assets/img/home/Logo/Illustrations/Wave.png"
 				alt="wave"
 			/>
-		</div> -->
+		</div>
 
-		<!-- <section class="about" id="about">
+		<section class="about" id="about">
 			<div class="about-wrapper container">
 				<div class="about-content row d-flex align-items-center">
 					<div class="about-content-text col-xl-6 col-md-5">
@@ -207,40 +140,51 @@
 					</div>
 				</div>
 			</div>
-		</section> -->
-		<section class="h-100"></section>
+		</section>
+		<section class="record" id="record">
+			<div class="container">
+				<div class="record-wrapper d-flex flex-wrap justify-content-center">
+					<div class="record-box record-ts">
+						<p class="ts-year text-regular mb-3">2020 HIGHLIGHTS</p>
+						<p class="ts-title text-sub-bold">TECHNOSCAPE</p>
+						<h1 class="ts-num text-big-medium">1500+</h1>
+						<p class="ts-participants">PARTICIPANTS</p>
+					</div>
+					<div class="record-box record-event">
+						<div class="row event-box">
+							<div class="col-md-6 flex-wrap">
+								<div class="event">
+									<p class="event-title text-sub-bold">VIRTUAL CONFERENCE</p>
+									<p class="event-participants">PARTICIPANTS</p>
+									<h1 class="event-num text-med-bold">500+</h1>
+								</div>
+								<div class="event">
+									<p class="event-title text-sub-bold">HACKATHON 3.0</p>
+									<p class="event-participants text-regular">
+										SELECTED PARTICIPANTS
+									</p>
+									<h1 class="event-num text-med-bold">100</h1>
+								</div>
+							</div>
+							<div class="col-md-6 flex-wrap">
+								<div class="event">
+									<p class="event-title text-sub-bold">ROAD TO HACKATHON</p>
+									<p class="event-participants">PARTICIPANTS</p>
+									<h1 class="event-num text-med-bold">900+</h1>
+								</div>
+								<div class="event">
+									<p class="event-title text-sub-bold">PARTNERSHIPS</p>
+									<p class="event-participants">COOPERATION</p>
+									<h1 class="event-num text-med-bold">100</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<script src="assets/lib/jquery/jquery.min.js"></script>
 		<script src="assets/lib/bootstrap/js/bootstrap.js"></script>
 		<script src="js/pages/home.js"></script>
-		<script>
-			$("body").mousemove((e) => {
-				let x = (e.pageX * -1) / 50;
-				let y = (e.pageY * -1) / 50;
-				$(".star").css(
-					"transform",
-					"translate(" + x + 750 + "px, " + y + 100 + "px)",
-					// "translateY(" + y + 100 + "px)",
-				);
-				// $(".star").css("left", x + 750 + "px");
-				// $(".star").css("top", y + 100 + "px");
-			});
-			$(".cards").mouseenter((e) => {
-				if (
-					$(".card-1").hasClass("card1-move-up") ||
-					$(".card-2").hasClass("card2-move-up")
-				) {
-					$(".card-1").removeClass("card1-move-up");
-					$(".card-2").removeClass("card2-move-up");
-				}
-				$(".card-1").addClass("card1-move-down");
-				$(".card-2").addClass("card2-move-up");
-			});
-			$(".cards").mouseleave((e) => {
-				$(".card-1").addClass("card1-move-up");
-				$(".card-1").removeClass("card1-move-down");
-				$(".card-2").addClass("card2-move-down");
-				$(".card-2").removeClass("card2-move-up");
-			});
-		</script>
 	</body>
 </html>

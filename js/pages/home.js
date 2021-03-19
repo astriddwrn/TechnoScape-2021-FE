@@ -17,15 +17,13 @@ $(window).scroll(() => {
 });
 
 $("body").mousemove((e) => {
-	let x = (e.pageX * -1) / 50;
-	let y = (e.pageY * -1) / 50;
+	let x = (e.pageX * -1) / 150;
+	let y = (e.pageY * -1) / 150;
+	if (e.pageX === 0) x = -0.5;
 	$(".star").css(
 		"transform",
 		"translate(" + x + 750 + "px, " + y + 100 + "px)",
-		// "translateY(" + y + 100 + "px)",
 	);
-	// $(".star").css("left", x + 750 + "px");
-	// $(".star").css("top", y + 100 + "px");
 });
 $(".cards").mouseenter((e) => {
 	if (
