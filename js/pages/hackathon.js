@@ -22,7 +22,7 @@ var technicalMeeting = new Date("June 24, 2021 23:59:59").getTime();
 var competitionDay = new Date("June 26, 2021 23:59:59").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function () {
+var timelineHackathonTrigger = setInterval(function () {
 	/* Get Today's date and time */
 	var now = new Date().getTime();
 	var triggerCloseregistration = closeRegistration - now;
