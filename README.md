@@ -5,15 +5,15 @@
 3. Gunakan camelCase dan bahasa inggris untuk penamaan method (JS)
 4. Git commit pakai bahasa inggris
 
-Repo Frontend Branch Structure:
-│ master
-│  
-├─── develop
-|
-=====├──── Home
-===========├───── Section/LandingHome
-===========├───── Section/AboutHome
-===========├───── Section/....
+Repo Frontend Branch Structure:  
+│ master  
+│    
+├─── develop  
+|  
+=====├──── Home  
+===========├───── Section/LandingHome  
+===========├───── Section/AboutHome  
+===========├───── Section/....  
 =====├───── 404
 |
 =====├──── DeveloperWorkshop
