@@ -69,4 +69,82 @@
 	padding-right: 2rem !important;
 }
 
-/*  */
+/* SPONSOR */
+.sponsor{
+	width: 100%;
+	padding: 100px 3vw;
+	height: fit-content;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.sponsor .text-orange{
+	text-align: center;
+}
+
+.sponsor .text-subheader{
+	color: var(--white);
+	text-align: center;
+	margin: 50px 0 20px 0;
+}
+
+.sponsor .platinum-container, .sponsor .gold-container, .sponsor .silver-container{
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.sponsor .box{
+	border: 2px solid rgba(255, 255, 255, 0.18);
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.sponsor .platinum-container img{
+	width: 350px;
+}
+
+.sponsor .gold-container img{
+	width: 275px;
+}
+
+.sponsor .silver-container img{
+	width: 150px;
+}
+
+/* MEDPAR */
+.medpar{
+	width: 100%;
+	padding: 100px 3vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.medpar .text-orange{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.medpar .medpar-container{
+	margin: 0 auto;
+	width: 1000px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.medpar .box{
+	border: 2px solid rgba(255, 255, 255, 0.18);
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.medpar .box img{
+	width: 150px;
+}
