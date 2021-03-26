@@ -138,6 +138,9 @@
 	
 }
 @media screen and (max-width:762px){
+	.champion{
+		padding: 100px 0;
+	}
 	.champion .box:nth-child(3){
 		margin-top: 25px;
 	}
@@ -151,9 +154,10 @@
 }
 @media screen and (max-width:576px){
 	.champion .text-orange{
-		padding: 0 60px;
+		padding: 0 0;
 		margin-bottom: 30px;
 		overflow: hidden;
+		font-size: 2.5rem;
 	}
 	
 }@media screen and (max-width:428px){
