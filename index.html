@@ -1,14 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/pages/home.css" />
-		<title>Technoscape</title>
-	</head>
-	<body>
-		<script src="assets/lib/jquery/jquery.min.js"></script>
-		<script src="assets/lib/bootstrap/js/bootstrap.js"></script>
-		<script src="js/pages/home.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/pages/home.css" />
+    <title>Technoscape</title>
+  </head>
+  <body>
+    <section class="landing" id="landing">
+      <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+          <a class="navbar-brand" href="#landing"
+            ><img
+              src="assets/img/home/Logo/TechnoScape/Logo-Technoscape.png"
+              alt="Technoscape 2021"
+              width="50"
+          /></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mx-md-4">
+                <a class="nav-link" href="#">Virtual Conference</a>
+              </li>
+              <li class="nav-item mx-md-4">
+                <a class="nav-link" href="#">Developer Workshop</a>
+              </li>
+              <li class="nav-item mx-md-4">
+                <a class="nav-link" href="#">Hackathon</a>
+              </li>
+              <li class="nav-item mx-md-4">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item ml-md-4">
+                <button class="btn nav-link" href="#">Sign In</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="landing-wrapper container">
+        <div class="landing-content">
+          <div class="technoscape-collab">
+            <img
+              class="collab-logo"
+              src="/assets/img/home/Logo/TechnoScape/TechnoScape_Horizontal_W.png"
+              alt="technoscape 2021"
+            />
+            <span class="text-med-light">&#x2715;</span>
+            <img
+              class="collab-logo"
+              src="/assets/img/home/Logo/TechnoScape/TechnoScape_Horizontal_W.png"
+              alt="technoscape 2021"
+            />
+          </div>
+          <p class="technoscape-title text-super">
+            DEVELOPER <br />
+            WORKSHOP
+          </p>
+          <p class="technoscape-description text-big-regular">
+            Enhancing Technology Skills to Build Remarkable Career
+          </p>
+          <p class="technoscape-content text-med-light">
+            1st - 3rd February 2021
+          </p>
+          <div>
+            <button class="btn talk-btn">Let's Talk!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wave">
+      <img
+        class="img-fluid wave-img"
+        src="assets/img/home/Logo/Illustrations/Wave.png"
+        alt="wave"
+      />
+    </div>
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h1 class="text-header">
+              <span>About</span><br />
+              Developer Workshop
+            </h1>
+            <p>
+              Developer Workshop is a teaching-workshop class especially
+              designed for those who want to become experts at coding.
+              Developing your talent at coding by providing the most
+              professional mentors, also giving you networking connections with
+              our sponsors. As well as more knowledge and preparation for future
+              TechnoScape’s Hackathon 4.0!
+            </p>
+            <button class="btn talk-btn">Download Guide Book</button>
+          </div>
+          <div class="col-6"></div>
+        </div>
+      </div>
+    </section>
+    <section class="why">
+      <div
+        class="container d-flex justify-content-center flex-column min-vh-100"
+      >
+        <h1 class="text-header text-center mb-5">Why You Should Join?</h1>
+        <div class="why-content d-flex justify-content-between text-center">
+          <div class="card">
+            <img
+              src="assets/img/home/Logo/Illustrations/Planet oren.png"
+              alt=""
+            />
+            <h3 class="text-subheader">From Experts, to You!</h3>
+            <p class="text-main">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
+              aut.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="assets/img/home/Logo/Illustrations/Planet oren.png"
+              alt=""
+            />
+            <h3 class="text-subheader">Broaden Knowledge and Passion</h3>
+            <p class="text-main">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
+              aut.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="assets/img/home/Logo/Illustrations/Planet oren.png"
+              alt=""
+            />
+            <h3 class="text-subheader">Succeeding Your Future Project</h3>
+            <p class="text-main">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
+              aut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="speaker">
+      <div
+        class="container min-vh-100 d-flex flex-column align-items-center justify-content-center"
+      >
+        <h1 class="text-header text-center mb-5">Speaker & Topic</h1>
+        <div class="row">
+          <div class="col-6">
+            <div class="card">
+              <div class="row">
+                <div class="col-6 card-img">
+                  <img src="assets/img/Male.png" alt="" />
+                </div>
+                <div class="col-6 card-content">
+                  <p class="card-heading text-main">Lorem, ipsum dolor.</p>
+                  <p class="card-name text-main">Name Name</p>
+                  <p class="card-desc">Lorem ipsum dolor sit amet.</p>
+                  <div>
+                    <div class="card-date">3 May 2021 - 4 May 2021</div>
+                  </div>
+                  <p class="card-time text-main">09.00 am. - 10.00 am.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <div class="row">
+                <div class="col-6 card-img">
+                  <img src="assets/img/Male.png" alt="" />
+                </div>
+                <div class="col-6 card-content">
+                  <p class="card-heading text-main">Lorem, ipsum dolor.</p>
+                  <p class="card-name text-main">Name Name</p>
+                  <p class="card-desc">Lorem ipsum dolor sit amet.</p>
+                  <div>
+                    <div class="card-date text-main">
+                      3 May 2021 - 4 May 2021
+                    </div>
+                  </div>
+                  <p class="card-time text-main">09.00 am. - 10.00 am.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ticket">
+      <div class="container min-vh-100 justify-content-center">
+        <div class="ticket-illus">
+          <img
+            src="assets/img/home/Logo/Illustrations/Planet oren.png"
+            alt=""
+          />
+          <img
+            src="assets/img/home/Logo/Illustrations/Planet oren.png"
+            alt=""
+          />
+          <img
+            src="assets/img/home/Logo/Illustrations/Planet oren.png"
+            alt=""
+          />
+        </div>
+        <h1 class="text-super">Get Ticket Now</h1>
+        <p class="text-main">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <button class="btn">Buy Ticket</button>
+        <p class="text-main">Registration Closed : 5/05/2021</p>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container min-vh-100">
+        <h1 class="text-header">Frequently Asked Question</h1>
+        <div class="row">
+          <div class="col-6">
+            <div class="faq-content">
+              <div class="ques"></div>
+              <div class="ans"></div>
+            </div>
+          </div>
+          <div class="col-6">
+            <img
+              src="assets/img/home/Logo/Illustrations/Planet oren.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="share">
+      <div class="container">
+        <div class="row min-vh-100 d-flex align-items-center">
+          <div class="col-6"></div>
+          <div class="col-6">
+            <h1 class="text-header">
+              <span>Linking what you see?</span><br />Share to Friend!
+            </h1>
+            <p class="text-main">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
+              ducimus.
+            </p>
+            <button type="button" class="btn">Share to your friend!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sponsors py-5">
+      <div class="container">
+        <h1 class="text-header">Sponsors</h1>
+        <p class="text-subheader mt-5">Plantinum Sponsors</p>
+        <div id="platinum" class="sponsors-content">
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+        </div>
+        <p class="text-subheader mt-5">Gold Sponsors</p>
+        <div id="gold" class="sponsors-content">
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+        </div>
+        <p class="text-subheader mt-5">Silver Sponsors</p>
+        <div id="silver" class="sponsors-content">
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sponsors py-5">
+      <div class="container">
+        <h1 class="text-header">Media Partners</h1>
+        <div id="medpar" class="sponsors-content mt-5">
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+          <div class="sponsors-content-item">
+            <img src="assets/img/BNCC.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="wave">
+        <img
+          class="img-fluid wave-img"
+          src="assets/img/home/Logo/Illustrations/Wave.png"
+          alt="wave"
+        />
+      </div>
+      <div class="container footer-wrapper">
+        <div class="footer-contact">
+          <div class="row">
+            <div class="contact-left col-md-6">
+              <h1>Have a Question in Mind?</h1>
+              <button
+                type="button"
+                class="btn talk-btn"
+                data-toggle="modal"
+                data-target="#talkForm"
+              >
+                Let's Talk!
+              </button>
+            </div>
+            <div class="col-md-1">
+              <div class="contact-divider"></div>
+            </div>
+            <div class="contact-right col-md-5">
+              <div class="contact-form">
+                <p>
+                  Subscribe to
+                  <span class="italic"
+                    >Techno<span class="bold">Scape</span></span
+                  >
+                </p>
+                <form class="contact-box">
+                  <input placeholder="Leave your email here" />
+                  <button>Subscribe</button>
+                </form>
+              </div>
+              <div class="contact-social-media">
+                <p>Find us on:</p>
+                <div class="contact-icon">
+                  <a href="">
+                    <img
+                      src="./assets/img/home/Logo/Logo/instagram.png"
+                      alt="Instagram BNCC"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./assets/img/home/Logo/Logo/line.png"
+                      alt="Line BNCC"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./assets/img/home/Logo/Logo/linkedin.png"
+                      alt="Linkedin BNCC"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./assets/img/home/Logo/Logo/twitter.png"
+                      alt="Twitter BNCC"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./assets/img/home/Logo/Logo/facebook.png"
+                      alt="Facebook BNCC"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-credit">
+          <div class="footer-logo row">
+            <div class="footer-logo-left col-md-6">
+              <p>Organized by</p>
+              <a href="">
+                <img
+                  src="./assets/img/home/Logo/Logo BNCC Binus/BNCC (1).png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="footer-logo-right col-md-6">
+              <p>Official Learning Partner of</p>
+              <a href="">
+                <img
+                  src="./assets/img/home/Logo/Logo Gojek/New GOJEK PUTIH.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer-divider"></div>
+          <div class="footer-text row">
+            <div class="footer-text-left col-md-6">
+              <p>All Right Reserved BNCC 2021 © Bina Nusantara Computer Club</p>
+            </div>
+            <div class="footer-text-right col-md-6">
+              <a href="">Privacy Policy & Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      class="modal fade"
+      id="talkForm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="talkFormTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container">
+              <div class="modal-wrapper row">
+                <div class="modal-left col-md-5">
+                  <div class="modal-left-text">
+                    <h3>Contact Person</h3>
+                    <p>
+                      If you have any other problem, feel free to contact one of
+                      the following contact person
+                    </p>
+                  </div>
+                  <div class="modal-left-contact">
+                    <h4>Ramen</h4>
+                    <a href="">
+                      <img
+                        src="./assets/img/home/Logo/Logo/whatsapp.png"
+                        alt=""
+                      />
+                      <p>62853xxxx0000</p>
+                    </a>
+                    <a href="">
+                      <img src="./assets/img/home/Logo/Logo/line.png" alt="" />
+                      <p>ichiraku_ramen</p>
+                    </a>
+                  </div>
+                  <div class="modal-left-contact">
+                    <h4>Ramen</h4>
+                    <a href="">
+                      <img
+                        src="./assets/img/home/Logo/Logo/whatsapp.png"
+                        alt=""
+                      />
+                      <p>62853xxxx0000</p>
+                    </a>
+                    <a href="">
+                      <img src="./assets/img/home/Logo/Logo/line.png" alt="" />
+                      <p>ichiraku_ramen</p>
+                    </a>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="close close-btn"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&#x2715;</span>
+                </button>
+                <div class="modal-right col-md-7">
+                  <h1>Let's Talk</h1>
+                  <form class="modal-form" action="">
+                    <div class="input-box">
+                      <input
+                        type="text"
+                        name="username"
+                        placeholder=" "
+                        onfocus="setBlue(this)"
+                        onBlur="setWhiteWhenFilled(this)"
+                        required
+                      />
+                      <label for="">Username</label>
+                    </div>
+                    <div class="input-box">
+                      <input
+                        type="text"
+                        name="email"
+                        placeholder=" "
+                        onfocus="setBlue(this)"
+                        onBlur="setWhiteWhenFilled(this)"
+                        onChange="validateEmail(this)"
+                        required
+                      />
+                      <label for="">Email</label>
+                      <div class="invalid-feedback">
+                        Please provide a valid email
+                      </div>
+                    </div>
+                    <div class="input-box">
+                      <input
+                        type="text"
+                        placeholder=" "
+                        onfocus="setBlue(this)"
+                        onBlur="setWhiteWhenFilled(this)"
+                        required
+                      />
+                      <label for="">Subject</label>
+                    </div>
+                    <div class="input-box">
+                      <textarea
+                        cols="30"
+                        rows="5"
+                        placeholder=" "
+                        onfocus="setBlue(this)"
+                        onBlur="setWhiteWhenFilled(this)"
+                        required
+                      ></textarea>
+                      <label for="">Message</label>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/lib/jquery/jquery.min.js"></script>
+    <script src="./assets/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/pages/home.js"></script>
+  </body>
 </html>
