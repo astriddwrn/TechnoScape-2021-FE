@@ -1,36 +1,94 @@
 @font-face {
-	font-family: "Inter-Bold";
-	src: "../../assets/fonts/Inter/Inter-Bold.ttf";
+  font-family: "Inter-Bold";
+  src: "../../assets/fonts/Inter/Inter-Bold.ttf";
+  src: url("../../assets/fonts/Inter/Inter-Bold.ttf");
 }
 
 @font-face {
-	font-family: "Inter-Semibold";
-	src: "../../assets/fonts/Inter/Inter-SemiBold.ttf";
+  font-family: "Inter-Semibold";
+  src: "../../assets/fonts/Inter/Inter-SemiBold.ttf";
+  src: url("../../assets/fonts/Inter/Inter-SemiBold.ttf");
 }
 
 @font-face {
-	font-family: "Inter-Medium";
-	src: "../../assets/fonts/Inter/Inter-Medium.ttf";
+  font-family: "Inter-Medium";
+  src: "../../assets/fonts/Inter/Inter-Medium.ttf";
+  src: url("../../assets/fonts/Inter/Inter-Medium.ttf");
 }
 
 @font-face {
-	font-family: "Inter-Regular";
-	src: "../../assets/fonts/Inter/Inter-Regular.ttf";
+  font-family: "Inter-Regular";
+  src: "../../assets/fonts/Inter/Inter-Regular.ttf";
+  src: url("../../assets/fonts/Inter/Inter-Regular.ttf");
 }
 
 @font-face {
-	font-family: "Inter-Light";
-	src: "../../assets/fonts/Inter/Inter-Light.ttf";
+  font-family: "Inter-Light";
+  src: "../../assets/fonts/Inter/Inter-Light.ttf";
+  src: url("../../assets/fonts/Inter/Inter-Light.ttf");
+}
+
+.text-super {
+  font-family: "Inter-Bold";
+  font-size: 5.5rem;
 }
 
 .text-header {
+  font-family: "Inter-Semibold";
+  font-size: 3rem;
 }
 
 .text-subheader {
+  font-family: "Inter-Medium";
+  font-size: 1.5rem;
 }
 
 .text-main {
+  font-family: "Inter-Medium";
+  font-size: 1.15rem;
+}
+
+.text-big-regular {
+  font-family: "Inter-Regular";
+  font-size: 1.5rem;
 }
 
 .text-regular {
+  font-family: "Inter-Regular";
+  font-size: 1rem;
+}
+
+.text-med-light {
+  font-family: "Inter-Light";
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 428px) {
+  .text-super {
+    font-size: 2.5rem;
+  }
+
+  .text-header {
+    font-size: 2rem;
+  }
+
+  .text-subheader {
+    font-size: 1.5rem;
+  }
+
+  .text-main {
+    font-size: 1.15rem;
+  }
+
+  .text-big-regular {
+    font-size: 1.15rem;
+  }
+
+  .text-regular {
+    font-size: 1rem;
+  }
+
+  .text-med-light {
+    font-size: 1.25rem;
+  }
 }
