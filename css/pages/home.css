@@ -154,6 +154,15 @@
   -webkit-text-fill-color: transparent;
 }
 
+.about-img {
+  display: flex;
+  align-items: flex-end;
+}
+
+.about img {
+  height: 24rem;
+}
+
 .highlight {
   height: 100vh;
 }
@@ -253,6 +262,10 @@
 .speaker .card .card-time {
   color: white;
   font-size: 1rem;
+}
+
+.schedule {
+  height: 100vh;
 }
 
 .ticket {
