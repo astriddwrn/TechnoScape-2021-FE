@@ -32,5 +32,10 @@
     #8177f7 19.15%,
     rgba(121, 159, 248, 0) 91.38%
   );
+  --virtual-conference-reverse: linear-gradient(
+    149.27deg,
+    rgba(121, 159, 248, 0) 17.81%,
+    #8177f7 90.96%
+  );
   --fading-white: rgba(255, 255, 255, 0.4);
 }

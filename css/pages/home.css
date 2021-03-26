@@ -154,6 +154,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+.highlight {
+  height: 100vh;
+}
+
 .why {
   color: white;
 }
@@ -186,6 +190,11 @@
 .why .text-subheader {
   /* text-shadow: 0px -30px 70px 0px 130, 169, 249, 0.45; */
   box-shadow: 0px -30px 70px 0px 130, 169, 249, 0.45;
+}
+
+.why .text-main {
+  font-family: "Inter-Light";
+  font-size: 1rem;
 }
 
 .speaker .text-header {
@@ -409,15 +418,16 @@
   transform: matrix(-1, 0, 0, 1, 0, 0) rotate(180deg);
 }
 
+.footer .wave-img {
+  transform: matrix(-1, 0, 0, 1, 0, 0) rotate(180deg);
+  bottom: auto;
+}
+
 .footer {
   min-width: 100%;
   min-height: 125%;
   /* overflow-x: hidden; */
-  background: linear-gradient(
-    151.12deg,
-    rgba(122, 150, 248, 0) 19.15%,
-    #ef8197 91.38%
-  );
+  background: var(--virtual-conference-reverse);
   color: var(--white);
   font-family: "Inter-Regular";
   font-size: 1rem;
