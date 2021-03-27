@@ -183,11 +183,75 @@
 	}
 	.about .email-button{
 		margin: 50px 0 0 0;
-	}
+
+/* CHAMPION */
+.champion{
+	width: 100%;
+	padding: 100px 3vw;
 }
-@media screen and (max-width:992px){
+
+.champion .text-orange{
+	width: fit-content;
+	margin: 0 auto 100px auto;
+	text-align: center;
+}
+
+.champion .main-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}	
+
+.champion .box{
+	max-width: 400px;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--white);
+
+	border-radius: 20px;
+	background: radial-gradient(88.77% 88.77% at 25.41% 9.11%, rgba(255, 255, 255, 0.4) 0%, #262859 100%);
+	background-position: center;
+	backdrop-filter: blur(40px);
+	padding: 80px 0;
+	outline: none;
+	
+	overflow: hidden;
+	border: 2px solid rgba(255, 255, 255, 0.18);
+	border-radius: 20px;
 
 }
+
+.champion .box div:not(:last-child){
+	margin-bottom: 20px;
+}
+
+.champion .title{
+	font-family: "Inter-Bold";
+	font-size: 2.5rem;
+}
+
+@media screen and (max-width:1200px){
+	.champion .box{
+		width: 300px;
+	}
+}
+
+@media screen and (max-width:992px){
+	.champion .box{
+		margin: 0 20px;
+		width: 40vw;
+		max-width: 400px;
+		min-width: 300px;
+	}
+	.champion .box:nth-child(3){
+		margin-top: 50px;
+	}
+	
+}
+
 @media screen and (max-width:762px){
 	.about .image-container img{
 		max-width: 500px;
@@ -198,7 +262,21 @@
 	.about .email-button{
 		margin: 100px 0 0 0;
 	}
+
+	.champion{
+		padding: 100px 0;
+	}
+	.champion .box:nth-child(3){
+		margin-top: 25px;
+	}
+	.champion .box{
+		margin: 25px 0;
+		width: 60vw;
+		max-width: 500px;
+		min-width: 350px;
+	}
 }
+
 @media screen and (max-width:576px){
 	.about .text-orange{
 		font-size: 2.5rem;
@@ -209,8 +287,16 @@
 	.about .text-container{
 		max-width: 400px;
 	}
+
+	.champion .text-orange{
+		padding: 0 0;
+		margin-bottom: 30px;
+		overflow: hidden;
+		font-size: 2.5rem;
+	}
 	
 }
+
 @media screen and (max-width:428px){
 	.about .image-container img{
 		max-width: 350px;
@@ -228,3 +314,5 @@
 	}
 
 }
+
+
