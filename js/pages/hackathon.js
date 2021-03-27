@@ -15,3 +15,16 @@ $(window).scroll(() => {
 	}
 	prevPosition = currPosition;
 });
+
+
+$(document).ready(function(){
+
+	$(".shareToFriend .button-orange").click(function(){
+		$(".shareToFriend-overlay").css("display", "block");
+	});
+	$(".shareToFriend-overlay .close").click(function(){
+		$(".shareToFriend-overlay").css("display", "none");
+	});
+
+
+});
