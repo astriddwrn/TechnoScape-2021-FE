@@ -72,7 +72,7 @@
 /* SPONSOR */
 .sponsor{
 	width: 100%;
-	padding: 100px 3vw;
+	padding: 100px 0;
 	height: fit-content;
 
 	display: flex;
@@ -101,25 +101,25 @@
 .sponsor .box{
 	border: 2px solid rgba(255, 255, 255, 0.18);
 	border-radius: 10px;
-	padding: 20px;
+	padding: 30px;
 }
 
 .sponsor .platinum-container img{
-	width: 350px;
+	width: 300px;
 }
 
 .sponsor .gold-container img{
-	width: 275px;
+	width: 200px;
 }
 
 .sponsor .silver-container img{
-	width: 150px;
+	width: 100px;
 }
 
 /* MEDPAR */
 .medpar{
 	width: 100%;
-	padding: 100px 3vw;
+	padding: 100px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -132,7 +132,7 @@
 
 .medpar .medpar-container{
 	margin: 0 auto;
-	width: 1000px;
+	width: 900px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -142,9 +142,137 @@
 .medpar .box{
 	border: 2px solid rgba(255, 255, 255, 0.18);
 	border-radius: 10px;
-	padding: 20px;
+	padding: 30px;
 }
 
 .medpar .box img{
-	width: 150px;
+	width: 100px;
+}
+
+@media screen and (max-width:1200px){
+	.sponsor .box{
+		padding: 20px;
+	}
+	.sponsor .platinum-container img{
+		width: 250px;
+	}
+	.sponsor .gold-container img{
+		width: 150px;
+	}
+	.sponsor .silver-container img{
+		width: 120px;
+	}
+	.medpar .medpar-container{
+		width: 700px;
+	}
+	.medpar .box{
+		padding: 20px;
+	}
+	.medpar .box img{
+		width: 120px;
+	}
+}
+@media screen and (max-width:992px){
+	.sponsor .box{
+		border: 2px solid rgba(255, 255, 255, 0.18);
+		border-radius: 10px;
+		padding: 20px;
+	}
+	.sponsor .platinum-container img{
+		width: 250px;
+	}
+	.sponsor .gold-container img{
+		width: 120px;
+	}
+	.sponsor .silver-container{
+		width: 500px;
+	}
+	.sponsor .silver-container img{
+		width: 120px;
+	}
+	.medpar .medpar-container{
+		width: 500px;
+	}
+	.medpar .box{
+		padding: 20px;
+	}
+	.medpar .box img{
+		width: 120px;
+	}
+}
+@media screen and (max-width:762px){
+	.sponsor .box{
+		border: 2px solid rgba(255, 255, 255, 0.18);
+		border-radius: 10px;
+		padding: 20px;
+	}
+	.sponsor .platinum-container img{
+		width: 250px;
+	}
+	.sponsor .gold-container{
+		width: 500px;
+	}
+	.sponsor .gold-container img{
+		width: 120px;
+	}
+	.sponsor .silver-container{
+		width: 500px;
+	}
+	.sponsor .silver-container img{
+		width: 120px;
+	}
+	.medpar .medpar-container{
+		width: 500px;
+	}
+	.medpar .box{
+		padding: 20px;
+	}
+	.medpar .box img{
+		width: 120px;
+	}
+	
+}
+@media screen and (max-width:576px){
+	.sponsor{
+		padding: 100 0;
+	}
+	.sponsor .text-orange{
+		font-size: 2.5rem;
+	}
+	.sponsor .box{
+		border: 2px solid rgba(255, 255, 255, 0.18);
+		border-radius: 10px;
+		padding: 20px;
+	}
+	.sponsor .platinum-container img{
+		width: 200px;
+	}
+	.sponsor .gold-container{
+		width: 400px;
+	}
+	.sponsor .gold-container img{
+		width: 80px;
+	}
+	.sponsor .silver-container{
+		width: 400px;
+	}
+	.sponsor .silver-container img{
+		width: 80px;
+	}
+	.medpar .text-orange{
+		font-size: 2.5rem;
+	}
+	.medpar .medpar-container{
+		width: 400px;
+	}
+	.medpar .box{
+		padding: 20px;
+	}
+	.medpar .box img{
+		width: 80px;
+	}
+	
+}
+@media screen and (max-width:428px){
+	
 }
