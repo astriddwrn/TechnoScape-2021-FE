@@ -154,6 +154,9 @@
 	.about .image-container{
 		margin-bottom: 50px;
 	}
+	.about .email-button{
+		margin: 50px 0 0 0;
+	}
 }
 @media screen and (max-width:992px){
 
@@ -165,15 +168,36 @@
 	.about .text-container{
 		max-width: 500px;
 	}
+	.about .email-button{
+		margin: 100px 0 0 0;
+	}
 }
 @media screen and (max-width:576px){
+	.about .text-orange{
+		font-size: 2.5rem;
+	}
 	.about .image-container img{
 		max-width: 400px;
 	}
 	.about .text-container{
 		max-width: 400px;
 	}
+	
 }
 @media screen and (max-width:428px){
+	.about .image-container img{
+		max-width: 350px;
+	}
+	.about .text-container{
+		max-width: 300px;
+	}
+	.button-orange{
+		padding: 15px 30px;
+		border-radius: 32px;
 	
+		letter-spacing: 0.1em;
+		color: white;
+		text-align: center;
+	}
+
 }
