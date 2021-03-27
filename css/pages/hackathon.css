@@ -76,13 +76,75 @@
 	padding: 100px 3vw;
 }
 
-.mentors .main-container {
+.mentors .container {
 	width: 100%;
 	height: 100%;
 }
 
 .mentors .text-header-bold {
-	width: fit-content;
-	margin: 0 auto 100px auto;
+	margin: 0 auto 20px auto;
 	text-align: center;
+}
+
+.mentors-buttons-wrapper {
+	margin-bottom: 3em;
+	color: var(--white);
+}
+
+.mentors .mentors-buttons-wrapper span {
+	padding: 0px 10px;
+}
+
+.mentors .mentors-buttons-wrapper span:nth-child(2) {
+	margin: 0 3em;
+}
+
+.mentors-buttons-active {
+	border-bottom: 3px solid var(--underline-blue);
+	color: var(--white);
+	text-align: center;
+}
+
+#mentors-design-button:hover,
+#mentors-technology-button:hover,
+#mentors-business-button:hover {
+	cursor: pointer;
+}
+
+/* Mentors Glass Card */
+.mentors-content div:nth-child(2) {
+	margin: 0px 3em;
+}
+
+.mentors-glass-card {
+	width: 18rem;
+	height: fit-content;
+	background: 
+	radial-gradient(
+		88.77% 88.77% at 25.41% 9.11%, 
+		rgba(255, 255, 255, 0.4) 0%, 
+		rgba(255, 255, 255, 0) 100%);
+	backdrop-filter: blur(40px);
+	-webkit-backdrop-filter: blur(40px);
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	color: var(--white);
+	text-align: center;
+}
+
+.mentors-card-img {
+	width: 15rem;
+	border-radius: 32px;
+	margin: 1.5em 1.5em;
+}
+
+.mentors-glass-card p {
+	font-family: "Inter-Light";
+	font-weight: 400;
+	margin-bottom: 1.5em;	
+}
+
+#mentors-technology,
+#mentors-business {
+	display: none;
 }
