@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technoscape</title>
+    <link rel="stylesheet" href="/css/pages/signUp.css">
+</head>
+<body>
+    <div class="logo-img"><img src="/assets/img/signUp/technoscapeLogo.svg" alt=""></div>
+    <div class="main-glass">
+        <div class="text-header">Sign Up</div>
+        <div class="text-regular haveAccount-wrapper"><div>Already have an account?</div><div><a href="">Log in</a></div></div>
+
+        <div class="progress">
+            <div class="ball ball1"> </div>
+            <div class="line"><div class="line1"> </div> </div>
+            <div class="ball"><div class="ball2"> </div> </div>
+            <div class="line"><div class="line2"> </div> </div>
+            <div class="ball"><div class="ball3"> </div> </div>
+        </div>
+
+        <form action="">
+            <div class="section-1">
+                <label class="text-regular" for="name">Full Name</label>
+                <div class="input-wrapper">
+                    <img src="/assets/img/signUp/logo0-name.svg" alt="">
+                    <input class="text-regular" type="text" name="name" id="name" placeholder="Please type your full name here...">
+                </div>
+                <label class="text-regular" for="placeBirth">Place of Birth</label>
+                <div class="input-wrapper">
+                    <img src="/assets/img/signUp/logo1-placeofbirth.svg" alt="">
+                    <input class="text-regular" type="text" name="placeBirth" id="placeBirth" placeholder="Please type your place of birth here...">
+                </div>
+                <label class="text-regular" for="dateBirth">Date of Birth</label>
+                <div class="input-wrapper">
+                    <img src="/assets/img/signUp/logo2-calendar.svg" alt="">
+                    <input class="text-regular" type="text" name="dateBirth" id="dateBirth" placeholder="Please type your date of birth here...">
+                </div>
+                
+                <div class="label-radio">
+                    <img src="/assets/img/signUp/logo3-gender.svg" alt="">
+                    <label for="gender">Gender</label>
+                </div>
+                <div class="input-radio">
+                    <div class="radio-wrapper">
+                        <input type="radio" name="gender" id="gender" value="Male" checked>
+                        <div class="text-regular">Male</div>
+                    </div>
+                    <div class="radio-wrapper">
+                        <input type="radio" name="gender" id="gender" value="Woman">
+                        <div class="text-regular"v>Woman</div>
+                    </div>
+                </div>
+                
+                <div class="next1 button-orange text-regular">Next</div>
+
+            </div>
+            
+            <div class="section-2">
+                <label class="text-regular" for="email">Email</label>
+                <div class="input-wrapper">
+                    <img src="/assets/img/signUp/logo4-email.svg" alt="">
+                    <input class="text-regular" type="email" name="email" id="email" placeholder="Please type your email here...">
+                </div>
+                <label class="text-regular" for="password">Password</label>
+                <div class="input-wrapper">
+                    <img src="/assets/img/signUp/logo5-password.svg" alt="">
+                    <input class="text-regular" type="password" name="password" id="password" placeholder="Please type your password here...">
+                </div>
+                <label class="text-regular" for="confirm">Confirm Password</label>
+                <div class="input-wrapper">
+                    <img src="/assets/img/signUp/logo5-confirmpassword.svg" alt="">
+                    <input class="text-regular" type="password" name="confirm" id="confirm" placeholder="Please type your confirm password here...">
+                </div>
+
+                <div class="next2 button-orange text-regular">Next</div>
+            </div>
+
+            <div class="section-3">
+                <label class="text-regular" for="whatsapp">WhatsApp Number</label>
+                <div class="input-wrapper">
+                    <img src="/assets/img/signUp/logo7-wa.svg" alt="">
+                    <input class="text-regular" type="number" name="whatsapp" id="whatsapp" placeholder="Please type your WhatsApp Number here...">
+                </div>
+                <label class="text-regular" for="text">Line ID</label>
+                <div class="input-wrapper">
+                    <img src="/assets/img/signUp/logo8-line-svg.svg" alt="">
+                    <input class="text-regular" type="text" name="line" id="line" placeholder="Please type your Line ID here...">
+                </div>
+                <label class="text-regular" for="company">Company/Institution</label>
+                <div class="input-wrapper">
+                    <img src="/assets/img/signUp/logo9-company.svg" alt="">
+                    <input class="text-regular" type="text" name="company" id="company" placeholder="Please type your company/institution here...">
+                </div>
+
+                <button class="submit button-orange text-regular">Submit</button>
+            </div>
+        </form>
+
+        
+    </div>
+
+    <div class="bottom"></div>
+
+    <script src="./assets/lib/jquery/jquery.min.js"></script>
+    <script src="/js/pages/signUp.js"></script>
+</body>
+</html>
