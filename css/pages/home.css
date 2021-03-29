@@ -58,12 +58,16 @@
 .wave {
   height: 100px;
 }
-.wave img {
+.wave .wave-img {
   transform: matrix(-1, 0, 0, 1, 0, 0);
   position: absolute;
   bottom: -100px;
   z-index: 0;
   border: none;
+}
+
+.footer .wave-img {
+  transform: matrix(0, 0, 0, 1, 0, 0);
 }
 
 .landing-wrapper {
@@ -170,6 +174,7 @@
 .why .card {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 31rem;
   width: 22rem;
   padding: 2.5rem;
@@ -183,6 +188,11 @@
 
 .why .card img {
   width: 15rem;
+  mix-blend-mode: luminosity;
+}
+
+.why .card:hover img {
+  mix-blend-mode: initial;
 }
 
 .why .text-subheader {
@@ -205,7 +215,7 @@
   position: relative;
   height: 25rem;
   width: 35rem;
-  padding: 2.5rem;
+  padding: 2rem 1rem;
   text-align: center;
   border-radius: 32px;
   background: linear-gradient(
@@ -215,8 +225,16 @@
   );
 }
 
-/* .speaker .card-img img {
-} */
+.speaker .card-img img {
+  mix-blend-mode: luminosity;
+  width: 100%;
+}
+
+.speaker .card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .speaker .card .card-heading {
   color: rgba(181, 207, 252, 1);
@@ -253,8 +271,10 @@
   color: white;
 }
 
-.ticket-illus img {
-  width: 15rem;
+.ticket-illus {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .ticket .text-super {
@@ -284,6 +304,71 @@
   text-align: center;
 }
 
+.faq img {
+  width: 100%;
+}
+
+.faq .faq-content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  padding: 0 1rem;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: radial-gradient(
+    88.77% 88.77% at 25.41% 9.11%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(40px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.faq .faq-content-item {
+  margin: 1rem 0;
+}
+
+.faq .faq-content .ques {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.faq .faq-content .ans {
+  display: none;
+}
+
+.faq .faq-btn {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.faq .faq-btn .btn-y {
+  width: 0.3rem;
+  height: 1.5rem;
+  background-color: rgba(129, 119, 247, 1);
+  transition: 1s;
+}
+
+.faq .faq-btn .btn-x {
+  width: 1.5rem;
+  height: 0.3rem;
+  position: absolute;
+  top: 0.6rem;
+  left: -0.6rem;
+  background-color: rgba(129, 119, 247, 1);
+}
+
+.faq .faq-content-item.active .faq-btn .btn-y {
+  transform: rotate(90deg);
+}
+
 .share .btn {
   background: var(--btn-orange);
   border: none;
@@ -310,6 +395,32 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.share .modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: radial-gradient(
+    88.77% 88.77% at 25.41% 9.11%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  backdrop-filter: blur(50px);
+  border-radius: 32px;
+  border: 1px solid rgba(157, 157, 157, 1);
+}
+
+.share .modal .modal-content span {
+  color: rgba(157, 157, 157, 1);
+}
+
+.share .modal .modal-content img {
+  margin: 2rem 0;
+}
+
+.share .modal .modal-content .icons img {
+  margin: 2rem 1rem;
 }
 
 .sponsors {
@@ -403,6 +514,7 @@
   position: absolute;
   width: 85%;
 }
+
 .wave-img {
   position: absolute;
   margin-top: -12rem;
@@ -411,10 +523,14 @@
   transform: matrix(-1, 0, 0, 1, 0, 0) rotate(180deg);
 }
 
+.footer .wave-img {
+  transform: matrix(-1, 0, 0, 1, 0, 0) rotate(180deg);
+  bottom: auto;
+}
+
 .footer {
   min-width: 100%;
   min-height: 125%;
-  /* overflow-x: hidden; */
   background: linear-gradient(
     151.12deg,
     rgba(122, 150, 248, 0) 19.15%,
@@ -425,6 +541,7 @@
   font-size: 1rem;
   letter-spacing: 0.05rem;
   padding-top: 12rem;
+  position: relative;
 }
 
 .footer-wrapper {

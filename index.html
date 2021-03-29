@@ -79,7 +79,6 @@
         </div>
       </div>
     </section>
-
     <div class="wave">
       <img
         class="img-fluid wave-img"
@@ -105,7 +104,9 @@
             </p>
             <button class="btn talk-btn">Download Guide Book</button>
           </div>
-          <div class="col-6"></div>
+          <div class="col-6 d-flex justify-content-center align-items-center">
+            <img src="assets/img/developer-workshop/about/about.svg" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -116,10 +117,7 @@
         <h1 class="text-header text-center mb-5">Why You Should Join?</h1>
         <div class="why-content d-flex justify-content-between text-center">
           <div class="card">
-            <img
-              src="assets/img/home/Logo/Illustrations/Planet oren.png"
-              alt=""
-            />
+            <img src="assets/img/developer-workshop/why/Experts.svg" alt="" />
             <h3 class="text-subheader">From Experts, to You!</h3>
             <p class="text-main">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
@@ -127,10 +125,7 @@
             </p>
           </div>
           <div class="card">
-            <img
-              src="assets/img/home/Logo/Illustrations/Planet oren.png"
-              alt=""
-            />
+            <img src="assets/img/developer-workshop/why/Knowledge.svg" alt="" />
             <h3 class="text-subheader">Broaden Knowledge and Passion</h3>
             <p class="text-main">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
@@ -138,10 +133,7 @@
             </p>
           </div>
           <div class="card">
-            <img
-              src="assets/img/home/Logo/Illustrations/Planet oren.png"
-              alt=""
-            />
+            <img src="assets/img/developer-workshop/why/Project.svg" alt="" />
             <h3 class="text-subheader">Succeeding Your Future Project</h3>
             <p class="text-main">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
@@ -161,16 +153,23 @@
             <div class="card">
               <div class="row">
                 <div class="col-6 card-img">
-                  <img src="assets/img/Male.png" alt="" />
+                  <img
+                    src="assets/img/developer-workshop/spekaer/John Doe.png"
+                    alt=""
+                  />
                 </div>
                 <div class="col-6 card-content">
                   <p class="card-heading text-main">Lorem, ipsum dolor.</p>
-                  <p class="card-name text-main">Name Name</p>
-                  <p class="card-desc">Lorem ipsum dolor sit amet.</p>
                   <div>
-                    <div class="card-date">3 May 2021 - 4 May 2021</div>
+                    <p class="card-name text-main">Name Name</p>
+                    <p class="card-desc">Lorem ipsum dolor sit amet.</p>
                   </div>
-                  <p class="card-time text-main">09.00 am. - 10.00 am.</p>
+                  <div>
+                    <div>
+                      <div class="card-date">3 May 2021 - 4 May 2021</div>
+                    </div>
+                    <p class="card-time text-main">09.00 am. - 10.00 am.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -179,18 +178,25 @@
             <div class="card">
               <div class="row">
                 <div class="col-6 card-img">
-                  <img src="assets/img/Male.png" alt="" />
+                  <img
+                    src="assets/img/developer-workshop/spekaer/Jane Doe.png"
+                    alt=""
+                  />
                 </div>
                 <div class="col-6 card-content">
                   <p class="card-heading text-main">Lorem, ipsum dolor.</p>
-                  <p class="card-name text-main">Name Name</p>
-                  <p class="card-desc">Lorem ipsum dolor sit amet.</p>
                   <div>
-                    <div class="card-date text-main">
-                      3 May 2021 - 4 May 2021
-                    </div>
+                    <p class="card-name text-main">Name Name</p>
+                    <p class="card-desc">Lorem ipsum dolor sit amet.</p>
                   </div>
-                  <p class="card-time text-main">09.00 am. - 10.00 am.</p>
+                  <div>
+                    <div>
+                      <div class="card-date text-main">
+                        3 May 2021 - 4 May 2021
+                      </div>
+                    </div>
+                    <p class="card-time text-main">09.00 am. - 10.00 am.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -201,18 +207,9 @@
     <section class="ticket">
       <div class="container min-vh-100 justify-content-center">
         <div class="ticket-illus">
-          <img
-            src="assets/img/home/Logo/Illustrations/Planet oren.png"
-            alt=""
-          />
-          <img
-            src="assets/img/home/Logo/Illustrations/Planet oren.png"
-            alt=""
-          />
-          <img
-            src="assets/img/home/Logo/Illustrations/Planet oren.png"
-            alt=""
-          />
+          <img src="assets/img/developer-workshop/ticket/Left.svg" alt="" />
+          <img src="assets/img/developer-workshop/ticket/Middle.svg" alt="" />
+          <img src="assets/img/developer-workshop/ticket/Right.svg" alt="" />
         </div>
         <h1 class="text-super">Get Ticket Now</h1>
         <p class="text-main">
@@ -223,20 +220,101 @@
       </div>
     </section>
     <section class="faq">
-      <div class="container min-vh-100">
-        <h1 class="text-header">Frequently Asked Question</h1>
-        <div class="row">
-          <div class="col-6">
+      <div
+        class="container min-vh-100 d-flex align-items-center flex-column py-5"
+      >
+        <h1 class="text-header my-5">Frequently Asked Question</h1>
+        <div class="row w-100">
+          <div class="col-7 d-flex align-items-center">
             <div class="faq-content">
-              <div class="ques"></div>
-              <div class="ans"></div>
+              <div class="faq-content-item">
+                <div class="ques">
+                  <div>Kenapa bumi tidak kotak?</div>
+                  <div class="faq-btn" onclick="expandQuestionsAnswer(this)">
+                    <div class="btn-x"></div>
+                    <div class="btn-y"></div>
+                  </div>
+                </div>
+                <div class="ans">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia placeat ipsum nihil inventore unde maxime illo ad
+                  blanditiis nesciunt? Ducimus.
+                </div>
+              </div>
+              <div class="faq-content-item">
+                <div class="ques">
+                  <div>Kenapa bumi tidak kotak?</div>
+                  <div class="faq-btn" onclick="expandQuestionsAnswer(this)">
+                    <div class="btn-x"></div>
+                    <div class="btn-y"></div>
+                  </div>
+                </div>
+                <div class="ans">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia placeat ipsum nihil inventore unde maxime illo ad
+                  blanditiis nesciunt? Ducimus.
+                </div>
+              </div>
+              <div class="faq-content-item">
+                <div class="ques">
+                  <div>Kenapa bumi tidak kotak?</div>
+                  <div class="faq-btn" onclick="expandQuestionsAnswer(this)">
+                    <div class="btn-x"></div>
+                    <div class="btn-y"></div>
+                  </div>
+                </div>
+                <div class="ans">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia placeat ipsum nihil inventore unde maxime illo ad
+                  blanditiis nesciunt? Ducimus.
+                </div>
+              </div>
+              <div class="faq-content-item">
+                <div class="ques">
+                  <div>Kenapa bumi tidak kotak?</div>
+                  <div class="faq-btn" onclick="expandQuestionsAnswer(this)">
+                    <div class="btn-x"></div>
+                    <div class="btn-y"></div>
+                  </div>
+                </div>
+                <div class="ans">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia placeat ipsum nihil inventore unde maxime illo ad
+                  blanditiis nesciunt? Ducimus.
+                </div>
+              </div>
+              <div class="faq-content-item">
+                <div class="ques">
+                  <div>Kenapa bumi tidak kotak?</div>
+                  <div class="faq-btn" onclick="expandQuestionsAnswer(this)">
+                    <div class="btn-x"></div>
+                    <div class="btn-y"></div>
+                  </div>
+                </div>
+                <div class="ans">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia placeat ipsum nihil inventore unde maxime illo ad
+                  blanditiis nesciunt? Ducimus.
+                </div>
+              </div>
+              <div class="faq-content-item">
+                <div class="ques">
+                  <div>Kenapa bumi tidak kotak?</div>
+                  <div class="faq-btn" onclick="expandQuestionsAnswer(this)">
+                    <div class="btn-x"></div>
+                    <div class="btn-y"></div>
+                  </div>
+                </div>
+                <div class="ans">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia placeat ipsum nihil inventore unde maxime illo ad
+                  blanditiis nesciunt? Ducimus.
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-6">
-            <img
-              src="assets/img/home/Logo/Illustrations/Planet oren.png"
-              alt=""
-            />
+          <div class="col-5">
+            <img src="assets/img/developer-workshop/faq/Assets.svg" alt="" />
           </div>
         </div>
       </div>
@@ -244,7 +322,9 @@
     <section class="share">
       <div class="container">
         <div class="row min-vh-100 d-flex align-items-center">
-          <div class="col-6"></div>
+          <div class="col-6">
+            <img src="assets/img/developer-workshop/share/Assets.svg" alt="" />
+          </div>
           <div class="col-6">
             <h1 class="text-header">
               <span>Linking what you see?</span><br />Share to Friend!
@@ -253,7 +333,72 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
               ducimus.
             </p>
-            <button type="button" class="btn">Share to your friend!</button>
+            <button
+              type="button"
+              class="btn"
+              data-toggle="modal"
+              data-target="#shareBtn"
+            >
+              Share to your friend!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="shareBtn"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="shareBtnTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content px-3 py-2">
+            <div>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center flex-column w-100"
+            >
+              <img
+                src="assets/img/developer-workshop/share/shuttle.svg"
+                alt=""
+              />
+              <p>Share our event to your friend</p>
+              <div class="icons">
+                <a href="">
+                  <img
+                    src="assets/img/developer-workshop/share/twitter.svg"
+                    alt=""
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="assets/img/developer-workshop/share/linkedin.svg"
+                    alt=""
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="assets/img/developer-workshop/share/facebook.svg"
+                    alt=""
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="assets/img/developer-workshop/share/instagram.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -580,6 +725,6 @@
     </div>
     <script src="./assets/lib/jquery/jquery.min.js"></script>
     <script src="./assets/lib/bootstrap/js/bootstrap.js"></script>
-    <script src="./js/pages/home.js"></script>
+    <script src="./js/pages/developer-workshop.js"></script>
   </body>
 </html>
