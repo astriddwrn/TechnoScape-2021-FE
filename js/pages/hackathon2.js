@@ -55,12 +55,12 @@ $(document).ready(function(){
 		$(visibleSlides).each(function() {
 		  $(this).animate({
 			opacity: 1 ,
-		}, 400);
+		}, 200);
 		});
 		//Set the opacity of the first and last partial slides.
-		$(visibleSlides).first().prev().animate({
+		$(visibleSlides).first().prev().css("z-index", -2).animate({
 			opacity: 0,
-		}, 400);
+		}, 100);
 		// $(visibleSlides).last().next().animate({
 		// 	opacity: 0,
 		// }, 200);
