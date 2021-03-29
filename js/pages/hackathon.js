@@ -85,29 +85,11 @@ $(document).ready(function(){
         if(indexRight>3){
             indexRight=0;
         }
-
-        // if (window.matchMedia('(max-width: 762px)').matches) {
-            
-           
-        //     $(".join .glass").eq(indexLeft).animate({
-        //         opacity: 0
-        //     },1000, function(){
-        //         $(".join .glass").eq(indexLeft).removeClass("activeJoin");
-        //         $(".join .glass").eq(indexMiddle).addClass("activeJoin");
-        //     });
-            
-
-        //     $(setDots());
-
-        // } else {
-            //...
-            
            
 
             $(setSlidesNext());
 
             $(setDots());
-        // }
 	});
 
 
@@ -134,6 +116,23 @@ $(document).ready(function(){
             $(setDots());
 		
 	});
+
+
+	$('.carousel-wrapper2').slick({
+		arrows: false,
+		autoplay: true,
+  		autoplaySpeed: 2000,
+
+		dots: true,
+    	customPaging: function(slider, i) {
+      
+      	return '<div class="dots2" id=' + i + "></div>";
+    	},
+    	useTransform: true,
+    	cssEase: "ease-in-out"
+	});
+
+	
 
 
 });

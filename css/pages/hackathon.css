@@ -90,6 +90,10 @@
 	width: 50%;
 }
 
+.join .glass2 .image{
+	width: fit-content ;
+}
+
 .join .glass div:not(:last-child){
 	margin-bottom: 10px;
 }
@@ -97,8 +101,17 @@
 .join .carousel-wrapper{
 	width: 800px;
 	height: 700px;
+	display: flex;
 	flex-direction: row;
 	position: relative;
+}
+
+.join .carousel-wrapper2{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 350px;
+	margin: 30px 0;
 }
 
 .join .glass .text{
@@ -108,14 +121,37 @@
 	font-family: "Inter-Regular";
 }
 
+.join .glass2 .text{
+	width: 280px;
+	text-align: center;
+	font-size: 1rem;
+	font-family: "Inter-Regular";
+}
+
 .join .glass .title{
 	font-size: 1.125rem;
 	font-family: "Inter-Medium";
 	width: 230px;
 }
 
+.join .glass2 .title{
+	font-size: 1.5rem;
+	font-family: "Inter-Medium";
+	width: 280px;
+	margin: 20px 0;
+}
+
 .join .main-container{
 	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	overflow: hidden;
+	padding: 0 20px;
+}
+
+.join .second-container{
+	display: none;
 	flex-direction: row;
 	justify-content: center;
 	width: 100%;
@@ -149,6 +185,26 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.join .glass2{
+	/* width: 250px; */
+	height: 500px;
+    display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	align-items: center !important;
+	color: var(--white);
+	text-align: center;
+
+	border-radius: 20px;
+	background: radial-gradient(88.77% 88.77% at 25.41% 9.11%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%) !important;
+	background-position: center;
+	backdrop-filter: blur(40px);
+	outline: none;
+	overflow: hidden;
+	border: 2px solid rgba(255, 255, 255, 0.18);
+	border-radius: 32px;
 }
 
 .invisibleJoin{
@@ -301,25 +357,6 @@
 	margin-right: 5vw;
 }
 
-.join ul{
-	margin: 0 auto;
-	width: 200px !important;
-	margin-top: 50px;
-	list-style-type: none;
-	width: 100%;
-	display: flex !important;
-	flex-direction: row !important;
-	justify-content: space-evenly;
-}
-
-.join  button{
-	width: 30px !important;
-	height: 0;
-	content: none;
-	font-size: 0; 
-	background-color: #4B5E8C;
-	border: 1.5px solid #4B5E8C;
-}
 
 .join .dots-container{
 	margin: 0 auto;
@@ -338,6 +375,27 @@
 	border: 3px solid var(--white) !important;
 }
 
+
+.join .slick-dots{
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	transform: translate(-55%, 0);
+	list-style: none;
+	display: flex !important;
+	width: 250px;
+	justify-content: space-evenly;
+}
+
+.slick-dots div{
+	width: 40px !important;
+	border: 5px solid #4B5E8C !important;
+}
+
+.slick-active .dots2{
+	border: 5px solid var(--white) !important;
+}
+
 @media screen and (max-width:1200px){
 	
 }
@@ -352,77 +410,26 @@
 
 }
 @media screen and (max-width:762px){
-	.leftJoin{
+	.join .main-container{
 		display: none !important;
-		transition: display 0.5s ease-out !important;
 	}
-	.rightJoin{
-		display: none !important;
-		transition: display 0.5s ease-out !important;
+	.join .second-container{
+		display: flex !important;
 	}
-	.activeJoin{
-		animation: opacityIn ease !important;
-		transition: display 0.5s ease 5s !important;
+	.join .dots-container{
+		display: none;
 	}
 
 }
 @media screen and (max-width:576px){
 
-	.join .carousel-wrapper{
-		height: 600px;
-	}
-
 	.join .text-orange{
 		font-size: 2.5rem;
 		padding: 0 10px;
 	}
-
-	.activeJoin{
-		display: flex !important;
-		z-index: 5 !important;
-		width: 280px !important;
-		height: 480px !important;
-		border-radius: 20px !important;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		padding: 0 10px;
-	}
 	
-	.activeJoin img{
-		filter: none !important;
-		mix-blend-mode: normal !important;
-	}
-	
-	.activeJoin .title{
-		font-size: 1.5rem !important;
-	}
-	
-	.activeJoin .text{
-		font-size: 1rem !important;
-	}
-	
-	.join .next,.join .prev{
-		width: 30px;
-		height: 30px;
-		position: relative;
-		background-color: var(--blue);
-		border: solid 5px transparent;
-		cursor: pointer;
-	}
-
-	.join .next::after, .join .prev::after{
-		width: 30px;
-		height: 30px;
-		content: '';
-		background: linear-gradient(151.12deg, #5FA8ED 19.15%, #7ED5B7 91.38%);
-		position: absolute;
-		z-index: -1;
-		right: -10px;
-		bottom: -10px;
-	}
-	
-}@media screen and (max-width:428px){
+}
+@media screen and (max-width:428px){
 	.join{
 		padding: 100px 0;
 	}
