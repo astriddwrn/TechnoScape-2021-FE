@@ -69,4 +69,17 @@
 	padding-right: 2rem !important;
 }
 
-/*  */
+/*FAQ*/
+.faq {
+    width: 100%;
+    padding: 100px 3vw;
+}
+
+.faq .container{
+    width: 100%;
+    height: 100vh;
+}
+
+.faq-illust img {
+	width: 70%;
+}
