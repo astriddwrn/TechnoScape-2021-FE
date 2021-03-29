@@ -181,6 +181,7 @@
 .why .card {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 31rem;
   width: 22rem;
   padding: 2.5rem;
@@ -194,6 +195,18 @@
 
 .why .card img {
   width: 15rem;
+  mix-blend-mode: luminosity;
+  margin-bottom: 3rem;
+}
+
+.why .card img:hover {
+  mix-blend-mode: normal;
+}
+
+.why .card .networking {
+  width: 8rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 
 .why .text-subheader {
@@ -274,7 +287,7 @@
 }
 
 .ticket-illus img {
-  width: 15rem;
+  width: 20rem;
 }
 
 .ticket .text-super {
