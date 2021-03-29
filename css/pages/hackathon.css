@@ -84,6 +84,21 @@
 	filter: grayscale(90%);
 	mix-blend-mode: luminosity;
 	width: 100%;
+
+	transition-property:filter;
+	-moz-transition-property: filter;
+	-webkit-transition-property:filter; 
+	-o-transition-property:filter; 
+	
+	transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-webkit-transition-duration: 1s; 
+	-o-transition-duration: 1s;
+
+	transition-timing-function: ease;
+	-moz-transition-timing-function: ease; 
+	-webkit-transition-timing-function: ease; 
+	-o-transition-timing-function: ease; 
 }
 
 .join .glass .image{
@@ -115,7 +130,10 @@
 }
 
 .join .glass .text{
-	width: 240px;
+	/* width: 240px;
+	padding-left: 0.2em;
+	padding-right: 0.2em; */
+	margin: 0em 0.7em;
 	text-align: center;
 	font-size: 0.6rem;
 	font-family: "Inter-Regular";
@@ -258,7 +276,7 @@
 }
 
 .behindJoin{
-	opacity: 1 !important;
+	opacity: 0 !important;
 	top: 50% !important;
 	left: 50% !important;
 	transform: translate(-50%, -50%) !important;
@@ -283,17 +301,34 @@
 .activeJoin{
 	opacity: 1 !important;
 	z-index: 5 !important;
-	width: 350px !important;
-	height: 550px !important;
+	/* width: 350px !important;
+	height: 550px !important; */
 	border-radius: 20px !important;
 	top: 50% !important;
 	left: 50% !important;
-	transform: translate(-50%, -50%) !important;
+	transform: translate(-50%, -50%) scale(1.3) !important;
 
 	transition-property:width, height, transform, filter, font-size;
 	-moz-transition-property: width, height, transform, filter, font-size;
 	-webkit-transition-property:width, height, transform, filter, font-size; 
 	-o-transition-property:width, height, transform, filter, font-size; 
+	
+	transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-webkit-transition-duration: 1s; 
+	-o-transition-duration: 1s;
+
+	transition-timing-function: ease;
+	-moz-transition-timing-function: ease; 
+	-webkit-transition-timing-function: ease; 
+	-o-transition-timing-function: ease; 
+}
+
+.basic-transition{
+	transition-property:width, height, transform, filter, font-size, opacity;
+	-moz-transition-property: width, height, transform, filter, font-size, opacity;
+	-webkit-transition-property:width, height, transform, filter, font-size, opacity; 
+	-o-transition-property:width, height, transform, filter, font-size, opacity; 
 	
 	transition-duration: 1s;
 	-moz-transition-duration: 1s;
@@ -312,11 +347,11 @@
 }
 
 .activeJoin .title{
-	font-size: 1.5rem !important;
+	/* font-size: 1.5rem !important; */
 }
 
 .activeJoin .text{
-	font-size: 1rem !important;
+	/* font-size: 1rem !important; */
 }
 
 .backJoin{
