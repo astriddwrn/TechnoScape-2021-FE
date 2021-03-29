@@ -15,3 +15,13 @@ $(window).scroll(() => {
 	}
 	prevPosition = currPosition;
 });
+
+$("body").mousemove((e) => {
+	let x = (e.pageX * -1) / 150;
+	let y = (e.pageY * -1) / 150;
+	if (e.pageX === 0) x = -0.5;
+	$(".star").css(
+		"transform",
+		"translate(" + x + 750 + "px, " + y + 100 + "px)",
+	);
+});
