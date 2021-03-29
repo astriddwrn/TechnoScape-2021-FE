@@ -156,7 +156,7 @@
 
 .about-img {
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .about img {
@@ -867,6 +867,10 @@
 }
 
 @media screen and (max-width: 992px) {
+  .about img {
+    height: 18rem;
+  }
+
   .contact-left h1 {
     font-size: 3rem;
   }
@@ -886,6 +890,30 @@
 }
 
 @media screen and (max-width: 768px) {
+  .about .row {
+    flex-direction: column-reverse;
+  }
+
+  .about .talk-btn,
+  .about .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-img {
+    margin-bottom: 4rem;
+  }
+
+  .about .text-header {
+    font-size: 2rem;
+  }
+
+  .about .text-header,
+  .about p {
+    text-align: center;
+  }
+
   .footer {
     font-size: 20px;
   }
