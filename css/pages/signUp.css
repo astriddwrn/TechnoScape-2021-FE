@@ -114,6 +114,7 @@ input[type=number] {
     align-items: center;
     background: transparent;
     margin: 15px 0;
+    margin-bottom: 30px;
 }
 
 .ball{
@@ -312,4 +313,55 @@ input[type='radio']:checked:after {
 
 .bottom{
     height: 80px;
+}
+
+@media screen and (max-width:1200px){
+
+}
+@media screen and (max-width:992px){
+
+
+	
+}
+@media screen and (max-width:762px){
+
+}
+@media screen and (max-width:576px){
+    .logo-img img{
+        width: 250px;
+    }
+    .progress{
+        margin-bottom: 35px;
+    }
+    .ball{
+        width: 20px;
+        height: 20px;
+    }
+    .main-glass{
+        background: none;
+        border: none;
+        backdrop-filter: blur(0px);
+        min-width: 400px;
+        width: 100%;
+    }
+    .input-wrapper input{
+        font-size: 0.8rem;
+    }
+    
+    
+    /* .section-1{
+        height: 150vh;
+    } */
+	
+}@media screen and (max-width:428px){
+	.text-header{
+        font-size: 3rem;
+    }
+    .main-glass{
+        min-width: 350px;
+    }
+    form{
+        padding: 0 40px;
+    }
+
 }
