@@ -1,72 +1,72 @@
 @import "./../base/base.css";
 
 .landing {
-	min-width: 100%;
-	min-height: 100%;
-	overflow-x: hidden;
-	background: var(--hackathon-landing-bg); 
+  min-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background: var(--hackathon-landing-bg);
 }
 
 /* NAVBAR */
 .navbar {
-	background: transparent;
+  background: transparent;
 }
 .navbar.change-bg {
-	background: var(--navbar-bg);
+  background: var(--navbar-bg);
 }
 .navbar.scroll-down,
 .navbar.scroll-up {
-	transition: top 1s;
+  transition: top 1s;
 }
 .navbar.scroll-down {
-	top: -100px;
+  top: -100px;
 }
 .navbar.scroll-up {
-	top: 0px;
+  top: 0px;
 }
 .navbar.change-bg .nav-link.active {
-	background: var(--landing-bg);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: var(--landing-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .nav-link {
-	color: var(--white);
+  color: var(--white);
 }
 .nav-link.active {
-	color: var(--blue);
+  color: var(--blue);
 }
 .nav-item .btn {
-	border: 2px solid var(--white);
-	border-radius: 32px;
-	padding-left: 2rem !important;
-	padding-right: 2rem !important;
+  border: 2px solid var(--white);
+  border-radius: 32px;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 
-.text-orange{
-    background-image: var(--heading-orange);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent
+.text-orange {
+  background-image: var(--heading-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
-.button-orange{
-    background-image: var(--btn-orange);
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 75px;
-    border-radius: 32px;
+.button-orange {
+  background-image: var(--btn-orange);
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 75px;
+  border-radius: 32px;
 
-    letter-spacing: 0.1em;
-    color: white;
-    text-align: center;
+  letter-spacing: 0.1em;
+  color: white;
+  text-align: center;
 }
 
-.text-med-light{
-    color: var(--white);
+.text-med-light {
+  color: var(--white);
 }
 
 /* Landing Wrapper */
@@ -139,20 +139,20 @@
 }
 
 .star-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .star {
-	position: fixed;
-	top: 100px;
-	margin: 0 auto;
-	/* left: 50%; */
-	/* transform: translate(20%, 80%); */
-	/* transform: translateX(-50%); */
-	width: 75%;
-	z-index: 1;
-	max-width: 100%;
+  position: fixed;
+  top: 100px;
+  margin: 0 auto;
+  /* left: 50%; */
+  /* transform: translate(20%, 80%); */
+  /* transform: translateX(-50%); */
+  width: 75%;
+  z-index: 1;
+  max-width: 100%;
 }
 
 .navbar-toggler {
@@ -169,15 +169,14 @@
     letter-spacing: 0.1rem;
   }
   .wave-img {
-		bottom: -90px;
-	}
+    bottom: -90px;
+  }
 }
 
 @media screen and (max-width: 992px) {
-
   .hackathon-content {
-		padding: 0 2rem;
-	}
+    padding: 0 2rem;
+  }
 
   .collab-logo {
     max-width: 25%;
@@ -187,11 +186,10 @@
     padding: 10px 65px;
     letter-spacing: 0.1rem;
   }
-  
+
   .wave-img {
-		bottom: -70px;
-	}
-  
+    bottom: -70px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -199,8 +197,8 @@
     letter-spacing: 10px;
   }
   .hackathon-description {
-		font-size: 1.6rem;
-	}
+    font-size: 1.6rem;
+  }
 
   .collab-logo {
     max-width: 25%;
@@ -210,11 +208,10 @@
     padding: 10px 65px;
     letter-spacing: 0.1rem;
   }
-  
+
   .wave-img {
-		bottom: -55px;
-	}
-  
+    bottom: -55px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -242,18 +239,18 @@
   }
 
   .wave-img {
-		bottom: -45px;
-	}
+    bottom: -45px;
+  }
 }
 
 @media screen and (max-width: 428px) {
   .landing-wrapper {
-		padding-top: 0;
-	}
+    padding-top: 0;
+  }
   .collab-logo {
-		margin: 0 0.2rem;
-		max-width: 40%;
-	}
+    margin: 0 0.2rem;
+    max-width: 40%;
+  }
   .hackathon-title {
     letter-spacing: 0.5rem;
   }
@@ -273,7 +270,7 @@
     padding: 8px 45px;
     letter-spacing: 0.1rem;
   }
-  /* .wave-img {
+  .wave-img {
 		bottom: 0px;
-	} */
+	}
 }
