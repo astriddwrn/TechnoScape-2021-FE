@@ -316,7 +316,7 @@
 	.timeline-vertical {
 		border-left: 3px solid rgba(244, 244, 244, 0.2);
 		height: 9rem;
-		margin-left: 1.1rem;
+		margin-left: 1.15rem;
 	}
 	
 }
@@ -367,23 +367,14 @@
 
 	/* TIMELINE BAR */
 	.timeline-circle {
-		height: 3rem;
-		width: 3rem;
+		height: 2.8rem;
+		width: 2.8rem;
 	}
 
 	.timeline-vertical {
 		border-left: 3px solid rgba(244, 244, 244, 0.2);
 		height: 11rem;
-		margin-left: 1.4rem;
-	}
-
-	.timeline-circle-active {
-		background: linear-gradient(151.12deg, #5FA8ED 19.15%, #7ED5B7 91.38%);
-	}
-
-	.timeline-vertical-active {
-		background: linear-gradient(151.12deg, #5FA8ED 19.15%, #7ED5B7 91.38%);
-		width: 4px;
+		margin-left: 1.3rem;
 	}
 }
 @media screen and (max-width:428px) {
@@ -423,6 +414,6 @@
 	/*  */
 	.timeline-vertical {
 		height: 10rem;
-		margin-left: 1.4rem;
+		margin-left: 1.3rem;
 	}
 }
