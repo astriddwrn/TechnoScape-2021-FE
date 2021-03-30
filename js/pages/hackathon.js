@@ -16,3 +16,10 @@ $(window).scroll(() => {
 	prevPosition = currPosition;
 });
 
+
+$(document).ready(function () {
+    $('.question .question-top').click(function () {
+        $(this).next('.answer').slideToggle();
+		$(this).parent().find('img').toggle();
+    });
+});
