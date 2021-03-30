@@ -104,12 +104,12 @@
 	margin-top: 3.5rem;
 }
 
-.timeline-text-subheader {
+.timeline-dates h2 {
 	font-size: 2rem;
 	color: var(--white);
 }
 
-.timeline-text-description {
+.timeline-dates h4 {
 	font-size: 1.5rem;
 	color: var(--timeline-blue);
 }
@@ -160,7 +160,7 @@
 	max-width: 100%;
 }
 
-.timeline-char-wrapper .planet-bluelarge {
+.timeline-char-wrapper .planet-green {
 	width: 250px;
 	bottom: 75px;
 }
@@ -184,7 +184,8 @@
 	animation: float-from-top 4s ease-in-out infinite;
 }
 
-.timeline-char-wrapper .planet:nth-child(even) {
+.timeline-char-wrapper .planet:nth-child(even),
+.timeline-char-wrapper .timeline-char {
 	animation: float-from-bottom 4s ease-in-out infinite;
 }
 
@@ -210,4 +211,20 @@
 	100% {
 		transform: translateY(-10px);
 	}
+}
+
+@media screen and (max-width:1200px) {
+
+}
+@media screen and (max-width:992px) {
+
+}
+@media screen and (max-width:762px) {
+
+}
+@media screen and (max-width:576px) {
+	
+}
+@media screen and (max-width:428px) {
+
 }
