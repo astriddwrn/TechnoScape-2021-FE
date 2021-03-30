@@ -104,6 +104,11 @@
 	margin-top: 3.5rem;
 }
 
+.timeline-dates span:nth-child(3),
+.timeline-dates span:nth-child(4) {
+	margin-top: 4rem;
+}
+
 .timeline-dates h2 {
 	font-size: 2rem;
 	color: var(--white);
@@ -118,7 +123,7 @@
 .timeline-circle {
 	height: 2rem;
   	width: 2rem;
-  	background: rgba(244, 244, 244, 0.2);
+  	background: radial-gradient(88.77% 88.77% at 25.41% 9.11%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
   	border-radius: 50%;
   	display: inline-block;
 	border: 2px solid rgba(244, 244, 244, 0.3);
@@ -148,13 +153,12 @@
 }
 
 .timeline-char {
-	position: absolute;
 	max-width: 100%;
 	left: 150px;
-	z-index: 3;
 }
 
-.timeline-char-wrapper .planet {
+.timeline-char-wrapper .planet,
+.timeline-char-wrapper .timeline-char {
 	position: absolute;
 	z-index: 1;
 	max-width: 100%;
@@ -213,18 +217,212 @@
 	}
 }
 
-@media screen and (max-width:1200px) {
 
+@media screen and (max-width:1200px) {
+	.timeline-char {
+		left: 100px;
+	}
+	.timeline-char-wrapper .planet-green {
+		width: 250px;
+		bottom: 75px;
+		left: -50px;
+	}
+	
+	.timeline-char-wrapper .planet-bluemedium {
+		left: 250px;
+		bottom: 50px;
+	}
+	
+	.timeline-char-wrapper .planet-orange {
+		left: -50px;
+		top: 50px;
+	}
+	
+	.timeline-char-wrapper .planet-bluesmall {
+		bottom: 0px;
+		right: 250px;
+	}
 }
 @media screen and (max-width:992px) {
+	.timeline-char-wrapper .planet-orange {
+		left: -100px;
+		top: 125px;
+	}
+	.timeline-char-wrapper .planet-bluemedium {
+		left: 275px;
+		bottom: 50px;
+	}
+	.timeline-char-wrapper .planet-bluesmall {
+		bottom: 0px;
+		right: 75px;
+	}
 
+	/* Dates */
+	.timeline-dates-wrapper {
+		margin-top: 5rem;
+	}
+	.timeline-dates h2 {
+		font-size: 1.8rem;
+	}
+	
+	.timeline-dates h4 {
+		font-size: 1.3rem;
+	}
+	.timeline-dates span:not(:first-child) {
+		margin-top: 4.2rem;
+	}
 }
 @media screen and (max-width:762px) {
+	.timeline-char {
+		width: 250px;
+		top: -50px;
+	}
+	.timeline-char-wrapper .planet-green {
+		width: 200px;
+		bottom: 50px;
+		left: -25px;
+	}
+	.timeline-char-wrapper .planet-orange {
+		left: -50px;
+		top: 50px;
+		width: 45px;
+	}
+	.timeline-char-wrapper .planet-bluemedium {
+		left: 225px;
+		bottom: 50px;
+		width: 80px;
+	}
+	.timeline-char-wrapper .planet-bluesmall {
+		bottom: 0px;
+		right: 120px;
+		width: 35px;
+	}
+	.timeline-char-wrapper {
+		height: 25rem;
+	}
 
-}
-@media screen and (max-width:576px) {
+	.timeline-dates-wrapper {
+		margin-top: 5rem;
+		height: 83vh;
+		max-width: 75%;
+	}
+
+	/* Bar */
+	.timeline-circle {
+		height: 2.5rem;
+		width: 2.5rem;
+	}
+
+	.timeline-vertical {
+		border-left: 3px solid rgba(244, 244, 244, 0.2);
+		height: 9rem;
+		margin-left: 1.1rem;
+	}
 	
 }
-@media screen and (max-width:428px) {
 
+@media screen and (max-width:576px) {
+	.timeline-char-wrapper {
+		height: 20rem;
+	}
+
+	.timeline-char {
+		width: 200px;
+		top: -50px;
+		left: 125px;
+	}
+	.timeline-char-wrapper .planet-green {
+		width: 175px;
+		bottom: 50px;
+		left: 0px;
+	}
+	.timeline-char-wrapper .planet-orange {
+		top: 25px;
+		left: 0px;
+		width: 35px;
+	}
+	.timeline-char-wrapper .planet-bluemedium {
+		left: 225px;
+		width: 70px;
+	}
+	.timeline-char-wrapper .planet-bluesmall {
+		right: 120px;
+		width: 30px;
+	}
+
+	/* Dates */
+	.timeline-dates-wrapper {
+		margin-top: 5rem;
+		height: 100vh;
+		max-width: 90%;
+	}
+
+	.timeline-dates h2 {
+		font-size: 2rem;
+	}
+	
+	.timeline-dates h4 {
+		font-size: 1.5rem;
+	}
+
+	/* TIMELINE BAR */
+	.timeline-circle {
+		height: 3rem;
+		width: 3rem;
+	}
+
+	.timeline-vertical {
+		border-left: 3px solid rgba(244, 244, 244, 0.2);
+		height: 11rem;
+		margin-left: 1.4rem;
+	}
+
+	.timeline-circle-active {
+		background: linear-gradient(151.12deg, #5FA8ED 19.15%, #7ED5B7 91.38%);
+	}
+
+	.timeline-vertical-active {
+		background: linear-gradient(151.12deg, #5FA8ED 19.15%, #7ED5B7 91.38%);
+		width: 4px;
+	}
+}
+@media screen and (max-width:428px) {
+	.timeline-char {
+		left: 75px;
+	}
+	.timeline-char-wrapper .planet-green {
+		width: 150px;
+		bottom: 50px;
+		left: -25px;
+	}
+	.timeline-char-wrapper .planet-orange {
+		left: -50px;
+	}
+	.timeline-char-wrapper .planet-bluemedium {
+		left: 175px;
+		width: 60px;
+	}
+	.timeline-char-wrapper .planet-bluesmall {
+		right: 75px;
+		width: 30px;
+	}
+
+	/* Dates */
+	.timeline-dates-wrapper {
+		margin-top: 5rem;
+		height: 90vh;
+		max-width: 90%;
+	}
+	.timeline-dates h2 {
+		font-size: 1.5rem;
+	}
+	
+	.timeline-dates h4 {
+		font-size: 1rem;
+	}
+	/*  */
+	.timeline-vertical {
+		height: 10rem;
+		margin-left: 1.4rem;
+	}
 }
