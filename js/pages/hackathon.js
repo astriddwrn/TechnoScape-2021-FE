@@ -39,19 +39,19 @@ $(document).ready(function(){
 /* mentorsCardShow */
 $(document).ready(function(){
 	$("#mentors-design-button").click(function () {
-		$("#mentors-design").show();
 		$("#mentors-technology").hide();
-	 	$("#mentors-business").hide();
+		$("#mentors-business").hide();
+		$("#mentors-design").fadeIn(800);
 	});
 	$("#mentors-technology-button").click(function () {
-		$("#mentors-technology").show();
 		$("#mentors-design").hide();
-	 	$("#mentors-business").hide();
+		$("#mentors-business").hide();
+		$("#mentors-technology").fadeIn(800);
 	});
 	$("#mentors-business-button").click(function () {
-		$("#mentors-business").show();
 		$("#mentors-technology").hide();
-	 	$("#mentors-design").hide();
+		$("#mentors-design").hide();
+		$("#mentors-business").fadeIn(800);
 	});
 });
   
