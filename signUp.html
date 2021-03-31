@@ -27,16 +27,19 @@
                 <div class="input-wrapper">
                     <img src="/assets/img/signUp/logo0-name.svg" alt="">
                     <input class="text-regular" type="text" name="name" id="name" placeholder="Please type your full name here...">
+                    <img class="symbol" src="/assets/img/signUp/errorSymbol.svg" alt="">
                 </div>
                 <label class="text-regular" for="placeBirth">Place of Birth</label>
                 <div class="input-wrapper">
                     <img src="/assets/img/signUp/logo1-placeofbirth.svg" alt="">
                     <input class="text-regular" type="text" name="placeBirth" id="placeBirth" placeholder="Please type your place of birth here...">
+                    <img class="symbol" src="/assets/img/signUp/errorSymbol.svg" alt="">
                 </div>
                 <label class="text-regular" for="dateBirth">Date of Birth</label>
                 <div class="input-wrapper">
                     <img src="/assets/img/signUp/logo2-calendar.svg" alt="">
-                    <input class="text-regular" type="text" name="dateBirth" id="dateBirth" placeholder="Please type your date of birth here...">
+                    <input class="text-regular date" type="date" name="dateBirth" id="dateBirth" placeholder="Please type your date of birth here...">
+                    <img class="symbol" src="/assets/img/signUp/errorSymbol.svg" alt="">
                 </div>
                 
                 <div class="label-radio">
@@ -45,16 +48,20 @@
                 </div>
                 <div class="input-radio">
                     <div class="radio-wrapper">
-                        <input type="radio" name="gender" id="gender" value="Male" checked>
+                        <input type="radio" name="gender" id="male" value="Male">
                         <div class="text-regular">Male</div>
                     </div>
                     <div class="radio-wrapper">
-                        <input type="radio" name="gender" id="gender" value="Woman">
-                        <div class="text-regular"v>Woman</div>
+                        <input type="radio" name="gender" id="woman" value="Woman">
+                        <div class="text-regular">Woman</div>
                     </div>
+                    <img class="symbol" src="/assets/img/signUp/errorSymbol.svg" alt="">
                 </div>
                 
-                <div class="next1 button-orange text-regular">Next</div>
+                <div class="button-container">
+                    <div class="next1 button-orange text-regular">Next</div>
+                </div>
+                
 
             </div>
             
@@ -63,39 +70,53 @@
                 <div class="input-wrapper">
                     <img src="/assets/img/signUp/logo4-email.svg" alt="">
                     <input class="text-regular" type="email" name="email" id="email" placeholder="Please type your email here...">
+                    <img class="symbol" src="/assets/img/signUp/errorSymbol.svg" alt="">
                 </div>
                 <label class="text-regular" for="password">Password</label>
                 <div class="input-wrapper">
                     <img src="/assets/img/signUp/logo5-password.svg" alt="">
                     <input class="text-regular" type="password" name="password" id="password" placeholder="Please type your password here...">
+                    <img class="symbol" src="/assets/img/signUp/errorSymbol.svg" alt="">
                 </div>
                 <label class="text-regular" for="confirm">Confirm Password</label>
                 <div class="input-wrapper">
                     <img src="/assets/img/signUp/logo5-confirmpassword.svg" alt="">
                     <input class="text-regular" type="password" name="confirm" id="confirm" placeholder="Please type your confirm password here...">
+                    <img class="symbol" src="/assets/img/signUp/errorSymbol.svg" alt="">
                 </div>
 
-                <div class="next2 button-orange text-regular">Next</div>
+                <div class="button-container">
+                    <div class="back1 back-button text-regular">Back</div>
+                    <div class="next2 button-orange text-regular">Next</div>
+                </div>
+                
             </div>
 
             <div class="section-3">
                 <label class="text-regular" for="whatsapp">WhatsApp Number</label>
                 <div class="input-wrapper">
                     <img src="/assets/img/signUp/logo7-wa.svg" alt="">
-                    <input class="text-regular" type="number" name="whatsapp" id="whatsapp" placeholder="Please type your WhatsApp Number here...">
+                    <input class="text-regular" type="text" name="whatsapp" id="whatsapp" placeholder="Please type your WhatsApp Number here...">
+                    <img class="symbol" src="/assets/img/signUp/errorSymbol.svg" alt="">
                 </div>
                 <label class="text-regular" for="text">Line ID</label>
                 <div class="input-wrapper">
                     <img src="/assets/img/signUp/logo8-line-svg.svg" alt="">
                     <input class="text-regular" type="text" name="line" id="line" placeholder="Please type your Line ID here...">
+                    <img class="symbol" src="/assets/img/signUp/errorSymbol.svg" alt="">
                 </div>
                 <label class="text-regular" for="company">Company/Institution</label>
                 <div class="input-wrapper">
                     <img src="/assets/img/signUp/logo9-company.svg" alt="">
                     <input class="text-regular" type="text" name="company" id="company" placeholder="Please type your company/institution here...">
+                    <img class="symbol" src="/assets/img/signUp/errorSymbol.svg" alt="">
                 </div>
 
-                <button class="submit button-orange text-regular">Submit</button>
+                <div class="button-container">
+                    <div class="back2 back-button text-regular">Back</div>
+                    <div><button class="submit button-orange text-regular">Submit</button></div>
+                </div>
+                
             </div>
         </form>
 
@@ -106,5 +127,7 @@
 
     <script src="./assets/lib/jquery/jquery.min.js"></script>
     <script src="/js/pages/signUp.js"></script>
+    <!-- jquery validate plugin -->
+    <script src="/assets/lib/jquery validate plugin/dist/jquery.validate.js"></script>
 </body>
 </html>

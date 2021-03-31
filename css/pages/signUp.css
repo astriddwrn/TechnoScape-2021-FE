@@ -16,6 +16,7 @@ button{
     padding: 0;
     border: none;
     background: none;
+    margin: 0 !important; 
 }
 
 button:focus { outline: none; }
@@ -63,7 +64,7 @@ input[type=number] {
 .main-glass{
     margin: 0 auto;
     width: 40vw;
-    height: 650px;
+    min-height: 650px;
     min-width: 550px;
     padding: 30px 0;
     display: flex;
@@ -189,13 +190,17 @@ form{
     justify-content: center;
 }
 
+form label{
+    margin-top: 20px;
+}
+
 .input-wrapper{
     width: 100%;
     display: flex;
     flex-direction: row;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--white);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .input-wrapper input{
@@ -280,10 +285,33 @@ input[type='radio']:checked:after {
     /* font-weight: lighter !important; */
 }
 
+.radio-wrapper:nth-of-type(2) div{
+    margin-right: 20px;
+}
+
+::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    width: 100%;
+    justify-content: center;
+}
+
+.button-container div{
+    margin: 0 10px;
+}
 
 
 .button-orange{
-    position: absolute;
+    margin-bottom: 20px;
     /* margin: 50px auto 0 auto; */
     background-image: var(--btn-orange);
     width: fit-content;
@@ -295,9 +323,9 @@ input[type='radio']:checked:after {
     border-radius: 32px;
 	cursor: pointer;
     /* top: 50%; */
-    left: 50%;
-    bottom: 30px;
-    transform: translate(-50%, 0);
+    /* left: 50%;
+    bottom:-30px;
+    transform: translate(-50%, 0); */
 
     letter-spacing: 0.1em;
     color: white;
@@ -311,9 +339,54 @@ input[type='radio']:checked:after {
 }
 
 
+
+.back-button{
+    margin-bottom: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 75px;
+    border-radius: 32px;
+    border: 2px solid rgba(255, 255, 255, 0.448);
+	cursor: pointer;
+
+    letter-spacing: 0.1em;
+    color: white;
+    text-align: center;
+}
+
+.back-button:hover{
+    box-shadow: 0px 0px 30px rgba(245, 245, 245, 0.25);
+    transition: 0.3s;
+}
+
 .bottom{
     height: 80px;
 }
+
+.errorBorder:not([type=radio]){
+    border-bottom: 2px solid #B34444;
+}
+
+.errorMsg{
+    color: #B34444;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 !important;
+    /* margin-top: -15px; */
+}
+
+.symbol{
+    display: none;
+    margin: 0 !important;
+}
+
+.valid{
+    opacity: 1;
+}
+
 
 @media screen and (max-width:1200px){
 
@@ -332,6 +405,9 @@ input[type='radio']:checked:after {
     }
     .progress{
         margin-bottom: 35px;
+    }
+    form{
+        padding: 0 40px;
     }
     .ball{
         width: 20px;
@@ -361,7 +437,13 @@ input[type='radio']:checked:after {
         min-width: 350px;
     }
     form{
-        padding: 0 40px;
+        padding: 0 20px;
+    }
+    ::-webkit-calendar-picker-indicator {
+        left: 10px;
+    }
+    .back-button, .button-orange{
+        padding: 10px 50px;
     }
 
 }
