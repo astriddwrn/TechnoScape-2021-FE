@@ -38,7 +38,7 @@
                 <label class="text-regular" for="dateBirth">Date of Birth</label>
                 <div class="input-wrapper">
                     <img src="/assets/img/signUp/logo2-calendar.svg" alt="">
-                    <input class="text-regular date" type="date" name="dateBirth" id="dateBirth" placeholder="Please type your date of birth here...">
+                    <input class="text-regular date" type="text" name="dateBirth" id="dateBirth" placeholder="Please type your date of birth here..." onfocus="(this.type='date')" onblur="(this.type='text')" data-date="" data-date-format="DD MM YYYY">
                     <img class="symbol" src="/assets/img/signUp/errorSymbol.svg" alt="">
                 </div>
                 

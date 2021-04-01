@@ -1,5 +1,8 @@
-$(document).ready(function(){
 
+
+
+
+$(document).ready(function(){
 
     // FROM VALIDATION
       $.validator.addMethod("letters", function(value, element) {
