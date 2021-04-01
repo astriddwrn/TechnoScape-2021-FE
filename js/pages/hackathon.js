@@ -109,7 +109,7 @@ $(document).ready(function(){
 		arrows: false,
 		autoplay: false,
 		autoplaySpeed: 2000,
-	
+		infinite: false,
 		dots: true,
 		customPaging: function(slider, i) {
 	  
