@@ -4,130 +4,116 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/pages/hackathon.css">
+		<link rel="stylesheet" type="text/css" href="/assets/lib/slick/slick.css"/>
 		<title>Technoscape</title>
 	</head>
 	<body>
 		<!-- Mentors -->
 		<section class="mentors container-fluid">
-			<div class="text-header-bold text-orange">Our Mentors</div>
+			<div class="text-header-bold text-orange">Our Mentors</div>	
 			<div class="mentors-buttons-wrapper w-100 d-flex justify-content-center">
 				<span id="mentors-design-button" class="mentors-buttons-active"><h4>Design</h4></span>
 				<span id="mentors-technology-button"><h4>Technology</h4></span>
 				<span id="mentors-business-button" ><h4>Business</h4></span>
 			</div>
+
 			<!-- Card Container -->
-			<!-- Design -->
-			<div id="mentors-design">
-				<div class="mentors-content row d-flex justify-content-center">
-					
-					<div class="mentors-glass-card card-1 flex-column">
-						<img
-						src="/assets/img/Hackathon/mentors-design-1.svg"
-						class="mentors-card-img"
-						alt="mentor-1"
-						/>
-						<h4>Rose Bush</h4>
-						<p>UX Researcher at ABC Company</p>
+			<div>
+				<div id="mentors-design" class="normaldisplay">
+					<div class="mentors-content row d-flex justify-content-center">
+						<div class="mentors-glass-card card-1 flex-column">
+							<img src="/assets/img/Hackathon/mentors-design-1.svg" class="mentors-card-img" alt="mentor-1"/>
+							<h4>Rose Bush</h4>
+							<p>UX Researcher at ABC Company</p>
+						</div>
+						<div class="mentors-glass-card card-2 flex-column">
+							<img src="/assets/img/Hackathon/mentors-design-2.svg" class="mentors-card-img"alt="mentor-2"/>
+							<h4>John Doe</h4>
+							<p>UI Designer at ABC Company</p>
+						</div>
+						<div class="mentors-glass-card card-3 flex-column">
+							<img src="/assets/img/Hackathon/mentors-design-3.svg" class="mentors-card-img" alt="mentor-3"/>
+							<h4>Olive Yew</h4>
+							<p>UI Designer at ABC Company</p>
+						</div>
 					</div>
-					
-					<div class="mentors-glass-card card-2 flex-column">
-						<img
-						src="/assets/img/Hackathon/mentors-design-2.svg"
-						class="mentors-card-img"
-						alt="mentor-2"
-						/>
-						<h4>John Doe</h4>
-						<p>UI Designer at ABC Company</p>
+				</div>
+	
+				<div id="mentors-technology" class="normaldisplay">
+					<div class="mentors-content business row d-flex justify-content-center">	
+						<div class="mentors-glass-card card-1 flex-column">
+							<img src="/assets/img/Hackathon/mentors-design-1.svg" class="mentors-card-img" alt="mentor-1"/>
+							<h4>tec</h4>
+							<p>UX Researcher at ABC Company</p>
+						</div>
+						<div class="mentors-glass-card card-2 flex-column">
+							<img src="/assets/img/Hackathon/mentors-design-2.svg" class="mentors-card-img"alt="mentor-2"/>
+							<h4>John Doe</h4>
+							<p>UI Designer at ABC Company</p>
+						</div>
+						<div class="mentors-glass-card card-3 flex-column">
+							<img src="/assets/img/Hackathon/mentors-design-3.svg" class="mentors-card-img" alt="mentor-3"/>
+							<h4>Olive Yew</h4>
+							<p>UI Designer at ABC Company</p>
+						</div>
 					</div>
-				
-					<div class="mentors-glass-card card-3 flex-column">
-						<img
-						src="/assets/img/Hackathon/mentors-design-3.svg"
-						class="mentors-card-img"
-						alt="mentor-3"
-						/>
-						<h4>Olive Yew</h4>
-						<p>UI Designer at ABC Company</p>
+				</div>
+	
+				<div id="mentors-business" class="normaldisplay">
+					<div class="mentors-content business row d-flex justify-content-center">	
+						<div class="mentors-glass-card card-1 flex-column">
+							<img src="/assets/img/Hackathon/mentors-design-1.svg" class="mentors-card-img" alt="mentor-1"/>
+							<h4>bus</h4>
+							<p>UX Researcher at ABC Company</p>
+						</div>
+						<div class="mentors-glass-card card-2 flex-column">
+							<img src="/assets/img/Hackathon/mentors-design-2.svg" class="mentors-card-img"alt="mentor-2"/>
+							<h4>John Doe</h4>
+							<p>UI Designer at ABC Company</p>
+						</div>
+						<div class="mentors-glass-card card-3 flex-column">
+							<img src="/assets/img/Hackathon/mentors-design-3.svg" class="mentors-card-img" alt="mentor-3"/>
+							<h4>Olive Yew</h4>
+							<p>UI Designer at ABC Company</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+
+			<!-- Design Mobile -->
+			<div class="mentors-mobile-wrapper">
+				<div class="mobile-carousel-wrapper mobile-notactive mobile-active" id="mentors-design-mobile">
+					<div class="mobile-carousel">
+						<div class="glass2">
+							<div class="image" ><img src="/assets/img/Hackathon/mentors-design-1.svg" alt="" id="design1-img"></div>
+							<div class="title" id="design1-title">Rose Bush</div>
+							<div class="text" id="design1-text">UX Researcher at ABC Company</div>
+						</div>
+						<div class="glass2">
+							<div class="image"><img src="/assets/img/Hackathon/mentors-design-2.svg" alt="" id="design2-img"></div>
+							<div class="title" id="design2-title">John Doe</div>
+							<div class="text" id="design2-text">UI Designer at ABC Company</div>
+						</div>
+						<div class="glass2">
+							<div class="image"><img src="/assets/img/Hackathon/mentors-design-3.svg" alt="" id="design3-img"></div>
+							<div class="title" id="design3-title">Olive Yew</div>
+							<div class="text" id="design3-text">UI Designer at ABC Company</div>
+						</div>
 					</div>
 				</div>
 			</div>
-
-			<div id="mentors-technology">
-				<div class="mentors-content row d-flex justify-content-center">
-					<div class="mentors-glass-card card-1 flex-column">
-						<img
-						src="/assets/img/Hackathon/mentors-design-1.svg"
-						class="mentors-card-img"
-						alt="mentor-1"
-						/>
-						<h4>tech</h4>
-						<p>UX Researcher at ABC Company</p>
-					</div>
-				
-					<div class="mentors-glass-card card-2 flex-column">
-						<img
-						src="/assets/img/Hackathon/mentors-design-2.svg"
-						class="mentors-card-img"
-						alt="mentor-2"
-						/>
-						<h4>John Doe</h4>
-						<p>UI Designer at ABC Company</p>
-					</div>
-					
-					<div class="mentors-glass-card card-3 flex-column">
-						<img
-						src="/assets/img/Hackathon/mentors-design-3.svg"
-						class="mentors-card-img"
-						alt="mentor-3"
-						/>
-						<h4>Olive Yew</h4>
-						<p>UI Designer at ABC Company</p>
-					</div>
-				</div>
-			</div>
-
-			<div id="mentors-business">
-				<div class="mentors-content row d-flex justify-content-center">
-					
-					<div class="mentors-glass-card card-1 flex-column">
-						<img
-						src="/assets/img/Hackathon/mentors-design-1.svg"
-						class="mentors-card-img"
-						alt="mentor-1"
-						/>
-						<h4>business</h4>
-						<p>UX Researcher at ABC Company</p>
-					</div>
-					
-					<div class="mentors-glass-card card-2 flex-column">
-						<img
-						src="/assets/img/Hackathon/mentors-design-2.svg"
-						class="mentors-card-img"
-						alt="mentor-2"
-						/>
-						<h4>John Doe</h4>
-						<p>UI Designer at ABC Company</p>
-					</div>
-					
-					<div class="mentors-glass-card card-3 flex-column">
-						<img
-						src="/assets/img/Hackathon/mentors-design-3.svg"
-						class="mentors-card-img"
-						alt="mentor-3"
-						/>
-						<h4>Olive Yew</h4>
-						<p>UI Designer at ABC Company</p>
-					</div>
-				</div>
-			</div>		
 			
 		</section>
+
+		
 
 		<!-- Jury -->
 		<section class="jury container-fluid">
 			<div class="text-header-bold text-orange">Our Jury</div>
 			<!-- Card Container -->
-			<div id="jury-design">
+			<div id="jury-wrapper">
 				<div class="jury-content row d-flex justify-content-center">
 					
 					<div class="jury-glass-card card-1 flex-column">
@@ -164,9 +150,56 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Jury Tablet Mode -->
+			<div id="jury-wrapper" class="d-none">
+				<div class="jury-content row d-flex justify-content-center">
+					
+					<div class="jury-glass-card card-1 flex-column">
+						<img
+						src="/assets/img/Hackathon/mentors-design-1.svg"
+						class="jury-card-img"
+						alt="jury-1"
+						/>
+						<h4>Rose Bush</h4>
+						<p>UX Researcher at ABC Company</p>
+						<div>Design Jury</div>
+					</div>
+					
+					<div class="jury-glass-card card-2 flex-column">
+						<img
+						src="/assets/img/Hackathon/mentors-design-2.svg"
+						class="jury-card-img"
+						alt="jury-2"
+						/>
+						<h4>John Doe</h4>
+						<p>UI Designer at ABC Company</p>
+						<div>Technology Jury</div>
+					</div>
+				
+					<div class="jury-glass-card card-3 flex-column">
+						<img
+						src="/assets/img/Hackathon/mentors-design-3.svg"
+						class="jury-card-img"
+						alt="jury-3"
+						/>
+						<h4>Olive Yew</h4>
+						<p>UI Designer at ABC Company</p>
+						<div>Business Jury</div>
+					</div>
+				</div>
+			</div>
+
 		</section>
+
+
+
 		<script src="assets/lib/jquery/jquery.min.js"></script>
 		<script src="assets/lib/bootstrap/js/bootstrap.js"></script>
 		<script src="js/pages/hackathon.js"></script>
+		<!-- Slick -->
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="/assets/lib/slick/slick.js"></script>
 	</body>
 </html>

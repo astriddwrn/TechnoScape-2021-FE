@@ -1,222 +1,341 @@
 @import "./../base/base.css";
 
 .landing {
-	min-width: 100%;
-	min-height: 100%;
-	overflow-x: hidden;
-	background: var(--hackathon-landing-bg); 
+  min-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background: var(--hackathon-landing-bg);
 }
 
-.text-orange{
-    background-image: var(--heading-orange);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent
+.text-orange {
+  background-image: var(--heading-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
-.button-orange{
-    background-image: var(--btn-orange);
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 75px;
-    border-radius: 32px;
+.button-orange {
+  background-image: var(--btn-orange);
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 75px;
+  border-radius: 32px;
 
-    letter-spacing: 0.1em;
-    color: white;
-    text-align: center;
+  letter-spacing: 0.1em;
+  color: white;
+  text-align: center;
 }
 
-.text-med-light{
-    color: var(--white);
+.text-med-light {
+  color: var(--white);
 }
 
 /* NAVBAR */
 .navbar {
-	background: transparent;
+  background: transparent;
 }
 .navbar.change-bg {
-	background: var(--navbar-bg);
+  background: var(--navbar-bg);
 }
 .navbar.scroll-down,
 .navbar.scroll-up {
-	transition: top 1s;
+  transition: top 1s;
 }
 .navbar.scroll-down {
-	top: -100px;
+  top: -100px;
 }
 .navbar.scroll-up {
-	top: 0px;
+  top: 0px;
 }
 .navbar.change-bg .nav-link.active {
-	background: var(--hackathon-landing-bg);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: var(--hackathon-landing-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .nav-link {
-	color: var(--white);
+  color: var(--white);
 }
 .nav-link.active {
-	color: var(--blue);
+  color: var(--blue);
 }
 .nav-item .btn {
-	border: 2px solid var(--white);
-	border-radius: 32px;
-	padding-left: 2rem !important;
-	padding-right: 2rem !important;
+  border: 2px solid var(--white);
+  border-radius: 32px;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 
 /*Mentors*/
 .mentors {
-	width: 100%;
-	height: fit-content;
-	padding: 100px 3vw;
+  width: 100%;
+  height: fit-content;
+  padding: 100px 3vw;
+  position: relative;
 }
 
 .mentors .container {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .mentors .text-header-bold {
-	margin: 0 auto 20px auto;
-	text-align: center;
+  margin: 0 auto 20px auto;
+  text-align: center;
 }
 
 .mentors-buttons-wrapper {
-	margin-bottom: 3em;
-	color: var(--white);
+  margin-bottom: 3em;
+  color: var(--white);
 }
 
 .mentors .mentors-buttons-wrapper span {
-	padding: 0px 10px;
+  padding: 0px 10px;
 }
 
 .mentors .mentors-buttons-wrapper span:nth-child(2) {
-	margin: 0 3em;
+  margin: 0 3em;
 }
 
 .mentors-buttons-active {
-	border-bottom: 3px solid var(--underline-blue);
-	color: var(--white);
-	text-align: center;
+  border-bottom: 3px solid var(--underline-blue);
+  color: var(--white);
+  text-align: center;
 }
 
 #mentors-design-button:hover,
 #mentors-technology-button:hover,
 #mentors-business-button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /* Mentors Glass Card */
 .mentors-content div:nth-child(2) {
-	margin: 0px 3em;
+  margin: 0px 3em;
 }
 
 .mentors-glass-card {
-	width: 18rem;
-	height: fit-content;
-	background: 
-	radial-gradient(
-		88.77% 88.77% at 25.41% 9.11%, 
-		rgba(255, 255, 255, 0.4) 0%, 
-		rgba(255, 255, 255, 0) 100%);
-	backdrop-filter: blur(40px);
-	-webkit-backdrop-filter: blur(40px);
-	border-radius: 20px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	color: var(--white);
-	text-align: center;
+  width: 18rem;
+  height: fit-content;
+  background: radial-gradient(
+    88.77% 88.77% at 25.41% 9.11%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--white);
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .mentors-card-img {
-	width: 15rem;
-	border-radius: 32px;
-	margin: 1.5em 1.5em;
+  width: 15rem;
+  border-radius: 32px;
+  margin: 1.5em 1.5em;
 }
 
 .mentors-glass-card p {
-	font-family: "Inter-Light";
-	font-weight: 400;
-	margin-bottom: 1.5em;	
+  font-family: "Inter-Light";
+  font-weight: 400;
+  margin-bottom: 1.5em;
 }
 
 #mentors-technology,
 #mentors-business {
-	display: none;
+  display: none;
 }
 
 /*Jury*/
 .jury {
-	width: 100%;
-	height: fit-content;
-	padding: 100px 3vw;
+  width: 100%;
+  height: fit-content;
+  padding: 100px 3vw;
 }
 
 .jury .container {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .jury .text-header-bold {
-	margin: 0 auto 50px auto;
-	text-align: center;
+  margin: 0 auto 50px auto;
+  text-align: center;
 }
 
 /* Mentors Glass Card */
 .jury-content div:nth-child(2) {
-	margin: 0px 3em;
+  margin: 0px 3em;
 }
 
 .jury-glass-card {
-	width: 18rem;
-	height: fit-content;
-	background: 
-	radial-gradient(
-		88.77% 88.77% at 25.41% 9.11%, 
-		rgba(255, 255, 255, 0.4) 0%, 
-		rgba(255, 255, 255, 0) 100%);
-	backdrop-filter: blur(40px);
-	-webkit-backdrop-filter: blur(40px);
-	border-radius: 20px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	color: var(--white);
-	text-align: center;
+  width: 17.6rem;
+  height: fit-content;
+  background: radial-gradient(
+    88.77% 88.77% at 25.41% 9.11%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--white);
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .jury-card-img {
-	width: 15rem;
-	border-radius: 32px;
-	margin: 1.5em 1.5em;
+  width: 15rem;
+  border-radius: 32px;
+  margin: 1.5em 1em;
 }
 
 .jury-glass-card p {
-	font-family: "Inter-Light";
-	font-weight: 400;
-	margin-bottom: 1.5em;	
+  font-family: "Inter-Light";
+  font-weight: 400;
+  margin-bottom: 1.5em;
 }
 
 .jury-glass-card div {
-	width: 14rem;
-	height: 2.5rem;
-	background: 
-	radial-gradient(
-		88.77% 88.77% at 25.41% 9.11%, 
-		rgba(255, 255, 255, 0.4) 0%, 
-		rgba(255, 255, 255, 0) 100%);
-	backdrop-filter: blur(40px);
-	border-radius: 10px;
-	padding: 0.5rem;
-	margin: 1rem auto;
-	/* Font */
-	font-family: "Inter-Light";
-	font-weight: 400;
+  width: 14rem;
+  height: 2.5rem;
+  background: radial-gradient(
+    88.77% 88.77% at 25.41% 9.11%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  /* Font */
+  font-family: "Inter-Light";
+  font-weight: 400;
 }
 
-.mentors-glass-card:hover {
-	box-shadow: 0px 0px 50px 0.1px #7779c4;
-	transition: 0.6s;
+.mentors-glass-card:hover,
+.jury-glass-card:hover {
+  box-shadow: 0px 0px 50px 0.1px #7779c4;
+  transition: 0.6s;
+}
+
+/* Mobile Carousel stuff */
+.mentors .mobile-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 350px;
+  margin: 30px auto;
+}
+
+.mentors .glass2 .text {
+  width: 280px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Inter-Regular";
+}
+
+.mentors .glass2 .title {
+  font-size: 1.5rem;
+  font-family: "Inter-Medium";
+  width: 280px;
+  margin: 20px 0;
+}
+
+.mentors .mobile-carousel-wrapper {
+  /* display: none; */
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.mentors .glass2 {
+  /* width: 250px; */
+  height: 500px;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: var(--white);
+  text-align: center;
+
+  border-radius: 20px;
+  background: radial-gradient(
+    88.77% 88.77% at 25.41% 9.11%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  ) !important;
+  background-position: center;
+  backdrop-filter: blur(40px);
+  outline: none;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  /* border-radius: 32px; */
+}
+
+.mentors .slick-dots {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-55%, 0);
+  list-style: none;
+  display: flex !important;
+  width: 250px;
+  justify-content: space-evenly;
+}
+
+.mentors .slick-dots div {
+  width: 40px !important;
+  border: 5px solid #4b5e8c !important;
+}
+
+.mentors .slick-active .dots2 {
+  border: 5px solid var(--white) !important;
+}
+
+.mentors .mobile-carousel-wrapper .glass2 img {
+  border-radius: 20px;
+}
+
+.mentors-mobile-wrapper {
+  opacity: 0%;
+}
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
+  .mentors .normaldisplay {
+    display: none !important;
+  }
+  .jury {
+    display: none;
+  }
+}
+@media screen and (max-width: 762px) {
+}
+@media screen and (max-width: 576px) {
+  .jury {
+    display: inline-block !important;
+  }
+  .jury-content div:nth-child(2) {
+    margin: 3rem 3em;
+  }
+  .mentors-mobile-wrapper {
+    opacity: 100%;
+  }
+  #mentors-design-button,
+  #mentors-technology-button,
+  #mentors-business-button {
+    font-size: 0.2rem;
+  }
+}
+@media screen and (max-width: 428px) {
 }
