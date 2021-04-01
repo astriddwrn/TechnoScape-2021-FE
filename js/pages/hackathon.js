@@ -58,6 +58,7 @@ $(document).ready(function(){
 		$('div#design3-title').text('Olive Yew');
 		$('div#design3-text').text('UI Designer at ABC Company');
 	});
+
 	$("#mentors-technology-button").click(function () {
 		/* Normal Display */
 		$("#mentors-design").hide();
@@ -78,6 +79,7 @@ $(document).ready(function(){
 		$('div#design3-title').text('John Doe');
 		$('div#design3-text').text('UI Designer at ABC Company');
 	});
+
 	$("#mentors-business-button").click(function () {
 		/* Normal Display */
 		$("#mentors-technology").hide();
@@ -98,10 +100,10 @@ $(document).ready(function(){
 		$('div#design3-title').text('Rose Bush');
 		$('div#design3-text').text('UX Researcher at ABC Company');
 	});
+
 });
   
 /* Mentors Carousel */
-
 $(document).ready(function(){
 	$('.mobile-carousel').slick({
 		arrows: false,

@@ -306,35 +306,131 @@
 }
 
 .mentors-mobile-wrapper {
-  opacity: 0%;
+  display: none;
 }
 
 @media screen and (max-width: 1200px) {
+  .mentors-content div:nth-child(2),
+  .jury-content div:nth-child(2) {
+    margin: 0px 2em;
+  }
 }
 @media screen and (max-width: 992px) {
-  .mentors .normaldisplay {
-    display: none !important;
+  #mentors-design-button,
+  #mentors-technology-button,
+  #mentors-business-button {
+    font-size: 0.5rem;
   }
-  .jury {
-    display: none;
+  .mentors-content div:nth-child(2),
+  .jury-content div:nth-child(2) {
+    margin: 0px 1em;
+  }
+
+  .mentors-glass-card,
+  .jury-glass-card {
+    width: 14rem;
+  }
+
+  .mentors-card-img,
+  .jury-card-img {
+    width: 11.5rem;
+    margin: 1.5em 1em;
+    border-radius: 20px;
+  }
+
+  .mentors-glass-card h4,
+  .jury-glass-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .mentors-glass-card p,
+  .jury-glass-card p {
+    font-size: 0.8rem;
+    margin-bottom: 1.5em;
+  }
+
+  .jury-glass-card div {
+    width: 11rem;
+    height: 2.5rem;
   }
 }
 @media screen and (max-width: 762px) {
+  .mentors-glass-card,
+  .jury-glass-card {
+    width: 10rem;
+  }
+
+  .mentors-card-img,
+  .jury-card-img {
+    width: 8rem;
+    margin: 1.5em 1em;
+    border-radius: 20px;
+  }
+
+  .mentors-glass-card h4,
+  .jury-glass-card h4 {
+    font-size: 0.9rem;
+  }
+
+  .mentors-glass-card p,
+  .jury-glass-card p {
+    font-size: 0.6rem;
+    margin-bottom: 1.5em;
+  }
+
+  .jury-glass-card div {
+    width: 8rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
 }
+
 @media screen and (max-width: 576px) {
+  .normaldisplay {
+    display: none !important;
+  }
   .jury {
     display: inline-block !important;
   }
   .jury-content div:nth-child(2) {
     margin: 3rem 3em;
   }
+
   .mentors-mobile-wrapper {
-    opacity: 100%;
+    display: block !important;
   }
   #mentors-design-button,
   #mentors-technology-button,
   #mentors-business-button {
     font-size: 0.2rem;
+  }
+
+  .jury-glass-card {
+    width: 17.6rem;
+    height: fit-content;
+  }
+
+  .jury-card-img {
+    width: 15rem;
+    border-radius: 32px;
+    margin: 1.5em 1em;
+  }
+
+  .jury-glass-card p {
+  }
+
+  .jury-glass-card div {
+    width: 14rem;
+    height: 2.5rem;
+  }
+  .jury-glass-card h4 {
+    font-size: 1.5rem;
+  }
+  .jury-glass-card p {
+    font-size: 1rem;
+  }
+  .jury-glass-card div {
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 428px) {
