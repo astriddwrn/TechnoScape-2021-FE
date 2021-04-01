@@ -1,0 +1,271 @@
+@import './../base/base.css';
+
+body{
+    width: 100%;
+    padding: 80px 0;
+}
+
+a { color: inherit; } 
+
+a:hover{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+button{
+    padding: 0;
+    border: none;
+    background: none;
+    margin: 0 !important; 
+}
+
+button:focus { outline: none; }
+
+button:hover{
+    background: inherit;
+    box-shadow: inherit;
+}
+
+.logo-img{
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.main-glass{
+    margin: 0 auto;
+    width: 40vw;
+    min-width: 550px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+	background: radial-gradient(88.77% 88.77% at 25.41% 9.11%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+	background-position: center;
+	backdrop-filter: blur(40px);
+	outline: none;
+	
+	overflow: hidden;
+	border: 2px solid rgba(255, 255, 255, 0.18);
+	border-radius: 32px;
+
+}
+
+.text-header{
+    width: fit-content;
+    background: linear-gradient(180deg, #FFC19E 6.25%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-med-light{
+    color: var(--white);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+label{
+    color: var(--pale-blue-light);
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+form{
+    width: 100%;
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.input-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--white);
+}
+
+.input-wrapper input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+}
+
+.input-wrapper img{
+    margin-right: 20px;
+    height: 25px;
+    width: 25px;
+}
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 50000000000s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: var(--white) !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--white-dark);
+    opacity: 1; /* Firefox */
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--white-dark);
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--white-dark);
+}
+
+.forgot{
+    margin-top: 10px;
+    width: 100%;
+    text-align: right;
+    color: var(--pale-blue-light);
+}
+
+.button-orange{
+    margin: 50px 0px 20px 0px !important;
+
+    background-image: var(--btn-orange);
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 75px;
+    border-radius: 32px;
+	cursor: pointer;
+
+    letter-spacing: 0.1em;
+    color: white;
+    text-align: center;
+}
+
+.button-orange:hover{
+	box-shadow: 0px 0px 30px rgba(245, 245, 245, 0.25);
+	background-image: linear-gradient(180deg, #da8f63 -22.64%, #d54d45 91.54%);
+	transition: 0.3s;
+}
+
+
+.noAccount-wrapper{
+    display: flex;
+    flex-direction: row;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.noAccount-wrapper div:nth-child(1){
+    margin-right: 5px;
+}
+
+.noAccount-wrapper a{
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 2.5px;
+}
+
+.errorBorder:not([type=radio]){
+    border-bottom: 2px solid #B34444;
+}
+
+.errorMsg{
+    color: #B34444;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 !important;
+    /* margin-top: -15px; */
+}
+
+.symbol{
+    display: none;
+    margin: 0 !important;
+}
+
+.valid{
+    opacity: 1;
+}
+
+.bottom{
+    height: 80px;
+}
+
+@media screen and (max-width:1200px){
+
+}
+@media screen and (max-width:992px){
+
+
+	
+}
+@media screen and (max-width:762px){
+
+}
+@media screen and (max-width:576px){
+    .logo-img img{
+        width: 250px;
+    }
+    .progress{
+        margin-bottom: 35px;
+    }
+    form{
+        padding: 0 0px !important;
+    }
+    body{
+        padding: 50px 20px;
+    }
+    .ball{
+        width: 20px;
+        height: 20px;
+    }
+    .main-glass{
+        background: none;
+        border: none;
+        backdrop-filter: blur(0px);
+        min-width: 400px;
+        width: 100%;
+    }
+    .input-wrapper input{
+        font-size: 0.8rem;
+    }
+    
+    
+    /* .section-1{
+        height: 150vh;
+    } */
+	
+}@media screen and (max-width:428px){
+	.text-header{
+        font-size: 3rem;
+    }
+    .main-glass{
+        min-width: 350px;
+    }
+    body{
+        padding: 0 20px;
+    }
+    /* .button-orange{
+        padding: 10px 50px;
+    } */
+
+}
+
+
