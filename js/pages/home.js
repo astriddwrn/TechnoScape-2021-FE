@@ -1,20 +1,44 @@
 let prevPosition = $(window).scrollTop();
 $(window).scroll(() => {
 	let currPosition = $(window).scrollTop();
-	if (prevPosition > currPosition) {
-		$("#navbar").removeClass("scroll-down");
-		$("#navbar").addClass("scroll-up");
-	} else {
-		$("#navbar").removeClass("scroll-up");
-		$("#navbar").addClass("scroll-down");
+	const mediaQuery = window.matchMedia("(min-width: 768px)");
+	if (mediaQuery.matches) {
+		if (prevPosition > currPosition) {
+			$("#navbar").removeClass("scroll-down");
+			$("#navbar").addClass("scroll-up");
+		} else {
+			$("#navbar").removeClass("scroll-up");
+			$("#navbar").addClass("scroll-down");
+		}
+		if (currPosition > 700) {
+			$("#navbar").addClass("change-bg");
+		} else {
+			$("#navbar").removeClass("change-bg");
+		}
+		prevPosition = currPosition;
 	}
-	if (currPosition > 700) {
-		$("#navbar").addClass("change-bg");
-	} else {
-		$("#navbar").removeClass("change-bg");
-	}
-	prevPosition = currPosition;
 });
+
+const navSlide = () => {
+	const nav = document.querySelector("nav");
+	const burger = document.querySelector(".burger");
+
+	const navLinks = document.querySelector(".nav-links");
+	const li = document.querySelectorAll(".nav-links li");
+	burger.addEventListener("click", () => {
+		navLinks.classList.toggle("nav-active");
+		burger.classList.toggle("toggle");
+		li.forEach((link, index) => {
+			if (link.style.animation) link.style.animation = "";
+			else {
+				link.style.animation = `navLinksFade 0.5s ease forwards ${
+					index / 7 + 0.3
+				}s`;
+			}
+		});
+	});
+};
+navSlide();
 
 $("body").mousemove((e) => {
 	let x = (e.pageX * -1) / 150;
