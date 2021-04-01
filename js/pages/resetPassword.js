@@ -8,22 +8,34 @@ $(document).ready(function(){
       $.validator.addMethod("emailPattern", function(value, element) {
         return this.optional(element) || value == value.match(/^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i);
       });
+      $.validator.addMethod("passwordPattern", function(value, element) {
+        return this.optional(element) || value == value.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/);
+      });
+
+
+
 
     $("form").validate({
         rules: {
-            email: {
-              required: true,
-              emailPattern: true,
-            //   remote: php //ini buat unique
+            password: {
+                required: true,
+                passwordPattern: true
+            },
+            confirm: {
+                required: true,
+                equalTo : "#password"
             }
+            
 
           },
           messages: {
-            
-            email: {
-              required: "Please input this field",
-              emailPattern: "Please specify a valid email address (must contain @ and .)",
-            //   remote: "Line ID is taken"
+            password: {
+                required: "Please input this field",
+                passwordPattern: "Password must contain at least a lower case, an upper case, a number, and 8 digits"
+            },
+            confirm: {
+                required: "Please input this field",
+                equalTo : "Password are not matching"
             }
           },
           errorPlacement: function(error, element) {
@@ -47,14 +59,14 @@ $(document).ready(function(){
 
    
 
-    $('.send').click(function(){
+    $('.reset').click(function(){
         $('form').valid();
         var ariaInvalidNotFalse = $(".valid");
-        if(ariaInvalidNotFalse.length<1){
-            $('.send').prop('disabled', 'disabled');
+        if(ariaInvalidNotFalse.length<2){
+            $('.login').prop('disabled', 'disabled');
         }
         else{
-            $('.send').prop('disabled', false);
+            $('.login').prop('disabled', false);
         }
     });
 

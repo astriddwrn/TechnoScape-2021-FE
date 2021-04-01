@@ -86,7 +86,7 @@ $(document).ready(function(){
             },
             password: {
                 required: "Please input this field",
-                passwordPattern: "Password must contain at least a lower case, an upper case, a number, and 8 digits"
+                passwordPattern: "Password must contain at least a lower case, an upper case, a number, and 8 characters"
             },
             confirm: {
                 required: "Please input this field",
