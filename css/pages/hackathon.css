@@ -132,6 +132,7 @@
   color: var(--white);
   text-align: center;
   box-sizing: border-box;
+  position: relative;
 }
 
 .mentors-card-img {
@@ -143,6 +144,7 @@
 .mentors-glass-card p {
   font-family: "Inter-Light";
   font-weight: 400;
+  font-size: 1.1rem;
   margin-bottom: 1.5em;
 }
 
@@ -218,11 +220,11 @@
   font-family: "Inter-Light";
 }
 
-.mentors-glass-card:hover,
+/* .mentors-glass-card:hover,
 .jury-glass-card:hover {
   box-shadow: 0px 0px 50px 0.1px #7779c4;
   transition: 0.6s;
-}
+} */
 
 /* Mobile Carousel stuff */
 .mentors .mobile-carousel {
@@ -308,6 +310,10 @@
   display: none;
 }
 
+/* Tilt */
+.js-tilt-glare {
+  border-radius: 20px;
+}
 @media screen and (max-width: 1200px) {
   .mentors-content div:nth-child(2),
   .jury-content div:nth-child(2) {

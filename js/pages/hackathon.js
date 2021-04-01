@@ -100,9 +100,10 @@ $(document).ready(function(){
 		$('div#design3-title').text('Rose Bush');
 		$('div#design3-text').text('UX Researcher at ABC Company');
 	});
-
 });
   
+
+
 /* Mentors Carousel */
 $(document).ready(function(){
 	$('.mobile-carousel').slick({
@@ -118,6 +119,15 @@ $(document).ready(function(){
 		useTransform: true,
 		cssEase: "ease-in-out"
 	});
+	VanillaTilt.init(document.querySelectorAll(".mentors-glass-card"), {
+		glare: true,
+		reverse: true,
+		"max-glare": 0.2,
+	});
+
+	VanillaTilt.init(document.querySelectorAll(".jury-glass-card"), {
+		reverse: true
+	})
 });
 
 /* Jury */
