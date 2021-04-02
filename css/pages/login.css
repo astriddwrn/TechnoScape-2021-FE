@@ -2,14 +2,19 @@
 
 body{
     width: 100%;
-    padding: 80px 0;
 }
 
-a { color: inherit; } 
+a { 
+    color: inherit; 
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 2.5px;
+} 
 
 a:hover{
     color: inherit;
     text-decoration: inherit;
+    color: var(--pale-blue-light);
+    border-bottom: 1px solid var(--pale-blue-light);
 }
 
 button{
@@ -28,8 +33,7 @@ button:hover{
 
 .logo-img{
     width: fit-content;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 
 .main-glass{
@@ -142,6 +146,10 @@ input:-webkit-autofill
     color: var(--pale-blue-light);
 }
 
+.forgot a{
+    border: none !important;
+}
+
 .button-orange{
     margin: 50px 0px 20px 0px !important;
 
@@ -178,9 +186,8 @@ input:-webkit-autofill
     margin-right: 5px;
 }
 
-.noAccount-wrapper a{
-    border-bottom: 1px solid var(--white);
-    padding-bottom: 2.5px;
+.activeBorder:not([type=radio]){
+    border-bottom: 2px solid var(--pale-blue-light);
 }
 
 .errorBorder:not([type=radio]){
@@ -205,7 +212,7 @@ input:-webkit-autofill
 }
 
 .bottom{
-    height: 80px;
+    height: 20px;
 }
 
 @media screen and (max-width:1200px){
@@ -230,7 +237,7 @@ input:-webkit-autofill
         padding: 0 0px !important;
     }
     body{
-        padding: 50px 40px;
+        padding: 20px 40px;
     }
     .ball{
         width: 20px;
@@ -247,10 +254,7 @@ input:-webkit-autofill
         font-size: 0.8rem;
     }
     
-    
-    /* .section-1{
-        height: 150vh;
-    } */
+
 	
 }@media screen and (max-width:428px){
 	.text-header{
@@ -260,12 +264,8 @@ input:-webkit-autofill
         min-width: 350px;
     }
     body{
-        padding: 50px 20px;
+        padding: 20px 20px;
     }
-    /* .button-orange{
-        padding: 10px 50px;
-    } */
-
 }
 
 

@@ -1,8 +1,22 @@
-
-
-
-
 $(document).ready(function(){
+
+    // input active
+    $('input').focus(function(){
+        if($(this).attr("type")!="radio"){
+            $(this).parent().addClass('activeBorder');
+        }
+        
+        
+    });
+
+    $('input').focusout(function(){
+        if($(this).val()=='' && $(this).attr("type")!="radio"){
+            $(this).parent().removeClass('activeBorder');
+        }
+        if($(this).hasClass('error') && $(this).attr("type")!="radio"){
+            $(this).parent().addClass('errorBorder');
+        }
+    });
 
     // FROM VALIDATION
       $.validator.addMethod("letters", function(value, element) {

@@ -2,14 +2,20 @@
 
 body{
     width: 100%;
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
-a { color: inherit; } 
+a { 
+    color: inherit; 
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 2.5px;
+} 
 
 a:hover{
     color: inherit;
     text-decoration: inherit;
+    color: var(--pale-blue-light);
+    border-bottom: 1px solid var(--pale-blue-light);
 }
 
 button{
@@ -69,7 +75,6 @@ input[type=number] {
     padding: 30px 0;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 
     border-radius: 20px;
@@ -95,15 +100,11 @@ input[type=number] {
     display: flex;
     flex-direction: row;
     color: var(--white);
+    margin-top: 20px;
 }
 
 .haveAccount-wrapper div:nth-child(1){
     margin-right: 5px;
-}
-
-.haveAccount-wrapper a{
-    border-bottom: 1px solid var(--white);
-    padding-bottom: 2.5px;
 }
 
 .progress{
@@ -115,7 +116,6 @@ input[type=number] {
     align-items: center;
     background: transparent;
     margin: 15px 0;
-    margin-bottom: 30px;
 }
 
 .ball{
@@ -241,7 +241,7 @@ input:-webkit-autofill
     color: var(--white-dark);
   }
 
-  input:before {
+input:before {
     position: absolute;
     top: 3px; left: 3px;
     content: attr(data-date);
@@ -334,7 +334,6 @@ input[type='radio']:checked:after {
 
 .button-orange{
     margin-bottom: 20px;
-    /* margin: 50px auto 0 auto; */
     background-image: var(--btn-orange);
     width: fit-content;
     display: flex;
@@ -344,10 +343,6 @@ input[type='radio']:checked:after {
     padding: 15px 75px;
     border-radius: 32px;
 	cursor: pointer;
-    /* top: 50%; */
-    /* left: 50%;
-    bottom:-30px;
-    transform: translate(-50%, 0); */
 
     letter-spacing: 0.1em;
     color: white;
@@ -359,8 +354,6 @@ input[type='radio']:checked:after {
 	background-image: linear-gradient(180deg, #da8f63 -22.64%, #d54d45 91.54%);
 	transition: 0.3s;
 }
-
-
 
 .back-button{
     margin-bottom: 20px;
@@ -385,11 +378,15 @@ input[type='radio']:checked:after {
 }
 
 .bottom{
-    height: 80px;
+    height: 20px;
+}
+
+.activeBorder:not([type=radio]){
+    border-bottom: 2px solid var(--pale-blue-light);
 }
 
 .errorBorder:not([type=radio]){
-    border-bottom: 2px solid #B34444;
+    border-bottom: 2px solid #B34444 !important;
 }
 
 .errorMsg{
@@ -441,15 +438,12 @@ input[type='radio']:checked:after {
         backdrop-filter: blur(0px);
         min-width: 400px;
         width: 100%;
+        padding: 0;
     }
     .input-wrapper input{
         font-size: 0.8rem;
     }
-    
-    
-    /* .section-1{
-        height: 150vh;
-    } */
+
 	
 }@media screen and (max-width:428px){
 	.text-header{

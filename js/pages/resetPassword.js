@@ -4,6 +4,25 @@
 
 $(document).ready(function(){
 
+  
+    // input active
+    $('input').focus(function(){
+        if($(this).attr("type")!="radio"){
+            $(this).parent().addClass('activeBorder');
+        }
+        
+        
+    });
+
+    $('input').focusout(function(){
+        if($(this).val()=='' && $(this).attr("type")!="radio"){
+            $(this).parent().removeClass('activeBorder');
+        }
+        if($(this).hasClass('error') && $(this).attr("type")!="radio"){
+            $(this).parent().addClass('errorBorder');
+        }
+    });
+
     // FROM VALIDATION
       $.validator.addMethod("emailPattern", function(value, element) {
         return this.optional(element) || value == value.match(/^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i);
@@ -11,9 +30,6 @@ $(document).ready(function(){
       $.validator.addMethod("passwordPattern", function(value, element) {
         return this.optional(element) || value == value.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/);
       });
-
-
-
 
     $("form").validate({
         rules: {

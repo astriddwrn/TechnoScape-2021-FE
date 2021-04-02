@@ -1,8 +1,22 @@
 
-
-
-
 $(document).ready(function(){
+
+
+    // input active
+    $('input').focus(function(){
+        if($(this).attr("type")!="radio"){
+            $(this).parent().addClass('activeBorder');
+        }
+    });
+
+    $('input').focusout(function(){
+        if($(this).val()=='' && $(this).attr("type")!="radio"){
+            $(this).parent().removeClass('activeBorder');
+        }
+        if($(this).hasClass('error') && $(this).attr("type")!="radio"){
+            $(this).parent().addClass('errorBorder');
+        }
+    });
 
     // FROM VALIDATION
       $.validator.addMethod("emailPattern", function(value, element) {
@@ -40,12 +54,7 @@ $(document).ready(function(){
             $(element).parent().children(".symbol").css("display", "none");
             $(element).parent().parent().children(".symbol").css("display", "none");
           }
-
-
     });
-
-
-   
 
     $('.send').click(function(){
         $('form').valid();
@@ -55,9 +64,14 @@ $(document).ready(function(){
         }
         else{
             $('.send').prop('disabled', false);
+            // $('.form-container').addClass('invisible');
+            // $('.sent-container').css("display", "flex")
         }
     });
 
+  //   $("form").submit(function(e) {
+  //     e.preventDefault();
+  // });;
 
 
 });
