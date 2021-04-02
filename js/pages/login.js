@@ -4,7 +4,12 @@
 
 $(document).ready(function(){
 
-  
+     // alert
+     $('.close').click(function(){
+        $('.alert').css("display", "none");
+     });
+
+
     // input active
     $('input').focus(function(){
         if($(this).attr("type")!="radio"){

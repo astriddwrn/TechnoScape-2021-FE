@@ -4,6 +4,30 @@ body{
     width: 100%;
 }
 
+.alert{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    background: linear-gradient(345.05deg, #EBAF8D -94.34%, #D1534B 75.62%);
+    border-radius: 0 !important;
+    color: var(--white);
+}
+
+.close{
+    cursor: pointer;
+    color: var(--white);
+    margin-left: 30px;
+}
+
 a { 
     color: inherit; 
     border-bottom: 1px solid var(--white);
