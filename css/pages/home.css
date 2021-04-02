@@ -860,15 +860,53 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .talk-btn {
+  /* .talk-btn {
     padding: 14px 30px;
     width: 60%;
+  } */
+
+  .why .card {
+    width: 18rem;
+  }
+
+  .why .card img {
+    margin-bottom: 1rem;
+  }
+
+  .why .card .networking {
+    margin-bottom: 3rem;
+  }
+
+  .ticket-illus img {
+    width: 15rem;
+  }
+
+  .share .btn {
+    width: 60%;
+  }
+
+  .share img {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 992px) {
   .about img {
     height: 18rem;
+  }
+
+  .why .card {
+    width: 14rem;
+    height: 45rem;
+  }
+
+  .why .card img {
+    margin-bottom: 0.5rem;
+  }
+
+  .why .card .networking {
+    margin-bottom: 2.5rem;
+    margin-top: 0;
   }
 
   .contact-left h1 {
@@ -879,13 +917,21 @@
     font-size: 12px;
   }
 
-  .talk-btn {
+  /* .talk-btn {
     padding: 14px 30px;
     width: 70%;
-  }
+  } */
 
   .contact-icon a > img {
     margin-right: 0.5rem;
+  }
+
+  .ticket-illus img {
+    width: 12rem;
+  }
+
+  .share .btn {
+    width: 80%;
   }
 }
 
@@ -984,12 +1030,24 @@
   .modal-right {
     border-radius: 32px 32px 0 0;
   }
+
+  .ticket-illus img {
+    width: 10rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .modal-dialog {
     width: 400px;
     margin: 30px auto;
+  }
+
+  .ticket-illus img:nth-child(odd) {
+    display: none;
+  }
+
+  .ticket-illus img:nth-child(even) {
+    width: 25rem;
   }
 }
 
