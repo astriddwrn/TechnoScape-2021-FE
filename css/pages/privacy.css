@@ -5,7 +5,7 @@
   padding: 1.5vw 6vw;
   position: fixed;
   width: 100%;
-  top:0;
+  top: 0;
 }
 
 .nav-img {
@@ -58,7 +58,19 @@ body {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
+}
+
+.tab-miniheading {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+.bold {
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .nav-pills {
@@ -95,7 +107,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .navbar{
+  .navbar {
     height: 3.5rem;
   }
 
@@ -112,15 +124,15 @@ body {
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top:0;
+    top: 0;
     right: 0;
     background-color: var(--blue); /* Black*/
-    overflow-x: auto ; /* Disable horizontal scroll */ /* Place content 60px from the top */
+    overflow-x: auto; /* Disable horizontal scroll */ /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     margin-top: 3.5rem;
   }
 
-  .nav-link{
+  .nav-link {
     padding-top: 2rem;
     padding-left: 2rem;
   }
@@ -131,10 +143,10 @@ body {
 
   .tab-content {
     margin-left: 0;
-    margin-top: 2rem
+    margin-top: 2rem;
   }
 
-  .tab-heading{
+  .tab-heading {
     font-size: 32px;
   }
 }
