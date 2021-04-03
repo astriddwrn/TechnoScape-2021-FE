@@ -317,6 +317,65 @@
   -webkit-text-fill-color: transparent;
 }
 
+.shareToFriend-overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(49, 49, 49, 0.65);
+  padding: 0 50px;
+}
+
+.shareToFriend-overlay .box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+
+  background: radial-gradient(
+    88.77% 88.77% at 25.41% 9.11%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(50px);
+  border-radius: 32px;
+
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+}
+
+.shareToFriend-overlay .close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.shareToFriend-overlay .text-big-regular {
+  margin: 20px 0;
+}
+
+.shareToFriend-overlay .socmed-container {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .sponsors {
   background-color: var(--background);
   min-height: 100vh;
@@ -932,6 +991,11 @@
     margin-top: 0;
   }
 
+  .shareToFriend-overlay .box {
+    width: 600px;
+    padding: 100px 0;
+  }
+
   .contact-left h1 {
     font-size: 3rem;
   }
@@ -1008,6 +1072,11 @@
   .share .text-header,
   .share p {
     text-align: center;
+  }
+
+  .shareToFriend-overlay .box {
+    width: 500px;
+    padding: 100px 0;
   }
 
   .footer {
@@ -1115,6 +1184,11 @@
   .ticket-illus img:nth-child(even) {
     width: 100%;
   }
+
+  .shareToFriend-overlay .box {
+    width: 400px;
+    padding: 100px 0;
+  }
 }
 
 @media screen and (max-width: 478px) {
@@ -1143,6 +1217,15 @@
 
   .landing .talk-btn {
     width: 15rem;
+  }
+
+  .shareToFriend-overlay .box {
+    width: 300px;
+    padding: 100px 0;
+  }
+
+  .shareToFriend-overlay .socmed-container {
+    width: 250px;
   }
 
   .modal-dialog {

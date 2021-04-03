@@ -67,3 +67,10 @@ const validateEmail = (input) => {
     input.classList.add("is-invalid");
   }
 };
+
+$(".share .talk-btn").click(function () {
+  $(".shareToFriend-overlay").css("display", "block");
+});
+$(".shareToFriend-overlay .close").click(function () {
+  $(".shareToFriend-overlay").css("display", "none");
+});
