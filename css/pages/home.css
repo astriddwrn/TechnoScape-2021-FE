@@ -110,6 +110,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Inter-Bold";
 }
 
 .about-img {
@@ -119,6 +120,7 @@
 
 .about img {
   height: 24rem;
+  animation: 4s ease-in-out 0s infinite normal none running float-about;
 }
 
 .highlight {
@@ -817,6 +819,19 @@
   color: var(--white);
 }
 
+@keyframes float-about {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 @media screen and (max-width: 1200px) {
   /* .talk-btn {
     padding: 14px 30px;
@@ -916,8 +931,17 @@
     bottom: -55px;
   }
 
+  .about p {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
   .about .row {
     flex-direction: column-reverse;
+  }
+
+  .about .talk-btn {
+    width: 90%;
   }
 
   .about .talk-btn,
