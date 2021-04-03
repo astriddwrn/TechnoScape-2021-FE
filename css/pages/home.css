@@ -277,6 +277,10 @@
   text-align: center;
 }
 
+.share img {
+  animation: 4s ease-in-out 0s infinite normal none running float-about;
+}
+
 .share .btn {
   background: var(--btn-orange);
   border: none;
@@ -931,36 +935,45 @@
     bottom: -55px;
   }
 
-  .about p {
+  .about p,
+  .share p {
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
 
-  .about .row {
+  .about .row,
+  .share .row {
     flex-direction: column-reverse;
   }
 
-  .about .talk-btn {
+  .about .talk-btn,
+  .share .talk-btn {
     width: 90%;
   }
 
   .about .talk-btn,
-  .about .about-img {
+  .about .about-img,
+  .share .talk-btn,
+  .share .about-img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
   }
 
   .about-img {
     margin-bottom: 4rem;
   }
 
-  .about .text-header {
+  .about .text-header,
+  .share .text-header {
     font-size: 2rem;
   }
 
   .about .text-header,
-  .about p {
+  .about p,
+  .share .text-header,
+  .share p {
     text-align: center;
   }
 
