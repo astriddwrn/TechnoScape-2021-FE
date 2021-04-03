@@ -126,7 +126,8 @@ $(document).ready(function(){
 	});
 
 	VanillaTilt.init(document.querySelectorAll(".jury-glass-card"), {
-		reverse: true
+		reverse: true,
+		
 	})
 });
 
