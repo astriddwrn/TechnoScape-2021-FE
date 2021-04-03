@@ -239,6 +239,77 @@
 
 .schedule {
   height: 100vh;
+  margin-bottom: 2rem;
+}
+
+.schedule .text-header {
+  background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.schedule-tabs {
+  border: none !important;
+}
+
+.schedule-pane {
+  display: flex;
+  place-items: center;
+}
+
+.schedule-date {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.schedule-heading {
+  color: var(--white);
+  font-family: "Inter-Medium";
+  font-size: 1rem;
+}
+
+.schedule-content {
+  color: var(--white);
+  font-family: "Inter-Light";
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.schedule-img {
+  margin-top: 1.25rem;
+  margin-right: 2.5rem;
+}
+
+.schedule-img img {
+  height: 20rem;
+}
+
+.schedule-card {
+  margin-bottom: 2rem;
+}
+
+.schedule-hour {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: fit-content;
+  padding: 6px;
+  margin-bottom: 4px;
+}
+
+.schedule-picker {
+  color: var(--white) !important;
+  background-color: transparent !important;
+  border: none !important;
+  font-family: "Inter-Regular";
+  font-size: 1.25rem;
+  margin: 0 3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.schedule-picker.active {
+  border-bottom: 3px solid #8177f7 !important;
 }
 
 .ticket {
@@ -1074,6 +1145,10 @@
     text-align: center;
   }
 
+  .schedule-picker {
+    margin: 0 1rem;
+  }
+
   .shareToFriend-overlay .box {
     width: 500px;
     padding: 100px 0;
@@ -1217,6 +1292,11 @@
 
   .landing .talk-btn {
     width: 15rem;
+  }
+
+  .schedule-picker {
+    margin: 0 0.5rem;
+    font-size: 1rem;
   }
 
   .shareToFriend-overlay .box {
