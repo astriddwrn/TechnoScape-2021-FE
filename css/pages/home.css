@@ -269,6 +269,14 @@
   width: 20rem;
 }
 
+.ticket-illus img:nth-child(odd) {
+  animation: float-from-top 4s ease-in-out infinite;
+}
+
+.ticket-illus img:nth-child(even) {
+  animation: float-from-bottom 4s ease-in-out infinite;
+}
+
 .faq .text-header {
   background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
   -webkit-background-clip: text;
@@ -836,6 +844,30 @@
   }
 }
 
+@keyframes float-from-top {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes float-from-bottom {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
 @media screen and (max-width: 1200px) {
   /* .talk-btn {
     padding: 14px 30px;
@@ -947,7 +979,8 @@
   }
 
   .about .talk-btn,
-  .share .talk-btn {
+  .share .talk-btn,
+  .ticket .btn {
     width: 90%;
   }
 
@@ -1080,7 +1113,7 @@
   }
 
   .ticket-illus img:nth-child(even) {
-    width: 25rem;
+    width: 100%;
   }
 }
 
