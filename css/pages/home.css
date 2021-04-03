@@ -44,6 +44,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
+  line-height: 6rem;
 }
 
 .technoscape-content {
@@ -1016,6 +1017,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  .technoscape-title {
+    line-height: normal;
+  }
+
   .technoscape-content {
     margin: 1rem 0;
   }
