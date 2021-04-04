@@ -1,7 +1,9 @@
 :root {
 	--black: #000;
-	--background: rgba(38, 40, 89, 1);
 	--white: #f4f4f4;
+	--white-dark: #9d9d9d;
+
+	/* TECHNOSCAPE SECTION */
 	--landing-bg: linear-gradient(
 		151.12deg,
 		#73bcf9 19.15%,
@@ -19,7 +21,6 @@
 		rgba(29, 31, 68, 0.651042) 57.81%,
 		rgba(38, 40, 89, 0) 100%
 	);
-	--white-dark: #9d9d9d;
 	--blue: #262859;
 	--text-blue: #4d6ba0;
 	--btn-orange: linear-gradient(180deg, #ebaf8d -22.64%, #d1534b 91.54%);
