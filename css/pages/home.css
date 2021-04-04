@@ -3,8 +3,9 @@
 
 .landing {
 	min-width: 100%;
-	min-height: 100%;
-	overflow-x: hidden;
+	min-height: 100vh;
+	position: relative;
+	/* overflow-x: hidden; */
 	background: var(--landing-bg);
 }
 
@@ -15,18 +16,21 @@
 .video {
 	position: relative;
 	z-index: 2;
+	min-height: 100vh;
 }
 
 /* WAVE */
 .wave {
-	height: 100px;
+	width: 100vw;
+	position: absolute;
+	bottom: -100px;
+	left: 0;
 }
 .wave-img {
 	transform: matrix(-1, 0, 0, 1, 0, 0);
-	position: absolute;
-	bottom: -100px;
-	z-index: 0;
 	border: none;
+	height: 100%;
+	width: 100%;
 }
 
 /* HERO */
@@ -259,7 +263,7 @@
 .video {
 	color: var(--white);
 	text-align: center;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 .video .video-carousel {
 	position: relative;
@@ -377,6 +381,10 @@
 	display: none;
 	width: 60%;
 	height: 80%;
+}
+.video-description {
+	position: relative;
+	z-index: 2;
 }
 
 /* SPONSOR MEDPART */
@@ -822,7 +830,7 @@
 		padding: 14px 30px;
 		width: 60%;
 	}
-	.wave-img {
+	.wave {
 		bottom: -90px;
 	}
 	.video .video-carousel .carousel-card#card-1,
@@ -857,7 +865,7 @@
 	.collab-logo {
 		max-width: 25%;
 	}
-	.wave-img {
+	.wave {
 		bottom: -70px;
 	}
 	.glass-card {
@@ -984,7 +992,7 @@
 	.technoscape-title {
 		letter-spacing: 10px;
 	}
-	.wave-img {
+	.wave {
 		bottom: -55px;
 	}
 	.cards {
@@ -1127,7 +1135,7 @@
 	.technoscape-content {
 		margin: 1rem 0;
 	}
-	.wave-img {
+	.wave {
 		bottom: -45px;
 	}
 	.technoscape-content {
@@ -1167,6 +1175,9 @@
 }
 
 @media screen and (max-width: 428px) {
+	.wave {
+		bottom: 0;
+	}
 	.landing-wrapper {
 		padding-top: 0;
 	}
