@@ -33,6 +33,28 @@
 	font-size: 3rem;
 }
 
+.text-small-super {
+	font-family: "Inter-Bold";
+	font-size: 1rem;
+}
+
+.text-header-bold {
+	font-family: "Inter-Semibold";
+	font-size: 3rem;
+}
+
+.text-header {
+	font-family: "Inter-Semibold";
+	font-size: 3rem;
+}
+.text-sub-bold {
+	font-family: "Inter-Medium";
+	font-size: 1.25rem;
+}
+.text-med-bold {
+	font-family: "Inter-Medium";
+	font-size: 2.5rem;
+}
 .text-subheader {
 	font-family: "Inter-Medium";
 	font-size: 1.5rem;
@@ -41,6 +63,10 @@
 .text-main {
 	font-family: "Inter-Medium";
 	font-size: 1.15rem;
+}
+.text-big-medium {
+	font-family: "Inter-Medium";
+	font-size: 5.5rem;
 }
 
 .text-big-regular {
@@ -58,12 +84,57 @@
 	font-size: 1.25rem;
 }
 
+.text-light {
+	font-family: "Inter-Light";
+	font-size: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+	.text-super,
+	.text-big-medium {
+		font-size: 4.5rem;
+	}
+}
+@media screen and (max-width: 992px) {
+	.text-header-bold {
+		font-size: 2.6rem;
+	}
+	.text-big-medium {
+		font-size: 4rem;
+	}
+	.text-sub-bold {
+		font-size: 1.2rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.text-super {
+		font-size: 4rem;
+	}
+	.text-big-regular {
+		font-family: "Inter-Regular";
+		font-size: 1.25rem;
+	}
+}
+@media screen and (max-width: 576px) {
+	.text-super {
+		font-size: 3rem;
+	}
+	.text-big-regular {
+		font-family: "Inter-Regular";
+		font-size: 1.15rem;
+	}
+	.text-med-light {
+		font-family: "Inter-Light";
+		font-size: 1.25rem;
+	}
+}
 @media screen and (max-width: 428px) {
 	.text-super {
 		font-size: 2.5rem;
 	}
 
-	.text-header {
+	.text-header,
+	.text-header-bold {
 		font-size: 2rem;
 	}
 
@@ -84,6 +155,6 @@
 	}
 
 	.text-med-light {
-		font-size: 1.25rem;
+		font-size: 1rem;
 	}
 }
