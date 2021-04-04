@@ -2,6 +2,11 @@
 @import "./colors.css";
 @import "./fonts.css";
 
+:root {
+	--top-position: 0%;
+	--bottom-position: 0%;
+}
+
 html,
 body {
 	width: 100%;

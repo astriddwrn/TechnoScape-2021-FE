@@ -35,4 +35,7 @@
 		rgba(255, 255, 255, 0.4) 0%,
 		rgba(255, 255, 255, 0) 100%
 	);
+
+	/* Video section */
+	--play-btn: linear-gradient(180deg, #ebaf8d -22.64%, #d1534b 91.54%);
 }
