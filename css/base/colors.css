@@ -28,4 +28,11 @@
 	--pale-blue: #b5cffc;
 	--pale-blue-light: #b5cffc;
 	--fading-white: rgba(255, 255, 255, 0.4);
+
+	--technoscape: linear-gradient(151.12deg, #73bcf9 19.15%, #7a96f8 91.38%);
+	--glass-404: radial-gradient(
+		88.77% 88.77% at 25.41% 9.11%,
+		rgba(255, 255, 255, 0.4) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
 }
