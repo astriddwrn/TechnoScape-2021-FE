@@ -1,5 +1,6 @@
 let scrollPrevPosition = $(window).scrollTop();
 $(window).scroll(() => {
+	console.log("tes");
 	let currPosition = $(window).scrollTop();
 	const mediaQuery = window.matchMedia("(min-width: 768px)");
 	if (mediaQuery.matches) {
