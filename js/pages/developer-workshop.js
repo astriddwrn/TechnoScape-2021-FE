@@ -23,3 +23,9 @@ const expandQuestionsAnswer = (e) => {
     addActiveElm();
   }
 };
+
+$('.faq-caro').slick({
+  prevArrow: $('#faq-nav-left'),
+  nextArrow: $('#faq-nav-right'),
+  dots: true,
+});

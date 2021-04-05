@@ -4,6 +4,7 @@
   min-width: 100%;
   min-height: 100%;
   overflow-x: hidden;
+  position: relative;
   background: linear-gradient(
     151.12deg,
     #ef8197 19.15%,
@@ -316,6 +317,9 @@
   width: 100%;
   height: 100%;
   color: white;
+}
+
+.faq .content {
   background: radial-gradient(
     88.77% 88.77% at 25.41% 9.11%,
     rgba(255, 255, 255, 0.4) 0%,
@@ -367,6 +371,35 @@
 
 .faq .faq-content-item.active .faq-btn .btn-y {
   transform: rotate(90deg);
+}
+
+.faq .faq-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.faq .faq-nav img {
+  width: 1rem;
+  margin: 0 5rem;
+  display: block;
+  z-index: 5;
+}
+
+.faq .faq-nav img:hover {
+  cursor: pointer;
+}
+
+.faq .slick-dots {
+  bottom: -3rem;
+}
+
+.faq .slick-dots li button::before {
+  content: '';
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: white;
 }
 
 .share .btn {
