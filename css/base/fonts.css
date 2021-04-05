@@ -38,7 +38,8 @@
 	font-size: 1rem;
 }
 
-.text-header-bold {
+.text-header-bold,
+.text-footer {
 	font-family: "Inter-Semibold";
 	font-size: 3rem;
 }

@@ -19,6 +19,19 @@
 	min-height: 100vh;
 }
 
+.technoscape-title,
+.about-title,
+.sponsors-title,
+.medpar-title,
+.article-title,
+.contact-title {
+	background: var(--heading-orange);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 1rem;
+}
+
 /* WAVE */
 .wave {
 	width: 100vw;
@@ -44,17 +57,9 @@
 	color: var(--white);
 	display: flex;
 }
-.landing-content {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
+
 .technoscape-title {
 	letter-spacing: 1rem;
-	background: var(--heading-orange);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 	margin: 0;
 }
 .technoscape-content {
@@ -65,7 +70,8 @@
 .technoscape-description {
 	letter-spacing: 0.1rem;
 }
-.talk-btn {
+.talk-btn,
+.contact-talk-btn {
 	background: var(--btn-orange);
 	border: none;
 	border-radius: 32px;
@@ -74,6 +80,10 @@
 	letter-spacing: 0.1rem;
 	font-weight: 600;
 	margin: 1rem 0;
+	cursor: pointer;
+}
+.contact-talk-btn {
+	width: 50%;
 }
 .technoscape-collab {
 	font-size: 1.5rem;
@@ -98,12 +108,6 @@
 }
 
 /* ABOUT */
-.about-content-text h1 {
-	background: var(--heading-orange);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	margin-bottom: 1rem;
-}
 .about-content-text p {
 	color: var(--white);
 	/* 30px =  1.9rem */
@@ -387,17 +391,139 @@
 	z-index: 2;
 }
 
+/* ARTICLE */
+.article {
+	min-width: 100%;
+	min-height: 100%;
+	background: var(--blue);
+	font-family: "Inter-Regular";
+	font-size: 1rem;
+	letter-spacing: 0.05rem;
+	color: var(--white);
+}
+
+.article-wrapper {
+	padding-top: 4rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.article-wrapper .row {
+	justify-content: space-between;
+}
+
+.article-text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 0.75fr 0.75fr 1.25fr;
+	grid-template-rows: 1fr 0.75fr 0.75fr;
+	gap: 0px 0px;
+	background: transparent;
+	border-radius: 32px;
+	justify-items: stretch;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	height: 600px;
+	grid-template-areas:
+		"card-1 card-1 card-2 card-2"
+		"card-3 card-4 card-4 card-6"
+		"card-5 card-5 card-5 card-6";
+}
+
+.grid-container a {
+	display: flex;
+	align-items: flex-end;
+	height: 100%;
+	color: #f4f4f4;
+	text-decoration: none;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-gradient {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(
+		88.77% 88.77% at 25.41% 9.11%,
+		rgba(255, 255, 255, 0.7) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
+}
+
+.card-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	filter: blur(16px);
+	opacity: 65%;
+}
+
+.card-bg:hover {
+	opacity: 100%;
+}
+
+.card-content {
+	margin: 0;
+	padding: 1rem;
+	position: absolute;
+	z-index: 1;
+	color: var(--white);
+}
+
+.article-card-1 {
+	background: var(--technoscape) !important;
+	grid-area: card-1;
+	display: flex;
+	justify-content: center;
+	align-items: center !important;
+	border-radius: 32px 0 0 0;
+}
+
+.article-card-1 img {
+	width: 80%;
+	mix-blend-mode: screen;
+}
+
+.article-card-2 {
+	grid-area: card-2;
+	border-radius: 0 32px 0 0;
+}
+
+.article-card-3 {
+	grid-area: card-3;
+}
+
+.article-card-4 {
+	grid-area: card-4;
+}
+
+.article-card-5 {
+	grid-area: card-5;
+	border-radius: 0 0 0 32px;
+}
+
+.article-card-6 {
+	grid-area: card-6;
+	border-radius: 0 0 32px 0;
+}
+
 /* SPONSOR MEDPART */
 .sponsors {
 	min-height: 100vh;
 	color: white;
 	text-align: center;
-}
-.sponsors .text-header {
-	background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
 .sponsors .sponsors-content {
 	display: flex;
@@ -502,30 +628,15 @@
 	display: flex;
 	flex-direction: column;
 }
-.contact-left h1 {
-	font-family: "Inter-Bold";
+.contact-title {
 	background: var(--heading-orange);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-weight: 700;
-	font-size: 50px;
 	letter-spacing: 0.05em;
 	line-height: 61px;
 	margin-top: 2rem;
 	margin-bottom: 3rem;
-}
-.contact-talk-btn {
-	background: var(--btn-orange);
-	border: none;
-	border-radius: 32px;
-	padding: 15px 75px;
-	color: var(--white);
-	letter-spacing: 0.1rem;
-	font-weight: 600;
-	margin: 1rem 0;
-	width: 50%;
-	cursor: pointer;
 }
 .contact-divider {
 	position: absolute;
@@ -887,9 +998,6 @@
 	.event-participants {
 		font-size: 0.9rem;
 	}
-	.contact-left h1 {
-		font-size: 3rem;
-	}
 
 	.contact-box {
 		font-size: 12px;
@@ -987,6 +1095,50 @@
 	:root {
 		--top-position: -100px;
 		--bottom-position: -120px;
+	}
+	.article-text {
+		text-align: center;
+	}
+
+	.article-title {
+		margin-bottom: 2rem;
+	}
+
+	.grid-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			"card-1"
+			"card-2"
+			"card-3"
+			"card-4"
+			"card-5"
+			"card-6";
+		padding: 2rem 1rem;
+	}
+
+	.card-content {
+		right: 0;
+		max-width: 80%;
+		text-align: right;
+	}
+
+	.article-card-1 {
+		border-radius: 32px 32px 0 0;
+	}
+
+	.article-card-1 img {
+		height: 25%;
+		mix-blend-mode: screen;
+	}
+
+	.article-card-2,
+	.article-card-5 {
+		border-radius: 0;
+	}
+
+	.article-card-6 {
+		border-radius: 0 0 32px 32px;
 	}
 
 	.technoscape-title {
