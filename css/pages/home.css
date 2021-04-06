@@ -1,5 +1,9 @@
 @import './../base/base.css';
 
+#mobile-illus {
+  display: none;
+}
+
 .landing {
   min-width: 100%;
   min-height: 100%;
@@ -177,7 +181,7 @@
   justify-content: center;
   align-items: center;
   height: 31rem;
-  width: 22rem;
+  width: 100%;
   padding: 2.5rem;
   border-radius: 32px;
   background: linear-gradient(
@@ -214,8 +218,7 @@
   align-items: center;
   flex-direction: row;
   position: relative;
-  height: 25rem;
-  width: 35rem;
+  width: 100%;
   padding: 2rem 1rem;
   text-align: center;
   border-radius: 32px;
@@ -224,6 +227,7 @@
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.4)
   );
+  margin: 1rem 0;
 }
 
 .speaker .card-img img {
@@ -395,7 +399,7 @@
   bottom: -3rem;
 }
 
-.faq .slick-dots li button::before {
+.slick-dots li button::before {
   content: '';
   width: 1.5rem;
   height: 0.2rem;
@@ -983,6 +987,42 @@
 }
 
 @media screen and (max-width: 992px) {
+  :root {
+    font-size: 14px;
+  }
+
+  #desktop-illus {
+    display: none;
+  }
+
+  #mobile-illus {
+    display: block;
+    width: 80%;
+  }
+
+  .about .content,
+  .share .content {
+    text-align: center;
+  }
+
+  .why .card {
+    width: 80vw;
+  }
+
+  .ticket-illus {
+    display: flex;
+    justify-content: center;
+  }
+
+  .speaker {
+    justify-content: center;
+  }
+
+  .speaker .card-img img {
+    mix-blend-mode: luminosity;
+    width: 30%;
+  }
+
   .contact-left h1 {
     font-size: 3rem;
   }

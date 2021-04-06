@@ -86,10 +86,10 @@
         alt="wave"
       />
     </div>
-    <section class="about">
+    <section class="about min-vh-100">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-lg-6 col-md-12 content">
             <h1 class="text-header">
               <span>About</span><br />
               Developer Workshop
@@ -104,61 +104,73 @@
             </p>
             <button class="btn talk-btn">Download Guide Book</button>
           </div>
-          <div class="col-6 d-flex justify-content-center align-items-center">
+          <div
+            class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center"
+          >
             <img src="assets/img/developer-workshop/about/about.svg" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <section class="why">
+    <section class="why min-vh-100">
       <div
         class="container d-flex justify-content-center flex-column min-vh-100"
       >
         <h1 class="text-header text-center mb-5">Why You Should Join?</h1>
         <div class="why-content d-flex justify-content-between text-center">
-          <div class="card">
-            <img src="assets/img/developer-workshop/why/Experts.svg" alt="" />
-            <h3 class="text-subheader">From Experts, to You!</h3>
-            <p class="text-main">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
-              aut.
-            </p>
+          <div class="col-4">
+            <div class="card w-100">
+              <img src="assets/img/developer-workshop/why/Experts.svg" alt="" />
+              <h3 class="text-subheader">From Experts, to You!</h3>
+              <p class="text-main">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Tenetur, aut.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <img src="assets/img/developer-workshop/why/Knowledge.svg" alt="" />
-            <h3 class="text-subheader">Broaden Knowledge and Passion</h3>
-            <p class="text-main">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
-              aut.
-            </p>
+          <div class="col-4">
+            <div class="card w-100">
+              <img
+                src="assets/img/developer-workshop/why/Knowledge.svg"
+                alt=""
+              />
+              <h3 class="text-subheader">Broaden Knowledge and Passion</h3>
+              <p class="text-main">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Tenetur, aut.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <img src="assets/img/developer-workshop/why/Project.svg" alt="" />
-            <h3 class="text-subheader">Succeeding Your Future Project</h3>
-            <p class="text-main">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
-              aut.
-            </p>
+          <div class="col-4">
+            <div class="card w-100">
+              <img src="assets/img/developer-workshop/why/Project.svg" alt="" />
+              <h3 class="text-subheader">Succeeding Your Future Project</h3>
+              <p class="text-main">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Tenetur, aut.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="speaker">
+    <section class="speaker min-vh-100">
       <div
         class="container min-vh-100 d-flex flex-column align-items-center justify-content-center"
       >
         <h1 class="text-header text-center mb-5">Speaker & Topic</h1>
-        <div class="row">
-          <div class="col-6">
+        <div class="speakers row w-100">
+          <div class="col-lg-6 col-md-12">
             <div class="card">
               <div class="row">
-                <div class="col-6 card-img">
+                <div class="col-lg-6 col-sm-12 card-img">
                   <img
+                    class="mx-auto"
                     src="assets/img/developer-workshop/spekaer/John Doe.png"
                     alt=""
                   />
                 </div>
-                <div class="col-6 card-content">
+                <div class="col-lg-6 col-sm-12 card-content">
                   <p class="card-heading text-main">Lorem, ipsum dolor.</p>
                   <div>
                     <p class="card-name text-main">Name Name</p>
@@ -174,16 +186,17 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
-            <div class="card">
+          <div class="col-lg-6 col-md-12">
+            <div class="card w-100">
               <div class="row">
-                <div class="col-6 card-img">
+                <div class="col-lg-6 col-sm-12 card-img">
                   <img
+                    class="mx-auto"
                     src="assets/img/developer-workshop/spekaer/Jane Doe.png"
                     alt=""
                   />
                 </div>
-                <div class="col-6 card-content">
+                <div class="col-lg-6 col-sm-12 card-content">
                   <p class="card-heading text-main">Lorem, ipsum dolor.</p>
                   <div>
                     <p class="card-name text-main">Name Name</p>
@@ -204,12 +217,26 @@
         </div>
       </div>
     </section>
-    <section class="ticket">
+    <section class="ticket min-vh-100">
       <div class="container min-vh-100 justify-content-center">
-        <div class="ticket-illus">
-          <img src="assets/img/developer-workshop/ticket/Left.svg" alt="" />
-          <img src="assets/img/developer-workshop/ticket/Middle.svg" alt="" />
-          <img src="assets/img/developer-workshop/ticket/Right.svg" alt="" />
+        <div class="ticket-illus row">
+          <img
+            class="col-lg-4"
+            id="desktop-illus"
+            src="assets/img/developer-workshop/ticket/Left.svg"
+            alt=""
+          />
+          <img
+            class="col-lg-4 col-md-8"
+            src="assets/img/developer-workshop/ticket/Middle.svg"
+            alt=""
+          />
+          <img
+            class="col-lg-4"
+            id="desktop-illus"
+            src="assets/img/developer-workshop/ticket/Right.svg"
+            alt=""
+          />
         </div>
         <h1 class="text-super">Get Ticket Now</h1>
         <p class="text-main">
@@ -219,13 +246,20 @@
         <p class="text-main">Registration Closed : 5/05/2021</p>
       </div>
     </section>
-    <section class="faq">
+    <section class="faq min-vh-100">
       <div
         class="container min-vh-100 d-flex align-items-center flex-column py-5"
       >
+        <img
+          id="mobile-illus"
+          src="assets/img/developer-workshop/faq/Assets1.svg"
+          alt=""
+        />
         <h1 class="text-header my-5">Frequently Asked Question</h1>
         <div class="row w-100">
-          <div class="col-7 d-flex align-items-center flex-column content">
+          <div
+            class="col-lg-7 col-md-12 d-flex align-items-center flex-column content"
+          >
             <div class="faq-caro w-100 m-0">
               <div class="faq-content">
                 <div class="faq-content-item">
@@ -499,19 +533,27 @@
               />
             </div>
           </div>
-          <div class="col-5">
-            <img src="assets/img/developer-workshop/faq/Assets.svg" alt="" />
+          <div class="col-lg-5 col-0">
+            <img
+              id="desktop-illus"
+              src="assets/img/developer-workshop/faq/Assets.svg"
+              alt=""
+            />
           </div>
         </div>
       </div>
     </section>
-    <section class="share">
+    <section class="share min-vh-100">
       <div class="container">
         <div class="row min-vh-100 d-flex align-items-center">
-          <div class="col-6">
-            <img src="assets/img/developer-workshop/share/Assets.svg" alt="" />
+          <div class="col-lg-6 col-md-6">
+            <img
+              class="w-100"
+              src="assets/img/developer-workshop/share/Assets.svg"
+              alt=""
+            />
           </div>
-          <div class="col-6">
+          <div class="col-lg-6 col-md-12 content">
             <h1 class="text-header">
               <span>Linking what you see?</span><br />Share to Friend!
             </h1>

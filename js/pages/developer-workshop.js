@@ -29,3 +29,21 @@ $('.faq-caro').slick({
   nextArrow: $('#faq-nav-right'),
   dots: true,
 });
+
+$(document).ready(function () {
+  let viewportWidth = $(window).width();
+
+  if (viewportWidth < 993) {
+    $('.why-content').slick({
+      arrows: false,
+      dots: true,
+    });
+  }
+
+  if (viewportWidth < 576) {
+    $('.speakers').slick({
+      arrows: false,
+      dots: true,
+    });
+  }
+});
