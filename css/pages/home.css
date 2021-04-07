@@ -382,7 +382,7 @@
   width: 50px;
   height: 50px;
   content: "";
-  background: linear-gradient(151.12deg, #5fa8ed 19.15%, #7ed5b7 91.38%);
+  background: linear-gradient(122.19deg, #f4f4f4 -6.52%, #799ff8 89.29%);
   position: absolute;
   z-index: -1;
   right: -10px;
@@ -505,7 +505,8 @@
   color: white;
 }
 
-.why .text-header {
+.why .text-header,
+.highlights .text-header {
   background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
   -webkit-background-clip: text;
   background-clip: text;
