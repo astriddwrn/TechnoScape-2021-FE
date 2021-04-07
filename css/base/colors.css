@@ -12,13 +12,15 @@
 		rgba(38, 40, 89, 0) 100%
 	);
 	--white: #f4f4f4;
+	--white-dark: #9d9d9d;
 	--blue: #262859;
 	--text-blue: #4d6ba0;
 	--btn-orange: linear-gradient(180deg, #ebaf8d -22.64%, #d1534b 91.54%);
 	--heading-orange: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
 	--pale-blue: #b5cffc;
-
+	--fading-white: rgba(255, 255, 255, 0.3);
+	--pale-blue-light: #b5cffc;
 	/* hackathon */
 	--hackathon-landing-bg: linear-gradient(320.47deg, rgba(95, 168, 237, 0) 6.98%, rgba(114, 195, 204, 0.607292) 45.67%, #7ED5B7 78.01%);
-
+	--hackathon-ball: linear-gradient(151.12deg, #5FA8ED 19.15%, #7ED5B7 91.38%);
 }

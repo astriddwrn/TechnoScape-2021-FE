@@ -1,0 +1,30 @@
+<svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b)">
+<path d="M5.5 7.5C5.5 3.64064 8.64064 0.5 12.5 0.5C16.3594 0.5 19.5 3.64064 19.5 7.5C19.5 11.3594 16.3594 14.5 12.5 14.5C8.64064 14.5 5.5 11.3594 5.5 7.5Z" fill="url(#paint0_radial)" stroke="url(#paint1_linear)"/>
+<path d="M14.1667 17.1668C16.9202 17.1668 19.5145 18.2599 21.4752 20.2507L21.8314 19.8999L21.4752 20.2507C23.4269 22.2324 24.5 24.8451 24.5 27.6113C24.5 27.7954 24.3507 27.9446 24.1667 27.9446H0.833333C0.649253 27.9446 0.5 27.7954 0.5 27.6113C0.5 24.8451 1.57315 22.2324 3.52479 20.2507L3.16856 19.8999L3.52479 20.2507C5.4855 18.2599 8.07984 17.1668 10.8333 17.1668H14.1667Z" fill="url(#paint2_radial)" stroke="url(#paint3_linear)"/>
+</g>
+<defs>
+<filter id="filter0_b" x="-40" y="-40" width="105" height="108.445" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="20"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+</filter>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(8.81215 1.36653) rotate(59.5385) scale(15.448 13.8131)">
+<stop stop-color="white" stop-opacity="0.4"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="paint1_linear" x1="16.6436" y1="0" x2="16.6436" y2="15" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.4"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+<radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(6.35359 17.7398) rotate(38.6953) scale(16.7236 16.6975)">
+<stop stop-color="white" stop-opacity="0.4"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="paint3_linear" x1="19.4061" y1="16.6668" x2="19.4061" y2="28.4446" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.4"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+</defs>
+</svg>
