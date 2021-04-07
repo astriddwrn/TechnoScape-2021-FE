@@ -1,4 +1,6 @@
 @import "./../../assets/lib/bootstrap/css/bootstrap.css";
+@import "../../assets/lib/slick/slick-theme.css";
+@import "../../assets/lib/slick/slick.css";
 @import "./colors.css";
 @import "./fonts.css";
 

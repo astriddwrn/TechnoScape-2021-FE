@@ -356,6 +356,116 @@
   text-align: center;
 }
 
+.faq-img {
+  display: flex;
+  place-items: center;
+}
+
+#mobile-illus {
+  display: none;
+}
+
+#desktop-illus {
+  width: 100%;
+}
+
+.faq .faq-content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  padding: 0 1rem;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.faq-content:focus {
+  outline: none;
+}
+
+.faq .content {
+  background: radial-gradient(
+    88.77% 88.77% at 25.41% 9.11%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(40px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.faq .faq-content-item {
+  margin: 1rem 0;
+}
+
+.faq .faq-content .ques {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.faq .faq-content .ans {
+  display: none;
+}
+
+.faq .faq-btn {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.faq .faq-btn .btn-y {
+  width: 0.3rem;
+  height: 1.5rem;
+  background-color: rgba(129, 119, 247, 1);
+  transition: 1s;
+}
+
+.faq .faq-btn .btn-x {
+  width: 1.5rem;
+  height: 0.3rem;
+  position: absolute;
+  top: 0.6rem;
+  left: -0.6rem;
+  background-color: rgba(129, 119, 247, 1);
+}
+
+.faq .faq-content-item.active .faq-btn .btn-y {
+  transform: rotate(90deg);
+}
+
+.faq .faq-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.faq .faq-nav img {
+  width: 1rem;
+  margin: 0 5rem;
+  display: block;
+  z-index: 5;
+}
+
+.faq .faq-nav img:hover {
+  cursor: pointer;
+}
+
+.faq .slick-dots {
+  bottom: -3rem;
+}
+
+.slick-dots li button::before {
+  content: "";
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: white;
+}
+
 .share img {
   animation: 4s ease-in-out 0s infinite normal none running float-about;
 }
@@ -1086,6 +1196,15 @@
 
   .ticket-illus img {
     width: 12rem;
+  }
+
+  #desktop-illus {
+    display: none;
+  }
+
+  #mobile-illus {
+    display: block;
+    width: 70%;
   }
 
   .share .btn {
