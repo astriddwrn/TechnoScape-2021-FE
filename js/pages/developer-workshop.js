@@ -24,14 +24,14 @@ const expandQuestionsAnswer = (e) => {
   }
 };
 
-$('.faq-caro').slick({
-  prevArrow: $('#faq-nav-left'),
-  nextArrow: $('#faq-nav-right'),
-  dots: true,
-});
-
 $(document).ready(function () {
   let viewportWidth = $(window).width();
+
+  $('.faq-caro').slick({
+    prevArrow: $('#faq-nav-left'),
+    nextArrow: $('#faq-nav-right'),
+    dots: true,
+  });
 
   if (viewportWidth < 993) {
     $('.why-content').slick({
@@ -46,4 +46,15 @@ $(document).ready(function () {
       dots: true,
     });
   }
+
+  $(window).resize(function () {
+    let viewportWidth = $(window).width();
+
+    if (viewportWidth > 993) {
+      $('.why-content').slick('unslick');
+    }
+    if (viewportWidth > 576) {
+      $('.speakers').slick('unslick');
+    }
+  });
 });
