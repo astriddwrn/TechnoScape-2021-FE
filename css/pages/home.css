@@ -752,10 +752,12 @@
 
 #mobile-illus {
   display: none;
+  animation: 4s ease-in-out 0s infinite normal none running float-about;
 }
 
 #desktop-illus {
   width: 100%;
+  animation: 4s ease-in-out 0s infinite normal none running float-about;
 }
 
 .faq .faq-content {
