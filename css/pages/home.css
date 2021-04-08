@@ -123,17 +123,20 @@
   animation: 4s ease-in-out 0s infinite normal none running float-about;
 }
 
-.highlights {
+.highlights,
+.speakers {
   width: 100%;
   padding: 100px 0;
 }
 
-.highlights .text-orange {
+.highlights .text-orange,
+.speakers .text-orange {
   text-align: center;
   width: 100%;
 }
 
-.highlights .main-container {
+.highlights .main-container,
+.speakers .main-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -142,7 +145,8 @@
   padding: 30px;
 }
 
-.highlights .second-container {
+.highlights .second-container,
+.speakers .second-container {
   display: none;
   flex-direction: row;
   justify-content: center;
@@ -151,7 +155,8 @@
   padding: 0 20px;
 }
 
-.highlights .carousel-wrapper {
+.highlights .carousel-wrapper,
+.speakers .carousel-wrapper {
   width: 800px;
   height: 400px;
   display: flex;
@@ -159,7 +164,8 @@
   position: relative;
 }
 
-.highlights .carousel-wrapper2 {
+.highlights .carousel-wrapper2,
+.speakers .carousel-wrapper2 {
   width: 600px;
   margin: 50px 0;
   /* height: 400px;
@@ -167,7 +173,8 @@
 	flex-direction: row; */
 }
 
-.highlights .glass {
+.highlights .glass,
+.speakers .glass {
   opacity: 0;
   position: absolute;
   z-index: -3;
@@ -197,7 +204,8 @@
   transform: translate(-50%, -50%);
 }
 
-.highlights .glass2 {
+.highlights .glass2,
+.speakers .glass2 {
   width: 400px;
   height: 300px;
   display: flex !important;
@@ -221,7 +229,9 @@
 }
 
 .highlights .glass .image,
-.highlights .glass2 .image {
+.highlights .glass2 .image,
+.speakers .glass .image,
+.speakers .glass2 .image {
   width: 90%;
   height: 90%;
   overflow: hidden;
@@ -230,7 +240,9 @@
 }
 
 .highlights .glass img,
-.highlights .glass2 img {
+.highlights .glass2 img,
+.speakers .glass img,
+.speakers .glass2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -252,6 +264,15 @@
   -moz-transition-timing-function: ease;
   -webkit-transition-timing-function: ease;
   -o-transition-timing-function: ease;
+}
+
+.speakers .glass2 {
+  height: 400px !important;
+}
+
+.speakers .glass2 img {
+  height: 80%;
+  border-radius: 16px;
 }
 
 .leftHigh {
@@ -368,7 +389,9 @@
 }
 
 .highlights .next,
-.highlights .prev {
+.highlights .prev,
+.speakers .next,
+.speakers .prev {
   width: 50px;
   height: 50px;
   position: relative;
@@ -378,7 +401,9 @@
 }
 
 .highlights .next::after,
-.highlights .prev::after {
+.highlights .prev::after,
+.speakers .next::after,
+.speakers .prev::after {
   width: 50px;
   height: 50px;
   content: "";
@@ -389,26 +414,29 @@
   bottom: -10px;
 }
 
-.highlights .next-container {
+.highlights .next-container,
+.speakers .next-container {
   height: fit-content;
   margin: auto 0;
   transform: rotate(-45deg);
   margin-left: 5vw;
 }
 
-.highlights .prev-container {
+.highlights .prev-container,
+.speakers .prev-container {
   height: fit-content;
   margin: auto 0;
   transform: rotate(135deg);
   margin-right: 5vw;
 }
 
-.highlights .description-container2 {
+.highlights .description-container2,
+.speakers .description-container2 {
   display: none;
 }
 
 .highlights .description-container,
-.highlights .description-container2 {
+.speakers .description-container2 {
   position: relative;
   height: 150px;
   color: var(--white);
@@ -418,7 +446,7 @@
 }
 
 .highlights .description-container div,
-.highlights .description-container2 div {
+.speakers .description-container2 div {
   position: absolute;
 }
 
@@ -462,7 +490,8 @@
   -o-transition-timing-function: ease;
 }
 
-.highlights .dots-container {
+.highlights .dots-container,
+.speakers .dots-container {
   margin: 0 auto;
   width: 200px;
   display: flex;
@@ -470,7 +499,8 @@
   justify-content: space-evenly;
 }
 
-.highlights .dots {
+.highlights .dots,
+.speakers .dots {
   width: 40px;
   border: 3px solid #4b5e8c;
 }
@@ -479,7 +509,8 @@
   border: 3px solid var(--white) !important;
 }
 
-.highlights .slick-dots {
+.highlights .slick-dots,
+.speakers .slick-dots {
   position: absolute;
   bottom: -170px;
   left: 50%;
@@ -490,14 +521,16 @@
   justify-content: space-evenly;
 }
 
-.highlights .slick-dots div {
+.highlights .slick-dots div,
+.speakers .slick-dots div {
   width: 40px !important;
   border: 5px solid #4b5e8c !important;
   font-size: 0;
   line-height: 0;
 }
 
-.highlights .slick-active .dotsHigh2 {
+.highlights .slick-active .dotsHigh2,
+.speakers .slick-active .dotsHigh2 {
   border: 5px solid var(--white) !important;
 }
 
@@ -506,7 +539,8 @@
 }
 
 .why .text-header,
-.highlights .text-header {
+.highlights .text-header,
+.speakers .text-header {
   background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -554,62 +588,36 @@
   font-size: 1rem;
 }
 
-.speaker .text-header {
-  background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.speakers .glass {
+  width: 250px;
+  height: 400px;
 }
 
-.speaker .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  position: relative;
-  height: 25rem;
-  width: 35rem;
-  padding: 2.5rem;
-  text-align: center;
-  border-radius: 32px;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.4)
-  );
+.speakers .glass img {
+  height: 75%;
+  border-radius: 16px;
 }
 
-/* .speaker .card-img img {
-} */
-
-.speaker .card .card-heading {
-  color: rgba(181, 207, 252, 1);
+.speakers .text {
+  color: var(--white);
 }
 
-.speaker .card .card-name {
-  color: white;
+.speakers .name {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
-.speaker .card .card-desc {
-  color: #f4f4f4;
-  opacity: 0.65;
+.speakers .activeHigh {
+  transform: translate(-50%, -50%) !important;
 }
 
-.speaker .card .card-date {
-  color: white;
-  padding: 0.5rem;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.4) 0%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
-  border-radius: 32px;
-  font-size: 1rem;
+.speakers .rightHigh {
+  left: 70% !important;
 }
 
-.speaker .card .card-time {
-  color: white;
-  font-size: 1rem;
+.speakers .leftHigh {
+  left: 30% !important;
 }
 
 .schedule {
@@ -1535,17 +1543,32 @@
 
   .highlights .main-container,
   .highlights .description-container,
-  .highlights .dots-container {
+  .highlights .dots-container,
+  .speakers .main-container,
+  .speakers .description-container,
+  .speakers .dots-container {
     display: none;
   }
-  .highlights .second-container {
+  .highlights .second-container,
+  .speakers .second-container {
     display: flex;
   }
-  .highlights .description-container2 {
+  .highlights .description-container2,
+  .speakers .description-container2 {
     display: block;
   }
-  .highlights .glass {
+  .highlights .glass,
+  .speakers .glass {
     opacity: 1;
+  }
+
+  .speakers .carousel-wrapper2 {
+    width: 250px !important;
+    height: 400px !important;
+  }
+
+  .speakers .slick-dots {
+    bottom: -90px;
   }
 
   .why .card {
@@ -1654,13 +1677,16 @@
     text-align: center;
   }
 
-  .highlights .carousel-wrapper2 {
+  .highlights .carousel-wrapper2,
+  .speakers .carousel-wrapper2 {
     width: 450px;
   }
-  .highlights .description-container2 {
+  .highlights .description-container2,
+  .speakers .description-container2 {
     width: 100%;
   }
-  .highlights .description-container2 div {
+  .highlights .description-container2 div,
+  .speakers .description-container2 div {
     padding: 0 60px;
   }
 
@@ -1766,20 +1792,27 @@
     padding: 0;
   }
 
-  .highlights .carousel-wrapper2 {
+  .highlights .carousel-wrapper2,
+  .speakers .carousel-wrapper2 {
     width: 400px;
   }
   .highlights .glass2 {
     height: 200px;
   }
-  .highlights .description-container2 div {
+  .highlights .description-container2 div,
+  .speakers .description-container2 div {
     padding: 0 30px;
   }
-  .highlights .slick-dots {
+  .highlights .slick-dots,
+  .speakers .slick-dots {
     position: absolute;
     bottom: -200px;
     left: 50%;
     transform: translate(-55%, 0);
+  }
+
+  .speakers .slick-dots {
+    bottom: -90px;
   }
 
   .modal-dialog {
@@ -1829,13 +1862,15 @@
     width: 15rem;
   }
 
-  .highlights .carousel-wrapper2 {
+  .highlights .carousel-wrapper2,
+  .speakers .carousel-wrapper2 {
     width: 300px;
   }
   .highlights .glass2 {
     height: 150px;
   }
-  .highlights .description-container2 div {
+  .highlights .description-container2 div,
+  .speakers .description-container2 div {
     padding: 0 10px;
   }
 

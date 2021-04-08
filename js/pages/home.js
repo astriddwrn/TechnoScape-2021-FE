@@ -291,4 +291,188 @@ $(document).ready(function () {
       }, 300);
     }
   );
+
+  /*Speakers*/
+  var indexBehind = 2;
+
+  var indexMiddle = 0;
+  var indexLeft = 3;
+  var indexRight = 1;
+
+  function setSlidesNext() {
+    $(".speakers .glass")
+      .eq(indexBehind)
+      .addClass("behindHigh")
+      .removeClass("leftHigh");
+
+    $(".speakers .glass")
+      .eq(indexMiddle)
+      .addClass("activeHigh")
+      .removeClass("rightHigh");
+    $(".speakers .glass")
+      .eq(indexLeft)
+      .addClass("leftHigh")
+      .removeClass("activeHigh");
+    $(".speakers .glass")
+      .eq(indexRight)
+      .addClass("backHigh")
+      .addClass("rightHigh");
+
+    setTimeout(function () {
+      $(".behindHigh").animate(
+        {
+          opacity: 0,
+        },
+        300,
+        function () {
+          $(this).removeClass("behindHigh");
+        }
+      );
+
+      $(".speakers .glass").each(function () {
+        $(this).removeClass("backHigh");
+      });
+    }, 700);
+  }
+
+  function setSlidesPrev() {
+    $(".speakers .glass")
+      .eq(indexBehind)
+      .addClass("behindHigh")
+      .removeClass("rightHigh");
+
+    $(".speakers .glass")
+      .eq(indexMiddle)
+      .addClass("activeHigh")
+      .removeClass("leftHigh");
+    $(".speakers .glass")
+      .eq(indexRight)
+      .addClass("rightHigh")
+      .removeClass("activeHigh");
+    $(".speakers .glass")
+      .eq(indexLeft)
+      .addClass("backHigh")
+      .addClass("leftHigh");
+
+    setTimeout(function () {
+      $(".behindHigh").animate(
+        {
+          opacity: 0,
+        },
+        300,
+        function () {
+          $(this).removeClass("behindHigh");
+        }
+      );
+
+      $(".speakers .glass").each(function () {
+        $(this).removeClass("backHigh");
+      });
+    }, 700);
+  }
+
+  function setDesc() {
+    $(".speakers .description-container div").each(function () {
+      $(this).addClass("deactiveHighDesc");
+    });
+
+    setTimeout(function () {
+      $(".speakers .description-container div")
+        .eq(indexMiddle2)
+        .removeClass("deactiveHighDesc")
+        .addClass("activeHighDesc");
+    }, 500);
+  }
+
+  function setDots() {
+    // return;
+    $(".speakers .dots").removeClass("activeHighDots");
+    $(".speakers .dots").eq(indexMiddle).addClass("activeHighDots");
+  }
+
+  $(".speakers .glass").eq(indexMiddle).addClass("activeHigh");
+  $(".speakers .glass").eq(indexLeft).addClass("leftHigh");
+  $(".speakers .glass").eq(indexRight).addClass("rightHigh");
+
+  $(setDesc());
+
+  $(setDots());
+
+  // NEXT
+  $(".speakers .next").click(function () {
+    // return;
+    indexBehind = indexLeft;
+    indexMiddle += 1;
+    indexLeft += 1;
+    indexRight += 1;
+
+    if (indexMiddle > 3) {
+      indexMiddle = 0;
+    }
+    if (indexLeft > 3) {
+      indexLeft = 0;
+    }
+    if (indexRight > 3) {
+      indexRight = 0;
+    }
+
+    $(setSlidesNext());
+
+    $(setDesc());
+
+    $(setDots());
+  });
+
+  // prev
+  $(".speakers .prev").click(function () {
+    // return;
+    indexBehind = indexRight;
+    indexMiddle -= 1;
+    indexLeft -= 1;
+    indexRight -= 1;
+
+    if (indexMiddle < 0) {
+      indexMiddle = 3;
+    }
+    if (indexLeft < 0) {
+      indexLeft = 3;
+    }
+    if (indexRight < 0) {
+      indexRight = 3;
+    }
+
+    $(setSlidesPrev());
+
+    $(setDesc());
+
+    $(setDots());
+  });
+
+  $(".speakers .carousel-wrapper2").slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+
+    dots: true,
+    customPaging: function (slider, i) {
+      return '<div class="dotsHigh2" id=' + i + "></div>";
+    },
+    useTransform: true,
+    cssEase: "ease-in-out",
+  });
+
+  $(".speakers .carousel-wrapper2").on(
+    "afterChange",
+    function (event, slick, currentSlide) {
+      $(".speakers .description-container2 div").each(function () {
+        $(this).addClass("deactiveHighDesc");
+      });
+      setTimeout(function () {
+        $(".speakers .description-container2 div")
+          .eq(currentSlide)
+          .removeClass("deactiveHighDesc")
+          .addClass("activeHighDesc");
+      }, 300);
+    }
+  );
 });
