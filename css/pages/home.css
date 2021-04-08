@@ -437,7 +437,7 @@
 }
 
 .highlights .description-container,
-.speakers .description-container2 {
+.highlights .description-container2 {
   position: relative;
   height: 150px;
   color: var(--white);
@@ -447,7 +447,7 @@
 }
 
 .highlights .description-container div,
-.speakers .description-container2 div {
+.highlights .description-container2 div {
   position: absolute;
 }
 
