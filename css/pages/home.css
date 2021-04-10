@@ -239,6 +239,7 @@
   border-radius: 10px;
 }
 
+.speakers .glass .image,
 .speakers .glass2 .image {
   opacity: inherit;
 }
@@ -273,6 +274,10 @@
 .speakers .glass2 {
   height: 400px !important;
   margin-right: 1rem;
+}
+
+.speakers .glass img {
+  opacity: 0.5;
 }
 
 .speakers .glass2 img {
