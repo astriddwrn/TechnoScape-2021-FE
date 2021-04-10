@@ -18,6 +18,7 @@ $(document).ready(function(){
         }
     });
 
+    var param = 5 * 1024 * 1024;
     // FROM VALIDATION
       $.validator.addMethod("letters", function(value, element) {
         return this.optional(element) || value == value.match(/^[a-zA-Z\s]*$/);
@@ -30,6 +31,9 @@ $(document).ready(function(){
       });
       $.validator.addMethod("whatsappPattern", function(value, element) {
         return this.optional(element) || value == value.match(/^\+?\d+$/);
+      });
+      $.validator.addMethod("fileSize", function(value, element, param) {
+        return this.optional(element) || (element.files[0].size <= param);
       });
 
 
@@ -48,6 +52,9 @@ $(document).ready(function(){
                 required: true
             },
             gender: {
+                required: true
+            },
+            status: {
                 required: true
             },
             email: {
@@ -74,6 +81,20 @@ $(document).ready(function(){
             },
             company: {
                 required: true
+            },
+            cv: {
+                required: true,
+                extension: "pdf|jpg|jpeg|png",
+                fileSize: 5 * 1024 * 1024
+            },
+            id_card: {
+                required: true,
+                extension: "pdf|jpg|jpeg|png",
+                fileSize: 5 * 1024 * 1024
+            },
+            team_code: {
+                required: true,
+                maxlength: 6
             }
 
           },
@@ -93,10 +114,13 @@ $(document).ready(function(){
             gender: {
                 required: "Please input this field"
             },
+            status: {
+                required: "Please input this field"
+            },
             email: {
               required: "Please input this field",
-              emailPattern: "Please specify a valid email address (must contain @ and .)",
-              remote: "Line ID is taken"
+              emailPattern: "Please specify a valid email address (must contain @ and .)"
+              /* remote: "Line ID is taken" */
             },
             password: {
                 required: "Please input this field",
@@ -117,7 +141,23 @@ $(document).ready(function(){
             },
             company: {
                 required: "Please input this field"
+              },
+            cv: {
+                required: "*Please upload your CV. In format pdf,jpg,jpeg, or png.",
+                extension: "Please upload your CV. In format pdf,jpg,jpeg, or png.",
+                fileSize: "Max. file size is 5MB"
+            },
+            id_card: {
+                required: "*Please upload your CV. In format pdf,jpg,jpeg, or png.",
+                extension: "Please upload your CV. In format pdf,jpg,jpeg, or png.",
+                fileSize: "Max. file size is 5MB"
+              },
+              team_code: {
+                  required: "Please input this field",
+                  maxlength: "Team Code only consist of 6 letters/numbers"
             }
+            
+            
           },
           errorPlacement: function(error, element) {
             if (element.attr("type") == "radio"){
@@ -141,10 +181,20 @@ $(document).ready(function(){
             $(element).parent().parent().children(".symbol").css("display", "none");
           }
 
-
+    }); 
+    
+    
+    $('#cv').bind('change', function () {
+        $(".cv div").text(this.value.replace(/C:\\fakepath\\/i, ''));
+        $( ".notes" ).css("display", "none");
     });
 
+    $('#id_card').bind('change', function () {
+        $(".id_card div").text(this.value.replace(/C:\\fakepath\\/i, ''));
+        $( ".notes" ).css("display", "none");
+    });
 
+    
     $(".next1").click(function(){
         $('form').valid();
         var ariaInvalidNotFalse = $(".section-1 .valid");
@@ -196,7 +246,7 @@ $(document).ready(function(){
                     left:"0"
                 },400, function(){
                     $(".ball3").animate({
-                        left:"0"
+                        top:"0"
                     },400);
                 });
     
@@ -210,10 +260,74 @@ $(document).ready(function(){
         }
     });
 
-    $('.submit').click(function(){
+    $(".next3").click(function(){
         $('form').valid();
         var ariaInvalidNotFalse = $(".section-3 .valid");
         if(ariaInvalidNotFalse.length<3){
+            return
+        }
+        else{
+            $( ".section-3" ).animate({
+                opacity: 0,
+              }, 400, function() {
+                $( ".section-3" ).css("display", "none");
+                $( ".section-3" ).css("opacity", 0);
+                $( ".section-4" ).css("display", "block");
+    
+                $(".line3").animate({
+                    left:"0"
+                },400, function(){
+                    $(".ball4").animate({
+                        top:"0"
+                    },400);
+                });
+    
+                $( ".section-4" ).animate({
+                    opacity: 1,
+                  }, 400, function() {
+                    
+                    $( ".section-4" ).css("opacity", 1);
+                  });
+              });
+        }
+    });
+
+    $(".next4").click(function(){
+        $('form').valid();
+        var ariaInvalidNotFalse = $(".section-4 .valid");
+        if(ariaInvalidNotFalse.length<2){
+            return
+        }
+        else{
+            $( ".section-4" ).animate({
+                opacity: 0,
+              }, 400, function() {
+                $( ".section-4" ).css("display", "none");
+                $( ".section-4" ).css("opacity", 0);
+                $( ".section-5" ).css("display", "block");
+    
+                $(".line4").animate({
+                    left:"0"
+                },400, function(){
+                    $(".ball5").animate({
+                        top:"0"
+                    },400);
+                });
+    
+                $( ".section-5" ).animate({
+                    opacity: 1,
+                  }, 400, function() {
+                    
+                    $( ".section-5" ).css("opacity", 1);
+                  });
+              });
+        }
+    });
+
+    $('.submit').click(function(){
+        $('form').valid();
+        var ariaInvalidNotFalse = $(".section-5 .valid");
+        if(ariaInvalidNotFalse.length<1){
             $('.submit').prop('disabled', 'disabled');
         }
         else{
@@ -221,6 +335,95 @@ $(document).ready(function(){
         }
     });
 
+    /* Ball Animation */
+    $(".ball4, .back4").click(function(){
+        if($(".section-5").css("display")=="block"){
+            $( ".section-5" ).animate({
+                opacity: 0,
+              }, 400, function() {
+                $( ".section-5" ).css("display", "none");
+                $( ".section-5" ).css("opacity", 0);
+                $( ".section-4" ).css("display", "block");
+    
+                $(".ball5").animate({
+                    top:"-160%"
+                },400, function(){
+                    $(".line4").animate({
+                        left:"-100%"
+                    },400);
+                });
+    
+                $( ".section-4" ).animate({
+                    opacity: 1,
+                  }, 400, function() {
+                    
+                    $( ".section-4" ).css("opacity", 1);
+                  });
+              });
+        }
+        
+    });
+
+    $(".ball3, .back3").click(function(){
+        if($(".section-4").css("display")=="block"){
+            $( ".section-4" ).animate({
+                opacity: 0,
+              }, 400, function() {
+                $( ".section-4" ).css("display", "none");
+                $( ".section-4" ).css("opacity", 0);
+                $( ".section-3" ).css("display", "block");
+    
+                $(".ball4").animate({
+                    top:"-160%"
+                },400, function(){
+                    $(".line3").animate({
+                        left:"-100%"
+                    },400);
+                });
+    
+                $( ".section-3" ).animate({
+                    opacity: 1,
+                  }, 400, function() {
+                    
+                    $( ".section-3" ).css("opacity", 1);
+                  });
+              });
+        }
+        
+        else if($(".section-5").css("display")=="block"){
+            $( ".section-5" ).animate({
+                opacity: 0,
+              }, 400, function() {
+                $( ".section-5" ).css("display", "none");
+                $( ".section-5" ).css("opacity", 0);
+                $( ".section-3" ).css("display", "block");
+    
+                $(".ball5").animate({
+                    top:"-160%"
+                },200, function(){
+                    $(".line4").animate({
+                        left:"-100%"
+                    },200, function(){
+                        $(".ball4").animate({
+                            top:"-160%"
+                        }, 200, function(){
+                            $(".line3").animate({
+                                left:"-100%"
+                            },200);
+                        });
+                    });
+                });
+    
+                $( ".section-3" ).animate({
+                    opacity: 1,
+                  }, 400, function() {
+                    
+                    $( ".section-3" ).css("opacity", 1);
+                  });
+              });
+        }
+    });
+    
     $(".ball2, .back2").click(function(){
         if($(".section-3").css("display")=="block"){
             $( ".section-3" ).animate({
@@ -231,7 +434,7 @@ $(document).ready(function(){
                 $( ".section-2" ).css("display", "block");
     
                 $(".ball3").animate({
-                    left:"-100%"
+                    top:"-160%"
                 },400, function(){
                     $(".line2").animate({
                         left:"-100%"
@@ -247,6 +450,79 @@ $(document).ready(function(){
               });
         }
         
+        else if($(".section-4").css("display")=="block"){
+            $( ".section-4" ).animate({
+                opacity: 0,
+              }, 400, function() {
+                $( ".section-4" ).css("display", "none");
+                $( ".section-4" ).css("opacity", 0);
+                $( ".section-2" ).css("display", "block");
+    
+                $(".ball4").animate({
+                    top:"-160%"
+                },200, function(){
+                    $(".line3").animate({
+                        left:"-100%"
+                    },200, function(){
+                        $(".ball3").animate({
+                            top:"-160%"
+                        }, 200, function(){
+                            $(".line2").animate({
+                                left:"-100%"
+                            },200);
+                        });
+                    });
+                });
+    
+                $( ".section-2" ).animate({
+                    opacity: 1,
+                  }, 400, function() {
+                    
+                    $( ".section-2" ).css("opacity", 1);
+                  });
+              });
+        }
+
+        else if($(".section-5").css("display")=="block"){
+            $( ".section-5" ).animate({
+                opacity: 0,
+              }, 400, function() {
+                $( ".section-5" ).css("display", "none");
+                $( ".section-5" ).css("opacity", 0);
+                $( ".section-2" ).css("display", "block");
+    
+                $(".ball5").animate({
+                    top:"-160%"
+                },200, function(){
+                    $(".line4").animate({
+                        left:"-100%"
+                    },200, function(){
+                        $(".ball4").animate({
+                            top:"-160%"
+                        }, 200, function(){
+                            $(".line3").animate({
+                                left:"-100%"
+                            }, 200, function () {
+                                $(".ball3").animate({
+                                    top: "-160%"
+                                }, 200, function () {
+                                    $(".line2").animate({
+                                        left: "-100%"
+                                    }, 200)
+                                });
+                            });
+                        });
+                    });
+                });
+    
+                $( ".section-2" ).animate({
+                    opacity: 1,
+                  }, 400, function() {
+                    
+                    $( ".section-2" ).css("opacity", 1);
+                  });
+              });
+        }
     });
 
     $(".ball1, .back1").click(function(){
@@ -259,7 +535,7 @@ $(document).ready(function(){
                 $( ".section-1" ).css("display", "block");
     
                 $(".ball2").animate({
-                    top:"-110%"
+                    top:"-160%"
                 },400, function(){
                     $(".line1").animate({
                         left:"-100%"
@@ -269,11 +545,12 @@ $(document).ready(function(){
                 $( ".section-1" ).animate({
                     opacity: 1,
                   }, 400, function() {
+                    
                     $( ".section-1" ).css("opacity", 1);
                   });
               });
         }
-
+        
         else if($(".section-3").css("display")=="block"){
             $( ".section-3" ).animate({
                 opacity: 0,
@@ -283,13 +560,13 @@ $(document).ready(function(){
                 $( ".section-1" ).css("display", "block");
     
                 $(".ball3").animate({
-                    left:"-100%"
+                    top:"-160%"
                 },200, function(){
                     $(".line2").animate({
                         left:"-100%"
                     },200, function(){
                         $(".ball2").animate({
-                            left:"-100%"
+                            top:"-160%"
                         }, 200, function(){
                             $(".line1").animate({
                                 left:"-100%"
@@ -306,7 +583,96 @@ $(document).ready(function(){
                   });
               });
         }
-        
+
+        else if($(".section-4").css("display")=="block"){
+            $( ".section-4" ).animate({
+                opacity: 0,
+              }, 400, function() {
+                $( ".section-4" ).css("display", "none");
+                $( ".section-4" ).css("opacity", 0);
+                $( ".section-1" ).css("display", "block");
+    
+                $(".ball4").animate({
+                    top:"-160%"
+                },200, function(){
+                    $(".line3").animate({
+                        left:"-100%"
+                    },200, function(){
+                        $(".ball3").animate({
+                            top:"-160%"
+                        }, 200, function(){
+                            $(".line2").animate({
+                                left:"-100%"
+                            }, 200, function () {
+                                $(".ball2").animate({
+                                    top: "-160%"
+                                }, 200, function () {
+                                    $(".line1").animate({
+                                        left: "-100%"
+                                    }, 200)
+                                });
+                            });
+                        });
+                    });
+                });
+    
+                $( ".section-1" ).animate({
+                    opacity: 1,
+                  }, 400, function() {
+                    
+                    $( ".section-1" ).css("opacity", 1);
+                  });
+              });
+        }
+
+        else if($(".section-5").css("display")=="block"){
+            $( ".section-5" ).animate({
+                opacity: 0,
+              }, 400, function() {
+                $( ".section-5" ).css("display", "none");
+                $( ".section-5" ).css("opacity", 0);
+                $( ".section-1" ).css("display", "block");
+    
+                $(".ball5").animate({
+                    top:"-160%"
+                },200, function(){
+                    $(".line4").animate({
+                        left:"-100%"
+                    },200, function(){
+                        $(".ball4").animate({
+                            top:"-160%"
+                        }, 200, function(){
+                            $(".line3").animate({
+                                left:"-100%"
+                            }, 200, function () {
+                                $(".ball3").animate({
+                                    top: "-160%"
+                                }, 200, function () {
+                                    $(".line2").animate({
+                                        left: "-100%"
+                                    }, 200, function () {
+                                        $(".ball2").animate({
+                                            top: "-160%"
+                                        }, 200, function () {
+                                            $(".line1").animate({
+                                                left: "-100%"
+                                            }, 200);
+                                        });
+                                    })
+                                });
+                            });
+                        });
+                    });
+                });
+    
+                $( ".section-1" ).animate({
+                    opacity: 1,
+                  }, 400, function() {
+                    
+                    $( ".section-1" ).css("opacity", 1);
+                  });
+              });
+        }
     });
 
     $(".eye").mousedown(function () {
@@ -318,4 +684,6 @@ $(document).ready(function(){
         }
     });
 
+
+    /* END */
 });

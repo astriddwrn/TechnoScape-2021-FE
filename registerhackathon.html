@@ -87,8 +87,114 @@
 								<div class="back1 back-button text-regular">Back</div>
 								<div class="next2 button-orange text-regular">Next</div>
 							</div>
-							
 						</div> 
+
+						<div class="section-3">
+							<p>Step 3 of 5</p>
+							<div class="label-radio">
+								<img src="/assets/img/RegisterHackathon/logo11-binusornot.svg" alt="">
+								<label for="status">Status</label>
+							</div>
+							<div class="input-radio">
+								<div class="radio-wrapper">
+									<input type="radio" name="status" id="binusian" value="binusian">
+									<div class="text-regular">BINUSIAN</div>
+								</div>
+								<div class="radio-wrapper">
+									<input type="radio" name="status" id="non-binusian" value="non-binusian">
+									<div class="text-regular">Non-BINUSIAN</div>
+								</div>
+								<img class="symbol" src="/assets/img/RegisterHackathon/errorSymbol.svg" alt="">
+							</div>
+
+							<label class="text-regular" for="whatsapp">WhatsApp Number</label>
+							<div class="input-wrapper">
+								<img src="/assets/img/RegisterHackathon/logo7-wa.svg" alt="">
+								<input class="text-regular" type="text" name="whatsapp" id="whatsapp" placeholder="Please type your WhatsApp Number here...">
+								<img class="symbol" src="/assets/img/RegisterHackathon/errorSymbol.svg" alt="">
+							</div>
+							<label class="text-regular" for="text">Line ID</label>
+							<div class="input-wrapper">
+								<img src="/assets/img/RegisterHackathon/logo8-line-svg.svg" alt="">
+								<input class="text-regular" type="text" name="line" id="line" placeholder="Please type your Line ID here...">
+								<img class="symbol" src="/assets/img/RegisterHackathon/errorSymbol.svg" alt="">
+							</div>
+			
+							<div class="button-container">
+								<div class="back2 back-button text-regular">Back</div>
+								<div class="next3 button-orange text-regular">Next</div>
+							</div>
+
+						</div>
+
+						<div class="section-4">
+							<p>Step 4 of 5</p>
+							<label class="text-regular" for="company">Company/Institution</label>
+							<div class="input-wrapper">
+								<img src="/assets/img/RegisterHackathon/logo9-company.svg" alt="">
+								<input class="text-regular" type="text" name="company" id="company" placeholder="Please type your company/institution here...">
+								<img class="symbol" src="/assets/img/RegisterHackathon/errorSymbol.svg" alt="">
+							</div>
+							
+							<label class="text-regular">CV</label>
+							<div class="input-wrapper">
+								<label for="cv" id="cv-label" class="cv">
+									<img src="/assets/img/RegisterHackathon/logo12-cv.svg" alt="">
+									<div> Please upload your CV here...</div>
+									<img src="/assets/img/RegisterHackathon/plusSymbol.svg" alt="">
+								</label>
+								<input type="file" id="cv" name="cv">
+							</div>
+							<div class="notes">
+								Your CV must be in .jpg, .jpeg, .png, or .pdf format.
+								<br> 
+								Max. file size is 5MB.
+							</div>
+							
+							<label class="text-regular">Identity</label>
+							<div class="input-wrapper">
+								<label for="id_card" id="id_card-label" class="id_card">
+									<img src="/assets/img/RegisterHackathon/logo13-id.svg" alt="">
+									<div> Please upload your identity card here...</div>
+									<img src="/assets/img/RegisterHackathon/plusSymbol.svg" alt="">
+								</label>
+								<input type="file" id="id_card" name="id_card">
+							</div>
+							<div class="notes">
+								Your ID-Card must be in .jpg, .jpeg, .png, or .pdf format.
+								<br> 
+								Max. file size is 5MB.
+							</div>
+							
+							
+							<div class="button-container">
+								<div class="back3 back-button text-regular">Back</div>
+								<div class="next4 button-orange text-regular">Next</div>
+							</div>
+							
+						</div>
+
+						<div class="section-5">
+							<p>Step 5 of 5</p>
+							<label class="text-regular" for="team_code">Team Code</label>
+							<div class="input-wrapper">
+								<img src="/assets/img/RegisterHackathon/logo14-teamcode.svg" alt="">
+								<input class="text-regular" type="text" name="team_code" id="team_code" placeholder="Please type your team code here...">
+								<img class="symbol" src="/assets/img/RegisterHackathon/errorSymbol.svg" alt="">
+							</div>
+							
+							<div class="createteam-container">	
+								<h6>Doesn't have a team yet?</h6>
+								<a href=""><div class="createteam-button outer">Create Team</div></a>
+							</div>
+							
+
+							<div class="button-container">
+								<div class="back4 back-button text-regular">Back</div>
+								<div><button class="submit button-orange text-regular">Submit</button></div>
+							</div>
+
+						</div>
 
 					</form>
 					
@@ -101,5 +207,6 @@
 		<script src="js/pages/registerhackathon.js"></script>
 		<!-- Jquery Validate Plugin -->
 		<script src="/assets/lib/jquery validate plugin/dist/jquery.validate.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 	</body>
 </html>
