@@ -540,10 +540,6 @@
   border: 5px solid var(--white) !important;
 }
 
-.why {
-  color: white;
-}
-
 .why .text-header,
 .highlights .text-header,
 .speakers .text-header {
@@ -553,12 +549,16 @@
   -webkit-text-fill-color: transparent;
 }
 
+.why {
+  color: white;
+}
+
 .why .card {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 31rem;
-  width: 22rem;
+  width: 100%;
   padding: 2.5rem;
   border-radius: 32px;
   background: linear-gradient(
@@ -574,19 +574,19 @@
   margin-bottom: 3rem;
 }
 
-.why .card img:hover {
-  mix-blend-mode: normal;
+.why .card:hover img {
+  mix-blend-mode: initial;
+}
+
+.why .text-subheader {
+  /* text-shadow: 0px -30px 70px 0px 130, 169, 249, 0.45; */
+  box-shadow: 0px -30px 70px 0px 130, 169, 249, 0.45;
 }
 
 .why .card .networking {
   width: 8rem;
   margin-bottom: 5rem;
   margin-top: 2rem;
-}
-
-.why .text-subheader {
-  /* text-shadow: 0px -30px 70px 0px 130, 169, 249, 0.45; */
-  box-shadow: 0px -30px 70px 0px 130, 169, 249, 0.45;
 }
 
 .why .text-main {
@@ -1509,18 +1509,6 @@
     bottom: -90px;
   }
 
-  .why .card {
-    width: 18rem;
-  }
-
-  .why .card img {
-    margin-bottom: 1rem;
-  }
-
-  .why .card .networking {
-    margin-bottom: 3rem;
-  }
-
   .ticket-illus img {
     width: 15rem;
   }
@@ -1577,20 +1565,6 @@
 
   .speakers .slick-dots {
     bottom: -90px;
-  }
-
-  .why .card {
-    width: 14rem;
-    height: 45rem;
-  }
-
-  .why .card img {
-    margin-bottom: 0.5rem;
-  }
-
-  .why .card .networking {
-    margin-bottom: 2.5rem;
-    margin-top: 0;
   }
 
   .shareToFriend-overlay .box {

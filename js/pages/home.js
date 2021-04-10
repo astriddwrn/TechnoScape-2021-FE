@@ -102,6 +102,22 @@ $(".shareToFriend-overlay .close").click(function () {
 });
 
 $(document).ready(function () {
+  let viewportWidth = $(window).width();
+
+  if (viewportWidth < 993) {
+    $(".why-content").slick({
+      arrows: false,
+      dots: true,
+    });
+  }
+
+  $(window).resize(function () {
+    let viewportWidth = $(window).width();
+
+    if (viewportWidth > 993) {
+      $(".why-content").slick("unslick");
+    }
+  });
   //HIGHLIGHTS
   var indexBehind2 = 2;
 
