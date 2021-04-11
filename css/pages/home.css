@@ -106,7 +106,7 @@
 }
 
 .about .text-header span {
-  background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
+  background: var(--heading-orange);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -418,7 +418,7 @@
   width: 50px;
   height: 50px;
   content: "";
-  background: linear-gradient(122.19deg, #f4f4f4 -6.52%, #799ff8 89.29%);
+  background: var(--virtual-conference-header);
   position: absolute;
   z-index: -1;
   right: -10px;
@@ -513,7 +513,7 @@
 .highlights .dots,
 .speakers .dots {
   width: 40px;
-  border: 3px solid #4b5e8c;
+  border: 3px solid var(--wedgewood-blue);
 }
 
 .activeHighDots {
@@ -535,7 +535,7 @@
 .highlights .slick-dots div,
 .speakers .slick-dots div {
   width: 40px !important;
-  border: 5px solid #4b5e8c !important;
+  border: 5px solid var(--wedgewood-blue) !important;
   font-size: 0;
   line-height: 0;
 }
@@ -548,7 +548,7 @@
 .why .text-header,
 .highlights .text-header,
 .speakers .text-header {
-  background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
+  background: var(--heading-orange);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -637,7 +637,7 @@
 }
 
 .schedule .text-header {
-  background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
+  background: var(--heading-orange);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -703,7 +703,7 @@
 }
 
 .schedule-picker.active {
-  border-bottom: 3px solid #8177f7 !important;
+  border-bottom: 3px solid var(--mediumslate-blue) !important;
 }
 
 .ticket {
@@ -716,7 +716,7 @@
 }
 
 .ticket .text-super {
-  background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
+  background: var(--heading-orange);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -743,7 +743,7 @@
 }
 
 .faq .text-header {
-  background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
+  background: var(--heading-orange);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -888,7 +888,7 @@
 }
 
 .share .text-header span {
-  background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
+  background: var(--heading-orange);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -961,7 +961,7 @@
 }
 
 .sponsors .text-header {
-  background: linear-gradient(180deg, #ffc19e 6.25%, #ffffff 100%);
+  background: var(--heading-orange);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

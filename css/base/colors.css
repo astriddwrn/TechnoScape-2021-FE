@@ -38,4 +38,11 @@
     #8177f7 90.96%
   );
   --fading-white: rgba(255, 255, 255, 0.4);
+  --virtual-conference-header: linear-gradient(
+    122.19deg,
+    #f4f4f4 -6.52%,
+    #799ff8 89.29%
+  );
+  --wedgewood-blue: #4b5e8c;
+  --mediumslate-blue: #8177f7;
 }
