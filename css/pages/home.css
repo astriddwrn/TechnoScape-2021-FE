@@ -1544,22 +1544,16 @@
 
   .highlights .main-container,
   .highlights .description-container,
-  .highlights .dots-container,
-  .speakers .main-container,
-  .speakers .description-container,
-  .speakers .dots-container {
+  .highlights .dots-container {
     display: none;
   }
-  .highlights .second-container,
-  .speakers .second-container {
+  .highlights .second-container {
     display: flex;
   }
-  .highlights .description-container2,
-  .speakers .description-container2 {
+  .highlights .description-container2 {
     display: block;
   }
-  .highlights .glass,
-  .speakers .glass {
+  .highlights .glass {
     opacity: 1;
   }
 
@@ -1570,6 +1564,14 @@
 
   .speakers .slick-dots {
     bottom: -90px;
+  }
+
+  .speakers .rightHigh {
+    transform: translate(-20%, -50%) scale(0.8) !important;
+  }
+
+  .speakers .leftHigh {
+    transform: translate(-80%, -50%) scale(0.8) !important;
   }
 
   .shareToFriend-overlay .box {
@@ -1662,6 +1664,21 @@
   .share .text-header,
   .share p {
     text-align: center;
+  }
+
+  .speakers .main-container,
+  .speakers .description-container,
+  .speakers .dots-container {
+    display: none;
+  }
+  .speakers .second-container {
+    display: flex;
+  }
+  .speakers .description-container2 {
+    display: block;
+  }
+  .speakers .glass {
+    opacity: 1;
   }
 
   .highlights .carousel-wrapper2,
