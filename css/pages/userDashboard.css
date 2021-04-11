@@ -600,12 +600,14 @@ body{
 }
 
 .schedule .line{
-    height: 20px;
+    /* height: 20px; */
+    top:30px;
+    height:calc(100% + 10px);
     position: absolute;
     border: 2px solid var(--fading-white);
     margin-left: 14px;
     z-index: 1;
-    display: none;
+    /* display: none; */
 }
 
 .schedule .ball{
