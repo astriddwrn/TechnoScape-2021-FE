@@ -7,7 +7,6 @@ body {
 
 a {
   color: inherit;
-  border-bottom: 1px solid var(--white);
   padding-bottom: 2.5px;
 }
 
@@ -15,7 +14,6 @@ a:hover {
   color: inherit;
   text-decoration: inherit;
   color: var(--pale-blue-light);
-  border-bottom: 1px solid var(--pale-blue-light);
 }
 
 button {
@@ -114,19 +112,21 @@ input:before {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   opacity: 1;
 }
 
-.section-2 {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  opacity: 0;
-  padding: 0px 4rem;
+i {
+  font-size: 1.1rem;
+}
+.section-1 div p {
+  margin-left: 1rem;
 }
 
+.section-1 .content-wrapper {
+  margin-top: 1rem;
+}
 .main-glass {
   width: 42vw;
   min-height: 400px;
@@ -160,35 +160,17 @@ input:before {
 }
 
 .main-glass div p {
-  position: relative;
-  width: 80%;
+  width: 100%;
   color: white;
   font-size: 1rem;
   text-align: left;
-  margin-bottom: 1.5rem;
-}
-
-.main-glass div p::before {
-  position: absolute;
-  content: " ";
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.4) 0%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
-  border-radius: 32px;
-  left: -20px;
-  top: 6px;
+  margin-bottom: 0px;
 }
 
 .button-container {
   display: flex;
   flex-direction: row;
-  padding-top: 3rem;
+  padding-top: 4rem;
   width: 100%;
   justify-content: center;
 }
@@ -220,46 +202,13 @@ input:before {
   transition: 0.3s;
 }
 
-.back-button {
-  margin-bottom: 20px;
-  width: fit-content;
+/* INPUT */
+.input-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  padding: 15px 75px;
   border-radius: 32px;
-  border: 2px solid rgba(255, 255, 255, 0.448);
-  cursor: pointer;
-
-  letter-spacing: 0.1em;
-  color: white;
-  text-align: center;
-}
-
-.back-button:hover {
-  box-shadow: 0px 0px 30px rgba(245, 245, 245, 0.25);
-  transition: 0.3s;
-}
-
-.haveAccount-wrapper {
-  display: flex;
-  flex-direction: row;
-  color: var(--white);
-  margin-top: 20px;
-}
-
-.haveAccount-wrapper div:nth-child(1) {
-  margin-right: 5px;
-}
-
-/* INPUT */
-.input-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--white);
+  background: var(--white);
   /* margin-bottom: 20px; */
 }
 
@@ -267,13 +216,12 @@ input:before {
   width: 100%;
   background-color: transparent;
   border: none;
-  color: var(--white);
-}
-
-.input-wrapper img {
-  margin-right: 20px;
-  height: 25px;
-  width: 25px;
+  color: black;
+  font-family: "Inter-Bold";
+  padding: 13px 55px;
+  font-size: 1.5rem;
+  text-align: center;
+  min-width: 250px;
 }
 
 input:-webkit-autofill,
@@ -296,30 +244,6 @@ input:focus {
   background-position: 0 0;
 }
 
-form label {
-  margin-top: 20px;
-}
-
-.valid {
-  opacity: 1;
-}
-
-.symbol {
-  display: none;
-  margin: 0 !important;
-}
-
-.errorMsg {
-  color: #b34444;
-  font-size: 1rem;
-  width: 100%;
-  margin: 0 !important;
-  /* margin-top: -15px; */
-}
-
-strong {
-  font-size: 1.01rem;
-}
 @media screen and (max-width: 1200px) {
   .createteam-container {
     padding: 0px 3rem;
@@ -370,15 +294,11 @@ strong {
     padding: 0;
   }
 
-  .section-1,
-  .section-2 {
-    width: 90%;
-  }
   .input-wrapper {
     width: 100%;
   }
   .input-wrapper input {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .button-container {
@@ -388,37 +308,13 @@ strong {
     padding: 12px 65px;
     border-radius: 32px;
   }
-
-  .back-button {
-    padding: 8px 65px;
-    border-radius: 32px;
-  }
-  .haveAccount-wrapper {
-    display: flex;
-    flex-direction: column;
-    color: var(--white);
-    margin-top: 20px;
-    margin-bottom: 4rem;
-  }
-
-  .createteam-container {
-    padding: 0px 0rem;
-  }
-  .section-2 {
-    padding: 0px 0rem;
-  }
-  label {
-    width: 80%;
-  }
-
   .button-orange {
     padding: 12px 55px;
     border-radius: 32px;
   }
-
-  .back-button {
-    padding: 8px 55px;
-    border-radius: 32px;
+  .input-wrapper input {
+    padding: 2px 55px;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 428px) {
