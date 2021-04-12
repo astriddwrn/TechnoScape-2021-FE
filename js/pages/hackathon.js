@@ -103,6 +103,22 @@ $(document).ready(function(){
 });
   
 
+/* Tilt */
+document.addEventListener('DOMContentLoaded', () => {
+	$('.mentors .glass-card').tilt({
+		glare: true,
+		maxGlare: 0.1,
+		speed: 1000,
+		perspective: 1500,
+	});
+
+	$('.jury .glass-card').tilt({
+		glare: true,
+		maxGlare: 0.1,
+		speed: 1000,
+		perspective: 1500,
+	});
+})
 
 /* Mentors Carousel */
 $(document).ready(function(){

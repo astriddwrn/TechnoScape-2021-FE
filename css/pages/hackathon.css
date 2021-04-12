@@ -82,6 +82,12 @@
   height: 100%;
 }
 
+.mentors-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .mentors .text-header-bold {
   margin: 0 auto 20px auto;
   text-align: center;
@@ -117,7 +123,7 @@
   margin: 0px 3em;
 }
 
-.mentors-glass-card {
+.mentors .glass-card {
   width: 18rem;
   height: fit-content;
   background: radial-gradient(
@@ -125,32 +131,71 @@
     rgba(255, 255, 255, 0.4) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
+  /*   backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px); */
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: var(--white);
   text-align: center;
   box-sizing: border-box;
   position: relative;
+  transform-style: preserve-3d;
+  z-index: 3;
 }
 
-.mentors-card-img {
+.mentors .glass-card-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentors .glass-card img {
   width: 15rem;
   border-radius: 32px;
   margin: 1.5em 1.5em;
 }
 
-.mentors-glass-card p {
+.mentors .glass-card p {
   font-family: "Inter-Light";
   font-weight: 400;
   font-size: 1.1rem;
   margin-bottom: 1.5em;
 }
 
+.glass-card img,
+.glass-card h4,
+.glass-card p {
+  transform: translateZ(15px);
+}
+
 #mentors-technology,
 #mentors-business {
   display: none;
+}
+
+.circleglow {
+  width: 21em;
+  height: 28em;
+  border-radius: 50%;
+  filter: blur(30px);
+  background: linear-gradient(
+    151.12deg,
+    rgba(172, 165, 255, 0.17) 19.15%,
+    rgba(236, 242, 255, 0.1) 91.38%
+  );
+  z-index: 1;
+  opacity: 0;
+}
+
+.mentors .circleglow {
+  position: absolute;
+}
+
+.glass-card:hover + .circleglow {
+  opacity: 1;
+  transition: 0.6s;
 }
 
 /*Jury*/
@@ -160,64 +205,87 @@
   padding: 100px 3vw;
 }
 
-.jury .container {
-  width: 100%;
-  height: 100%;
-}
-
 .jury .text-header-bold {
-  margin: 0 auto 50px auto;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
-/* Mentors Glass Card */
+.jury-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
 .jury-content div:nth-child(2) {
-  margin: 0px 3em;
+  margin: 0px 3rem;
 }
 
-.jury-glass-card {
-  width: 17.6rem;
+.jury .glass-card {
+  width: 18rem;
   height: fit-content;
   background: radial-gradient(
     88.77% 88.77% at 25.41% 9.11%,
     rgba(255, 255, 255, 0.4) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
+  /*   backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px); */
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: var(--white);
   text-align: center;
   box-sizing: border-box;
+  position: relative;
+  transform-style: preserve-3d;
+  z-index: 3;
 }
 
-.jury-card-img {
-  width: 15rem;
-  border-radius: 32px;
-  margin: 1.5em 1em;
-}
-
-.jury-glass-card p {
-  font-family: "Inter-Light";
-  font-weight: 400;
-  margin-bottom: 1.5em;
-}
-
-.jury-glass-card div {
-  width: 14rem;
-  height: 2.5rem;
+.jury .glassblock {
+  margin: 2rem 2rem;
+  margin-top: 0.2rem !important;
+  padding: 0.5rem 1rem;
   background: radial-gradient(
     88.77% 88.77% at 25.41% 9.11%,
     rgba(255, 255, 255, 0.4) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 10px;
-  padding: 0.5rem;
-  margin: 1rem auto;
-  /* Font */
+  transform: translateZ(25px);
   font-family: "Inter-Light";
+}
+
+.jury .glass-card p {
+  padding: 0px 3rem;
+  margin-bottom: 0rem;
+  font-family: "Inter-Light";
+}
+
+.jury .glass-card img {
+  width: 15rem;
+  border-radius: 32px;
+  margin: 1.5em 1.5em;
+  margin-bottom: 0.1rem;
+}
+
+.jury .glass-card-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jury .circleglow {
+  height: 33rem;
+  position: absolute;
+  top: 0%;
+}
+
+.jury .glass-card:hover + .circleglow {
+  opacity: 1;
+  transition: 0.6s;
 }
 
 /* Mobile Carousel stuff */
@@ -305,13 +373,20 @@
 }
 
 /* Tilt */
-.js-tilt-glare {
+.mentors .js-tilt-glare {
   border-radius: 20px;
 }
+
+.jury .js-tilt-glare {
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 1200px) {
-  .mentors-content div:nth-child(2),
+  .mentors-content div:nth-child(2) {
+    margin: 0px 1.5em;
+  }
   .jury-content div:nth-child(2) {
-    margin: 0px 2em;
+    margin: 0px 1.5em;
   }
 }
 @media screen and (max-width: 992px) {
@@ -320,68 +395,103 @@
   #mentors-business-button {
     font-size: 0.5rem;
   }
-  .mentors-content div:nth-child(2),
-  .jury-content div:nth-child(2) {
-    margin: 0px 1em;
-  }
 
-  .mentors-glass-card,
-  .jury-glass-card {
+  .mentors .glass-card {
     width: 14rem;
   }
 
-  .mentors-card-img,
-  .jury-card-img {
-    width: 11.5rem;
-    margin: 1.5em 1em;
-    border-radius: 20px;
-  }
-
-  .mentors-glass-card h4,
-  .jury-glass-card h4 {
-    font-size: 1.2rem;
-  }
-
-  .mentors-glass-card p,
-  .jury-glass-card p {
-    font-size: 0.8rem;
-    margin-bottom: 1.5em;
-  }
-
-  .jury-glass-card div {
+  .mentors .glass-card img {
     width: 11rem;
-    height: 2.5rem;
-    font-size: 0.9rem;
+    margin: 1.1rem 1rem;
+  }
+
+  .mentors .glass-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .mentors .circleglow {
+    width: 14rem;
+    height: 24rem;
+  }
+
+  .jury .glass-card {
+    width: 14rem;
+  }
+
+  .jury .glass-card img {
+    width: 11rem;
+    margin: 1.1rem 1rem;
+  }
+
+  .jury .glass-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .jury .glass-card p {
+    font-size: 1.05rem;
+    padding: 0px 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .jury .circleglow {
+    width: 14rem;
+    height: 24rem;
   }
 }
 @media screen and (max-width: 762px) {
-  .mentors-glass-card,
-  .jury-glass-card {
-    width: 10rem;
+  .mentors .glass-card {
+    width: 11rem;
   }
 
-  .mentors-card-img,
-  .jury-card-img {
+  .mentors .glass-card img {
     width: 8rem;
-    margin: 1.5em 1em;
+    margin: 1.1rem 1rem;
     border-radius: 20px;
   }
 
-  .mentors-glass-card h4,
-  .jury-glass-card h4 {
-    font-size: 0.9rem;
+  .mentors .glass-card h4 {
+    font-size: 1.1rem;
   }
 
-  .mentors-glass-card p,
-  .jury-glass-card p {
+  .mentors .glass-card p {
     font-size: 0.8rem;
-    margin-bottom: 1.5em;
   }
 
-  .jury-glass-card div {
+  .mentors .circleglow {
+    display: none;
+  }
+
+  .jury .glass-card {
+    width: 11rem;
+  }
+
+  .jury .glass-card img {
     width: 8rem;
-    height: 2rem;
+    margin: 1.1rem 1rem;
+    border-radius: 20px;
+  }
+
+  .jury .glass-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .jury .glass-card p {
     font-size: 0.8rem;
+  }
+
+  .jury .glassblock {
+    font-size: 0.8rem;
+    margin: 1rem;
+  }
+
+  .jury .circleglow {
+    display: none;
+  }
+  .mentors-content div:nth-child(2) {
+    margin: 0px 0.5em;
+  }
+  .jury-content div:nth-child(2) {
+    margin: 0px 0.5em;
   }
 }
 
@@ -389,48 +499,57 @@
   .normaldisplay {
     display: none !important;
   }
+
   .jury {
     display: inline-block !important;
-  }
-  .jury-content div:nth-child(2) {
-    margin: 3rem 3em;
   }
 
   .mentors-mobile-wrapper {
     display: block !important;
   }
+
   #mentors-design-button,
   #mentors-technology-button,
   #mentors-business-button {
     font-size: 0.2rem;
   }
 
-  .jury-glass-card {
-    width: 17.6rem;
-    height: fit-content;
+  .jury-content {
+    flex-direction: column;
+  }
+  .jury .glass-card {
+    width: 18rem;
   }
 
-  .jury-card-img {
+  .jury .glass-card img {
     width: 15rem;
     border-radius: 32px;
-    margin: 1.5em 1em;
+    margin: 1.5em 1.5em;
+    margin-bottom: 0.1rem;
   }
 
-  .jury-glass-card p {
-  }
-
-  .jury-glass-card div {
-    width: 14rem;
-    height: 2.5rem;
-  }
-  .jury-glass-card h4 {
+  .jury .glass-card h4 {
     font-size: 1.5rem;
+    margin-top: 1rem;
   }
-  .jury-glass-card p {
-    font-size: 1rem;
+
+  .jury .glass-card p {
+    font-size: 1.2rem;
+    padding: 0px 4rem;
+    margin-bottom: 1rem;
+    font-family: "Inter-Light";
   }
-  .jury-glass-card div {
+
+  .jury .glassblock {
     font-size: 1.1rem;
+    margin: 2rem 2rem;
+  }
+
+  .jury .circleglow {
+    display: none;
+  }
+  .jury-content div:nth-child(2) {
+    margin: 3rem 0em;
   }
 }
 @media screen and (max-width: 428px) {
