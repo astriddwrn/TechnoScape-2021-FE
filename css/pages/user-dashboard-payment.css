@@ -226,6 +226,38 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
     transition: 0.3s;
 }
 
+/* DW */
+.text-header{
+    text-align: center;
+    
+}
+
+.early .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    margin: 30px 0; 
+}
+
+.text-subheader{
+    text-align: center;
+}
+
+.early .text-med-bold{
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.bullets{
+    margin-top:0 !important;
+}
+
+.center{
+    text-align: center;
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -242,6 +274,10 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
 @media screen and (max-width: 762px) {
     body{
         padding: 50px 5vw;
+    }
+    .early .text-med-bold{
+        margin-top: 30px;
+        font-size: 1.3rem;
     }
     
 }
@@ -281,6 +317,11 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
         margin: 0 2vw;
         padding: 5px 0;
     }
+
+    .early .text-med-bold{
+        margin-top: 30px;
+        font-size: 1rem;
+    }
 }
 @media screen and (max-width: 428px) {
     body{
@@ -293,8 +334,8 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
         font-size: .6rem !important;
         padding-top: 5px;
     }
-    .button-wrapper div{
-        
+    .early .text-subheader{
+        font-size: 1rem;
     }
 }
   
