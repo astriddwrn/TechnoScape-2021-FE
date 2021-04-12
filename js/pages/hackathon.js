@@ -119,16 +119,6 @@ $(document).ready(function(){
 		useTransform: true,
 		cssEase: "ease-in-out"
 	});
-	VanillaTilt.init(document.querySelectorAll(".mentors-glass-card"), {
-		glare: true,
-		reverse: true,
-		"max-glare": 0.2,
-	});
-
-	VanillaTilt.init(document.querySelectorAll(".jury-glass-card"), {
-		reverse: true,
-		
-	})
 });
 
 /* Jury */
