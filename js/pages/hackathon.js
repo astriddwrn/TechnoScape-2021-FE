@@ -100,6 +100,7 @@ $(document).ready(function(){
 		$('div#design3-title').text('Rose Bush');
 		$('div#design3-text').text('UX Researcher at ABC Company');
 	});
+
 });
   
 
@@ -119,6 +120,23 @@ document.addEventListener('DOMContentLoaded', () => {
 		perspective: 1500,
 	});
 })
+
+/* Destroy tilt < 992px view width */
+$(() => {
+	const viewwidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
+    const tilt = $('.js-tilt').tilt();
+    const tiltOutput = $('.js-tilt-output').tilt();
+    tiltOutput.on('change', function (e, transforms) {
+       const output = $(this).closest('.js-parent').find('.js-output');
+       $(`<li><strong>X: </strong>${transforms.percentageX} | <strong>Y: </strong>${transforms.percentageY}</li>`).prependTo(output);
+    });
+
+	if (viewwidth < 992) {
+		const tilt = $('.glass-card').tilt()
+		tilt.tilt.destroy.call(tilt);
+	};
+});
 
 /* Mentors Carousel */
 $(document).ready(function(){
