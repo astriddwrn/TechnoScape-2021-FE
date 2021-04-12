@@ -1,7 +1,12 @@
 @import './../base/base.css';
 
+a[href^="tel"]{
+    color:inherit;
+    text-decoration:none;
+}
+
 .bold{
-    font-weight: 700 !important;
+    font-family: "Inter-Bold";
 }
 
 .text-orange{
@@ -52,15 +57,19 @@
 
 body{
     padding:20px;
-    
-
     display: grid;
     grid-template-areas: 'left right right right';
     grid-gap: 20px;
 }
 
 .menu-symbol-container{
-    position: relative;
+    position: fixed;
+    width: 100%;
+    background-color: var(--blue);
+    top: 0;
+    height: 70px;
+    z-index: 9999;
+    display: none;
 }
 
 .menu-symbol{
@@ -83,14 +92,15 @@ body{
     color:var(--white);
 }
 
-.left-menu .upper-wrapper{
+.left-menu .upper-wrapper, .left-menu .lower-wrapper{
     display: flex;
     flex-direction:column;
     align-items: center;
+    width:80%;
 }
 
 .left-menu .upper-wrapper div{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .left-menu .logo{
@@ -111,7 +121,7 @@ body{
     margin-bottom: 10px;
 }
 
-.left-menu .tab{
+.left-menu .tab, .left-menu .logout-tab{
     width:80%;
     display: flex;
     flex-direction: row;
@@ -119,11 +129,11 @@ body{
     cursor: pointer;
 }
 
-.tab img{
+.tab img, .logout-tab img{
     width:25px;
 }
 
-.left-menu .tab span{
+.left-menu .tab span, .logout-tab span{
     margin-left: 10px;
 }
 
@@ -135,13 +145,14 @@ body{
     display: none;
 }
 
-.left-menu .lower-wrapper {
+/* .left-menu .lower-wrapper {
     width:80%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 0 auto; */
-}
+    /* margin: 0 auto; 
+} */
+
 
 .right-container{
     grid-area: right;
@@ -264,7 +275,14 @@ body{
 
 /* TASK */
 .task .box{
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.task .box:hover{
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .task .box .text-med-bold{
@@ -486,6 +504,10 @@ body{
 }
 
 .viewCV-overlay .close{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
     color: var(--white);
     position: absolute;
     right: 30px;
@@ -599,7 +621,7 @@ body{
     /* height: 300px; */
 }
 
-.schedule .line{
+.schedule .content .line{
     /* height: 20px; */
     top:30px;
     height:calc(100% + 10px);
@@ -608,6 +630,10 @@ body{
     margin-left: 14px;
     z-index: 1;
     /* display: none; */
+}
+
+.schedule .glass div:last-of-type .line{
+    display: none !important;
 }
 
 .schedule .ball{
@@ -680,6 +706,63 @@ body{
     cursor: pointer;
 }
 
+.logout-overlay{
+    width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 99999;
+	top:0;
+    left:0;
+    right:0;
+    bottom:0;
+	background: rgba(0, 0, 0, 0.65);
+	padding: 0 50px;
+}
+
+.logout-overlay .glass{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    max-width: 1000px;
+    max-height: 700px;
+    height: 60vh;
+    width: 60vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.logout-overlay .button-wrapper div{
+    padding: 15px 0;
+    width: 40%;
+}
+
+.logout-overlay .button-wrapper{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}
+
+.logout-overlay .back-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 75px;
+    border-radius: 32px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.logout-overlay .back-button:hover{
+    box-shadow: 0px 0px 30px rgba(245, 245, 245, 0.25);
+    transition: 0.3s;
+}
+
 
 @media screen and (max-width: 1200px) {
     .task .notRegistered .description-container img{
@@ -690,12 +773,19 @@ body{
 }
 @media screen and (max-width: 992px) {
     body{
-        padding: 0 20px;
+        padding: 0 0px;
+        /* padding-top: padding-top: 100px; ; */
         display: block;
+    }
+    .menu-symbol-container{
+        /* background-color: var(--blue-bg); */
+        display: block;
+        width: 100%;
     }
     .menu-symbol{
         display: block;
-        top: 40px;
+        top: 20px;
+        right: 20px;
     }
     .left-menu{
         position: fixed;
@@ -704,10 +794,12 @@ body{
         height:100vh;
         right:0;
         border-radius: 0;
+        z-index: 9999;
         /* display: none; */
     }
     .right-container{
-        padding-top: 20px;
+        /* padding: 0 10px; */
+        padding-top: 50px;
         min-height: 100vh;
         width: 100%;
         background: none;
@@ -725,6 +817,23 @@ body{
         right: 10px;
         top: 50%;
         transform: translate(0, -50%);
+    }
+
+
+    .logout-overlay .glass{
+        padding:  30px;
+        text-align: center;
+        /* width:400px; */
+    }
+    .logout-overlay .button-wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        height: 60%;
+    }
+    .logout-overlay .button-wrapper div{
+        width: 300px;
+        margin-bottom: 10px;
     }
 
 }
@@ -779,19 +888,26 @@ body{
     .joinGroup-overlay .glass{
         width: 90%;
     }
+
+    .logout-overlay .glass{
+        width:400px;
+    }
     
 }
 @media screen and (max-width: 576px) {
     .left-menu{
         width:60vw;
     }
+    .menu-symbol-container{
+        /* padding: 0; */
+    }
     .menu-symbol{
-        top: 40px;
-        right: 0px;
+        /* top: 40px; */
+        /* right: -20px; */
     }
-    .right-container{
+    /* .right-container{
         padding: 20px 0;
-    }
+    } */
 
     .task .text-med-bold{
         font-size: 2rem;
@@ -836,8 +952,12 @@ body{
     }
 }
 @media screen and (max-width: 428px) {
+    .menu-symbol-container{
+        height: 60px;
+    }
     .menu-symbol{
-        top:30px;
+        top:13px;
+        right: 20px;
     }
 
     .announcement .list .right-wrapper .button-container{
@@ -860,6 +980,12 @@ body{
     .joinGroup-overlay{
         padding: 10px;
     }
+    .joinGroup-overlay .group-button{
+        padding: 10px 20px;
+    }
+    .joinGroup-overlay img{
+        width: 70%;
+    }
     .viewCV-overlay .container{
         width: 90vw;
     }
@@ -872,6 +998,19 @@ body{
     .task-team .button-orange:nth-child(1){
         margin-right:0;
         margin-bottom: 20px;
+    }
+
+    .logout-overlay .glass{
+        padding:  20px;
+        text-align: center;
+        width:250px;
+    }
+    .logout-overlay .button-wrapper{
+        height: 60%;
+    }
+    .logout-overlay .button-wrapper div{
+        width: 200px;
+        margin-bottom: 10px;
     }
 }
   

@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technoscape</title>
-    <link rel="stylesheet" href="./css/pages/userDashboard.css">
+    <link rel="stylesheet" href="./css/pages/user-dashboard.css">
 </head>
 <body>
 
+    <div class="logout-overlay">
+        <div class="glass patch-glass">
+            <div class="text-subheader bold">Are you sure you want to log out?</div>
+            <div class="button-wrapper">
+                <div class="back-button text-regular">Go Back</div>
+                <div class="logout-button text-regular button-orange">Log Out</div>
+            </div>
+        </div>
+    </div>
+
     <div class="joinGroup-overlay">
-        <div class="glass">
+        <div class="glass patch-glass">
             <span class="close">X</span>
             <div class="text-med-light bold">Join our WA group!</div>
             <div class="text-light">You only have to join 1 group!</div>
@@ -33,7 +43,7 @@
 
     <div class="menu-symbol-container"><img class="menu-symbol" src="./assets/img/userDashboard/menuSymbol.svg" alt=""></div>
 
-    <div class="left-menu glass">
+    <div class="left-menu glass patch-glass">
         <div class="upper-wrapper">
             <img class="logo" src="./assets/img/userDashboard/menu-logo.svg" alt="">
             <div class="user">
@@ -64,7 +74,7 @@
         </div>
 
         <div class="lower-wrapper">
-            <div class="tab">
+            <div class="logout-tab">
                 <img src="/assets/img/userDashboard/menu-logout.svg" alt="">
                 <span class="text-regular bold">Log Out</span>
             </div>
@@ -72,18 +82,18 @@
         
     </div>
 
-    <div class="right-container glass">
+    <div class="right-container glass patch-glass">
 
         <!-- ANNOUNCEMENT -->
         <div class="announcement section">
             <div class="text-orange text-header">Announcement</div>
 
-            <div class="empty glass text-header">
+            <div class="empty glass patch-glass text-header">
                 <span class="text-header">You have no announcement!</span>
                 <img src="./assets/img/userDashboard/announcement-emptyGirl.svg" alt="">
             </div>
 
-            <div class="list glass">
+            <div class="list glass patch-glass">
                 <div class="clickbait ">
                     <div class="text-subheader bold">title</div>
                     <div class="right-wrapper">
@@ -99,7 +109,7 @@
                     <div class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac posuere urna in lectus sed sollicitudin nunc. Suscipit ultrices feugiat magnis eu phasellus posuere. Quam diam adipiscing massa lacinia risus quam quis. Nulla est, mattis venenatis scelerisque etiam cras et, pretium ut. Laoreet aenean est viverra urna elementum eget. Dictumst enim nunc dignissim egestas feugiat. Enim, integer a duis est leo, mi mauris vestibulum ornare. </div>
                 </div>
             </div>
-            <div class="list glass">
+            <div class="list glass patch-glass">
                 <div class="clickbait ">
                     <div class="text-subheader bold">title</div>
                     <div class="right-wrapper">
@@ -121,12 +131,12 @@
         <div class="task section">
             <div class="text-orange text-header">Task</div>
           
-            <div class="box glass vc">
+            <div class="box glass patch-glass vc">
                 <div class="text-med-bold">Virtual Conference</div>
                 
                 <div class="notRegistered">
                     <div class="description-container">
-                        <div class="text-regular">Virtual Conference is a series of online webinars and talkshows that will be held for 3 days and bring topics about technology, business, and design. This year Virtual Conference raised the theme "Exploring Potential through Technological Development". Virtual Conference will be a place for participants to gain insight through webinars and talkshows as well as introduce various topics relevant to IT Development directly from speakers who are experts in their fields so that participants can implement this knowledge in the future.</div>
+                        <div class="text-regular">Virtual Conference is a <b>series of online webinars and talkshows</b> that will be held for 3 days and bring topics about technology, business, and design. This year Virtual Conference raised the theme <b>"Exploring Potential through Technological Development"</b>. Virtual Conference will be a place for participants to gain insight through webinars and talkshows as well as introduce various topics relevant to IT Development directly from speakers who are experts in their fields so that participants can implement this knowledge in the future.</div>
                         <img src="./assets/img/userDashboard/task-VCplanet.svg" alt="">
                     </div>
                     <div class="regular-text readMore">...Read More</div>
@@ -163,12 +173,12 @@
                 </div>
             </div>
 
-            <div class="box glass dw">
+            <div class="box glass patch-glass dw">
                 <div class="text-med-bold">Developer Workshop</div>
                 
                 <div class="notRegistered">
                     <div class="description-container">
-                        <div class="text-regular">Developer Workshop is a teaching-workshop class especially designed for those who want to become experts at coding. Developing your talent at coding by providing the most professional mentors, also giving you networking connections with our sponsors. As well as more knowledge and preparation for future TechnoScape’s Hackathon 4.0!</div>
+                        <div class="text-regular">Developer Workshop is a <b>teaching-workshop class</b> especially designed for those who want to become experts at coding. Developing your talent at coding by providing the most professional mentors, also giving you networking connections with our sponsors. As well as more knowledge and preparation for future TechnoScape’s Hackathon 4.0!</div>
                         <img src="./assets/img/userDashboard/task-DWplanet.svg" alt="">
                     </div>
                     <div class="regular-text readMore">...Read More</div>
@@ -207,12 +217,12 @@
                 </div>
             </div>
 
-            <div class="box glass hack">
+            <div class="box glass patch-glass hack">
                 <div class="text-med-bold">Hackathon 4.0</div>
                 
                 <div class="notRegistered">
                     <div class="description-container">
-                        <div class="text-regular">Hackathon is an online coding competition held in a marathon for 48 hours, where each team is challenged to provide a solution to a problem by producing a product in the form of an application or website.</div>
+                        <div class="text-regular">Hackathon is an <b>online coding competition held in a marathon for 48 hours</b>, where each team is challenged to provide a solution to a problem by producing a product in the form of an application or website.</div>
                         <img src="./assets/img/userDashboard/task-HACKplanet.svg" alt="">
                     </div>
                     <div class="regular-text readMore">...Read More</div>
@@ -379,22 +389,22 @@
         <!-- SCHEDULE -->
         <div class="schedule section">
             <div class="text-orange text-header">Schedule</div>
-            <div class="glass">
-                <div class="text-big-regular title">Hari, tanggal bulan 2021</div>
+            <div class="glass patch-glass">
+                <div class="text-big-regular title ">Hari, tanggal bulan 2021</div>
                 <div class="content">
                     <div class="line"> </div>
                     <div class="ball"> </div>
                     <div class="text-wrapper">
-                        <div class="text-big-regular">Virtual Conference - [judul VC]</div>
+                        <div class="text-big-regular bold">Virtual Conference - [judul VC]</div>
                         <div class="text-regular">07.20 - 08.50 WIB</div>
                     </div>
                     <div class="button-orange">Join Zoom</div>
                 </div>
                 <div class="content">
-                    <!-- <div class="line"> </div> -->
+                    <div class="line"> </div>
                     <div class="ball"> </div>
                     <div class="text-wrapper">
-                        <div class="text-big-regular">Virtual Conference - [judul VC]</div>
+                        <div class="text-big-regular bold">Virtual Conference - [judul VC]</div>
                         <div class="text-regular">07.20 - 08.50 WIB</div>
                     </div>
                     <div class="button-orange">Join Zoom</div>
@@ -493,7 +503,7 @@
 
     <script src="./assets/lib/jquery/jquery.min.js"></script>
     <script src="./assets/lib/jquery-ui/jquery-ui.js"></script>
-    <script src="./js/pages/userDashboard.js"></script>
+    <script src="./js/pages/user-dashboard.js"></script>
     <!-- jquery validate plugin -->
     <!-- <script src="/assets/lib/jquery validate plugin/dist/jquery.validate.js"></script> -->
 </body>

@@ -1,0 +1,280 @@
+@import './../base/base.css';
+
+
+a[href^="tel"]{
+    color:inherit;
+    text-decoration:none;
+}
+
+.bold{
+    font-family: "Inter-Bold";
+}
+
+.text-orange{
+    width: fit-content;
+    background: linear-gradient(180deg, #FFC19E 6.25%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-orange {
+    background-image: var(--btn-orange);
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 75px;
+    border-radius: 32px;
+  
+    letter-spacing: 0.1em;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-orange:hover {
+    box-shadow: 0px 0px 30px rgba(245, 245, 245, 0.25);
+    background-image: linear-gradient(180deg, #da8f63 -22.64%, #d54d45 91.54%);
+    transition: 0.3s;
+}
+  
+.glass{
+    
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+    border-radius: 20px;
+	background: radial-gradient(88.77% 88.77% at 25.41% 9.11%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+	background-position: center;
+	backdrop-filter: blur(40px);
+	outline: none;
+	
+	overflow: hidden;
+	border: 2px solid rgba(255, 255, 255, 0.18);
+	border-radius: 32px;
+}
+
+body{
+    padding: 50px 15vw;
+    color: var(--white);
+}
+
+.text-orange{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section{
+    padding: 40px 100px;
+    margin-bottom: 50px;
+}
+
+.text-med-bold{
+    font-size:2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.roww{
+    display: flex;
+    flex-direction: row;
+}
+
+.order .roww{
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.order .header{
+    padding-bottom: 10px;
+    border-bottom:2px solid rgba(255, 255, 255, 0.18);
+}
+
+.order .roww:last-child{
+    margin-top: 30px;
+}
+
+.instruction .roww{
+    margin-top: 15px;
+}
+
+.instruction .roww div:first-child{
+    margin-right: 10px;
+}
+
+.instruction .rekeningInfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.instruction .rekeningInfo div:first-child{
+    margin-right: 50px;
+}
+
+.instruction img{
+    margin: 10px 0
+}
+
+.receipt .blue{
+    color: var(--pale-blue) !important;
+}
+
+.receipt .roww{
+    width:100%;
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 10px;
+    position: relative;
+    align-items: center;
+}
+
+.receipt .roww img{
+    margin-right: 10px;
+}
+
+.receipt input{
+    width:100%;
+}
+
+.receipt label {
+    width: 100%;
+    margin: 0 !important;
+    /* padding: 0 !important; */
+    height: 1rem !important;
+ }
+
+.receipt .add{
+    right: 0;
+    position: absolute;
+    
+}
+input[type=file], /* FF, IE7+, chrome (except button) */
+input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
+    cursor: pointer; 
+}
+ 
+#receipt{
+    opacity: 0;
+    position: absolute;
+    z-index: 5;
+    width: 50px;
+    right: 0;
+    cursor: pointer !important;
+}
+
+.receipt .contact-wrapper{
+    margin: 40px 0;
+}
+
+.receipt .contact-wrapper .list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.receipt .contact-wrapper .list img{
+    margin-right: 10px;
+}
+
+.button-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.button-wrapper div{
+    padding: 15px 0;
+    width: 200px;
+}
+
+.back-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 75px;
+    border-radius: 32px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.back-button:hover{
+    box-shadow: 0px 0px 30px rgba(245, 245, 245, 0.25);
+    transition: 0.3s;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    
+}
+@media screen and (max-width: 992px) {
+    body{
+        padding: 50px 10vw;
+    }
+    .section{
+        padding: 40px 50px;
+    }
+}
+@media screen and (max-width: 762px) {
+    body{
+        padding: 50px 5vw;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    body{
+        padding: 50px 10vw;
+    }
+    .section{
+        padding: 25px 0px;
+        margin-bottom: 20px;
+    }
+    .text-header{
+        font-size: 2rem;
+    }
+    .glass{
+        background: none;
+        backdrop-filter: none;
+        border: none;
+    }
+    .text-med-bold{
+        font-size: 1.5rem;
+    }
+    .instruction .rekeningInfo div:first-child{
+        margin-right: 30px;
+    }
+    label{
+        font-size: .8rem !important;
+    }
+    .button-wrapper{
+        width: 80vw;
+        justify-content: space-between;
+        
+    }
+    .button-wrapper div{
+        margin: 0 2vw;
+        padding: 5px 0;
+    }
+}
+@media screen and (max-width: 428px) {
+    body{
+        padding: 50px 10px;
+    }
+    .text-header{
+        font-size: 1.5rem;
+    }
+    label{
+        font-size: .6rem !important;
+        padding-top: 5px;
+    }
+    .button-wrapper div{
+        
+    }
+}
+  
+

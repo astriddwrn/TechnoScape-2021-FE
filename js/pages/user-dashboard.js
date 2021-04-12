@@ -15,6 +15,11 @@ $(document).ready(function(){
             });
             $(".group-button-active").children().show();
         }
+        else{
+            $(".joinGroup-overlay .group-button div").each(function(){
+                $(this).show();
+            });
+        }
     }
 
     checkPosition();
@@ -69,6 +74,9 @@ $(document).ready(function(){
         }
         else if($(".tab4").children(".text-regular").hasClass("text-active")){
             $(".profile").show();
+        }
+        if(window.matchMedia('(max-width: 992px)').matches && $(".left-menu").is(":visible")){
+            $(".left-menu").hide("slide", { direction: "right" }, 400);
         }
 
         $(".right-container").scrollTop(0);
@@ -144,31 +152,18 @@ $(document).ready(function(){
         $(".viewCV-overlay").show();
     });
 
+    $(".logout-overlay").hide();
+    // LOG OUT
+    $(".logout-tab").click(function(){
+        $(".logout-overlay").show();
+    })
+    $(".logout-overlay .back-button").click(function(){
+        $(".logout-overlay").hide();
+    })
+
+
 });
 
 
-$(window).on('load', function() {
-    function line(){
-        // return
-        // $(".schedule .line:not(:first)").show();
-        $(".schedule .line:not(:first)").each(function(){
-            return;
-            $(this).show();
-            var $current = $(this).parent(); //the element you have
-            var $elems = $('.schedule .content'); //the collection of elements
-            // var $previous = $elems.eq($elems.index($current) - 1).html();
-            var $previous = $current.prevAll(".schedule .content");
-            var $lineHeight = $previous.height();
-            console.log($lineHeight);
-
-            // $current.css("border", "2px solid yellow");
-            // $elems.css("border", "2px solid yellow");
-
-            // $(this).css("height", $lineHeight);
-        });
-    }
-
-    line();
-});
 
 

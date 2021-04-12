@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technoscape</title>
+    <link rel="stylesheet" href="./css/pages/user-dashboard-payment.css">
+</head>
+<body>
+
+    <div class="text-orange text-header">Virtual Conference<br>Payment Page</div>
+
+    <div class="glass section order">
+        <div class="text-med-bold bold">Order Details</div>
+        <div class="roww header">
+            <div class="text-main bold">Ticket</div>
+            <div class="text-main bold">Ticket price</div>
+        </div>
+        <div class="roww">
+            <div class="text-main bold">General</div>
+            <div class="text-regular">Rp30.000</div>
+        </div>
+        <div class="text-regular allEvent">All event pass</div>
+        <div class="roww">
+            <div class="text-main bold">Order ID</div>
+            <div class="text-regular">VC-BNCC-0001</div>
+        </div>
+    </div>
+
+    <div class="glass section instruction text-regular">
+        <div class="text-med-bold bold">Payment Method Instruction</div>
+        <div class="roww">
+            <div>1.</div>
+            <div>5 April hingga 29 Mei 2021 Puku 23.59 WIB</div>
+        </div>
+        <div class="roww">
+            <div>2.</div>
+            <div class="wrapper">
+                <div>Lakukan pembayaran biaya pendaftaran melalui QR code atau ke nomor rekening
+                    berikut:</div>
+                <div class="rekeningInfo">
+                    <div>
+                        <div>Nomor Rekening</div>
+                        <div>Bank</div>
+                        <div>Atas Nama</div>
+                    </div>
+                    <div>
+                        <div>: 7015352337</div>
+                        <div>: BCA</div>
+                        <div>: WILLIAM</div>
+                    </div>
+                </div>
+                <img src="./assets/img/userDashboard/payment-qr.svg" alt="">
+            </div>
+        </div>
+        <div class="roww">
+            <div>3.</div>
+            <div>Peserta mengunggah file bukti pembayaran dengan batas maksimum 5 mb dalam
+                bentuk .JPG, .JPEG, .PNG, atau .PDF.</div>
+        </div>
+        <div class="roww">
+            <div>4.</div>
+            <div>Calon peserta yang telah mengupload bukti pembayaran akan memiliki status
+                Pending dan akan diverifikasi oleh panitia dalam rentang waktu 24 jam. Apabila
+                calon peserta belum diverifikasi dalam rentang waktu tersebut, calon peserta dapat
+                menghubungi panitia melalui Contact Person.</div>
+        </div>
+        <div class="roww">
+            <div>5.</div>
+            <div>Pendaftar yang telah terverifikasi akan secara resmi terdaftar sebagai peserta
+                Virtual Conference.</div>
+        </div>
+        <div class="roww">
+            <div>6.</div>
+            <div>Setelah terverifikasi, peserta dapat melihat link Zoom Virtual Conference di
+                Dashboard - Schedule pada H-1 Virtual Conference.</div>
+        </div>
+    </div>
+
+    <div class="section receipt">
+        <div class="text-med-bold bold">Upload Payment Receipt</div>
+        <div class="text-regular blue">Payment Receipt</div>
+        <div class="roww">
+            <img src="./assets/img/userDashboard/payment-credit.svg" alt="">
+            <label for="" class="text-regular">
+                <i class="fa fa-cloud-upload"></i>Please upload your payment receipt here...
+              </label>
+            <input type="file" id="receipt" name="receipt">
+            <img class="add" src="./assets/img/userDashboard/payment-plus.svg" alt="">
+        </div>
+        <div >Your payment receipt must be in .jpg, .jpeg, .png, or .pdf format.<br>Max. file size is 5MB.
+        </div>
+        <div class="contact-wrapper">
+            <div class="text-regular bold">Got a question? Don’t hesitate to contact us!</div>
+            <div class="text-regular bold">Contact Person</div>
+            <div class="list">
+                <img src="./assets/img/userDashboard/task-user1.svg" alt="">
+                <div class="text-regular">John Doe</div>
+            </div>
+            <div class="list">
+                <img src="./assets/img/userDashboard/task-wa2.svg" alt="">
+                <div class="text-regular">081234567890</div>
+            </div>
+            <div class="list">
+                <img src="./assets/img/userDashboard/task-line3.svg" alt="">
+                <div class="text-regular">johndoe123</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-wrapper">
+        <div class="back-button text-regular">Back</div>
+        <div class="logout-button text-regular button-orange">Submit</div>
+    </div>
+
+    <script src="./assets/lib/jquery/jquery.min.js"></script>
+    <script src="./assets/lib/jquery-ui/jquery-ui.js"></script>
+    <script src="./js/pages/user-dashboard-payment.js"></script>
+    <!-- jquery validate plugin -->
+    <!-- <script src="/assets/lib/jquery validate plugin/dist/jquery.validate.js"></script> -->
+</body>
+</html>
