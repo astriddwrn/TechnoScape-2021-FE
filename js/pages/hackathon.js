@@ -334,8 +334,19 @@ $(document).ready(function(){
     	cssEase: "ease-in-out"
 	});
 	
-	/* Timeline */
-		/* Time Trigger on Hackathon-Timeline */
+	//   SHARE TO FRIEND
+	$(".shareToFriend .button-orange").click(function(){
+		$(".shareToFriend-overlay").css("display", "block");
+	});
+	$(".shareToFriend-overlay .close").click(function(){
+		$(".shareToFriend-overlay").css("display", "none");
+	});
+
+
+});
+
+/* Timeline */
+	/* Time Trigger on Hackathon-Timeline */
 	var closeRegistration = new Date("June 20, 2021 23:59:59").getTime();
 	var technicalMeeting = new Date("June 24, 2021 23:59:59").getTime();
 	var competitionDay = new Date("June 26, 2021 23:59:59").getTime();
@@ -363,63 +374,193 @@ $(document).ready(function(){
 		/* Updates every 1 minutes, biar ga lag? */
 	}, 60000);
 
-
-	/* FAQ */
-	$(document).ready(function () {
-		$('.question .question-top').click(function () {
-			$(this).next('.answer').slideToggle();
-			$(this).parent().find('img').toggle();
-		});
-	});
 	
-	var currPagenumb = 1;
-	let currPagestring = "1 of 3";
+/* Mentors */
+/* mentorsButton */
+$(document).ready(function(){
+	$("#mentors-design-button").click(function () {
+		$("#mentors-design-button").addClass("mentors-buttons-active");
+		$("#mentors-technology-button").removeClass("mentors-buttons-active");
+		$("#mentors-business-button").removeClass("mentors-buttons-active");
+	});
+	$("#mentors-technology-button").click(function () {
+		$("#mentors-technology-button").addClass("mentors-buttons-active");
+		$("#mentors-design-button").removeClass("mentors-buttons-active");
+		$("#mentors-business-button").removeClass("mentors-buttons-active");
+	});
+	$("#mentors-business-button").click(function () {
+		$("#mentors-business-button").addClass("mentors-buttons-active");
+		$("#mentors-technology-button").removeClass("mentors-buttons-active");
+		$("#mentors-design-button").removeClass("mentors-buttons-active");
+	});
+});
 
-	$(document).ready(function () {
-		$('#afterpage').click(function () {
-			if (currPagenumb == 1) {
-				currPagestring = "2 of 3";
-				$('#currpage').html(currPagestring);
-				currPagenumb = 2;
-				$("#faqPage1").addClass("faq-none");
-				$("#faqPage2").removeClass("faq-none");
-				$("#faqPage3").addClass("faq-none");
-			} else if (currPagenumb == 2) {
-				currPagestring = "3 of 3";
-				$('#currpage').html(currPagestring);
-				currPagenumb = 3;
-				$("#faqPage1").addClass("faq-none");
-				$("#faqPage2").addClass("faq-none");
-				$("#faqPage3").removeClass("faq-none");
-			}
-		});
-		$('#beforepage').click(function () {
-			if (currPagenumb == 2) {
-				currPagestring = "1 of 3";
-				$('#currpage').html(currPagestring);
-				currPagenumb = 1;
-				$("#faqPage1").removeClass("faq-none");
-				$("#faqPage2").addClass("faq-none");
-				$("#faqPage3").addClass("faq-none");
-			} else if (currPagenumb == 3) {
-				currPagestring = "2 of 3";
-				$('#currpage').html(currPagestring);
-				currPagenumb = 2;
-				$("#faqPage1").addClass("faq-none");
-				$("#faqPage2").removeClass("faq-none");
-				$("#faqPage3").addClass("faq-none");
-			}
-		});
+/* mentorsCardShow */
+$(document).ready(function(){
+	$("#mentors-design-button").click(function () {
+		/* Normal Display */
+		$("#mentors-technology").hide();
+		$("#mentors-business").hide();
+		$("#mentors-design").fadeIn(800);
+		/* Tablet Display */
+
+		/* Mobile Display */
+		$('#design1-img').attr('src','/assets/img/Hackathon/mentors-design-1.svg');
+		$('div#design1-title').text('Rose Bush');
+		$('div#design1-text').text('UX Researcher at ABC Company');
+
+		$('#design2-img').attr('src','/assets/img/Hackathon/mentors-design-2.svg');
+		$('div#design2-title').text('John Doe');
+		$('div#design2-text').text('UI Designer at ABC Company');
+
+		$('#design3-img').attr('src','/assets/img/Hackathon/mentors-design-3.svg');
+		$('div#design3-title').text('Olive Yew');
+		$('div#design3-text').text('UI Designer at ABC Company');
 	});
 
+	$("#mentors-technology-button").click(function () {
+		/* Normal Display */
+		$("#mentors-design").hide();
+		$("#mentors-business").hide();
+		$("#mentors-technology").fadeIn(800);
+		/* Tablet Display */
 
-	//   SHARE TO FRIEND
-	$(".shareToFriend .button-orange").click(function(){
-		$(".shareToFriend-overlay").css("display", "block");
-	});
-	$(".shareToFriend-overlay .close").click(function(){
-		$(".shareToFriend-overlay").css("display", "none");
+		/* Mobile Display */
+		$('#design1-img').attr('src','/assets/img/Hackathon/mentors-design-3.svg');
+		$('div#design1-title').text('Olive Yew');
+		$('div#design1-text').text('UI Designer at ABC Company');
+
+		$('#design2-img').attr('src','/assets/img/Hackathon/mentors-design-1.svg');
+		$('div#design2-title').text('Rose Bush');
+		$('div#design2-text').text('UX Researcher at ABC Company');
+
+		$('#design3-img').attr('src','/assets/img/Hackathon/mentors-design-2.svg');
+		$('div#design3-title').text('John Doe');
+		$('div#design3-text').text('UI Designer at ABC Company');
 	});
 
+	$("#mentors-business-button").click(function () {
+		/* Normal Display */
+		$("#mentors-technology").hide();
+		$("#mentors-design").hide();
+		$("#mentors-business").fadeIn(800);
+		/* Tablet Display */
+
+		/* Mobile Display */
+		$('#design1-img').attr('src','/assets/img/Hackathon/mentors-design-2.svg');
+		$('div#design1-title').text('John Doe ');
+		$('div#design1-text').text('UI Designer at ABC Company');
+
+		$('#design2-img').attr('src','/assets/img/Hackathon/mentors-design-3.svg');
+		$('div#design2-title').text('Olive Yew');
+		$('div#design2-text').text('UI Designer at ABC Company');
+
+		$('#design3-img').attr('src','/assets/img/Hackathon/mentors-design-1.svg');
+		$('div#design3-title').text('Rose Bush');
+		$('div#design3-text').text('UX Researcher at ABC Company');
+	});
 
 });
+	
+
+/* Tilt */
+document.addEventListener('DOMContentLoaded', () => {
+	$('.mentors .glass-card').tilt({
+		glare: true,
+		maxGlare: 0.1,
+		speed: 1000,
+		perspective: 1500,
+	});
+	$('.jury .glass-card').tilt({
+		glare: true,
+		maxGlare: 0.1,
+		speed: 1000,
+		perspective: 1500,
+	});
+
+})
+
+/* Destroy tilt < 992px view width */
+$(() => {
+	const viewwidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
+	const tilt = $('.js-tilt').tilt();
+	const tiltOutput = $('.js-tilt-output').tilt();
+	tiltOutput.on('change', function (e, transforms) {
+		const output = $(this).closest('.js-parent').find('.js-output');
+		$(`<li><strong>X: </strong>${transforms.percentageX} | <strong>Y: </strong>${transforms.percentageY}</li>`).prependTo(output);
+	});
+
+	if (viewwidth < 992) {
+		const tilt = $('.glass-card').tilt()
+		tilt.tilt.destroy.call(tilt);
+	};
+});
+
+/* Mentors Carousel */
+$(document).ready(function(){
+	$('.mobile-carousel').slick({
+		arrows: false,
+		autoplay: false,
+		autoplaySpeed: 2000,
+		infinite: false,
+		dots: true,
+		customPaging: function(slider, i) {
+		
+			return '<div class="dots2" id=' + i + "></div>";
+		},
+		useTransform: true,
+		cssEase: "ease-in-out"
+	});
+});
+
+
+/* FAQ */
+$(document).ready(function () {
+	$('.question .question-top').click(function () {
+		$(this).next('.answer').slideToggle();
+		$(this).parent().find('img').toggle();
+	});
+});
+
+var currPagenumb = 1;
+let currPagestring = "1 of 3";
+
+$(document).ready(function () {
+	$('#afterpage').click(function () {
+		if (currPagenumb == 1) {
+			currPagestring = "2 of 3";
+			$('#currpage').html(currPagestring);
+			currPagenumb = 2;
+			$("#faqPage1").addClass("faq-none");
+			$("#faqPage2").removeClass("faq-none");
+			$("#faqPage3").addClass("faq-none");
+		} else if (currPagenumb == 2) {
+			currPagestring = "3 of 3";
+			$('#currpage').html(currPagestring);
+			currPagenumb = 3;
+			$("#faqPage1").addClass("faq-none");
+			$("#faqPage2").addClass("faq-none");
+			$("#faqPage3").removeClass("faq-none");
+		}
+	});
+	$('#beforepage').click(function () {
+		if (currPagenumb == 2) {
+			currPagestring = "1 of 3";
+			$('#currpage').html(currPagestring);
+			currPagenumb = 1;
+			$("#faqPage1").removeClass("faq-none");
+			$("#faqPage2").addClass("faq-none");
+			$("#faqPage3").addClass("faq-none");
+		} else if (currPagenumb == 3) {
+			currPagestring = "2 of 3";
+			$('#currpage').html(currPagestring);
+			currPagenumb = 2;
+			$("#faqPage1").addClass("faq-none");
+			$("#faqPage2").removeClass("faq-none");
+			$("#faqPage3").addClass("faq-none");
+		}
+	});
+});
+
+
