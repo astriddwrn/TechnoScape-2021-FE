@@ -6,6 +6,20 @@ a[href^="tel"]{
     text-decoration:none;
 }
 
+button{
+    padding: 0;
+    border: none;
+    background: none;
+    margin: 0 !important; 
+}
+
+button:focus { outline: none; }
+
+button:hover{
+    background: inherit;
+    box-shadow: inherit;
+}
+
 .bold{
     font-family: "Inter-Bold";
 }
@@ -120,6 +134,7 @@ body{
 
 .receipt .blue{
     color: var(--pale-blue) !important;
+    margin-bottom: 10px;
 }
 
 .receipt .roww{
@@ -143,12 +158,12 @@ body{
     margin: 0 !important;
     /* padding: 0 !important; */
     height: 1rem !important;
+    color: var(--white-dark);
  }
 
 .receipt .add{
     right: 0;
     position: absolute;
-    
 }
 input[type=file], /* FF, IE7+, chrome (except button) */
 input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
@@ -162,6 +177,10 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
     width: 50px;
     right: 0;
     cursor: pointer !important;
+}
+
+.receipt .format{
+    color: var(--white-dark);
 }
 
 .receipt .contact-wrapper{

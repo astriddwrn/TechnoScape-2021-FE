@@ -79,6 +79,7 @@
     </div>
 
     <div class="section receipt">
+        <form action="">
         <div class="text-med-bold bold">Upload Payment Receipt</div>
         <div class="text-regular blue">Payment Receipt</div>
         <div class="roww">
@@ -86,10 +87,10 @@
             <label for="" class="text-regular">
                 <i class="fa fa-cloud-upload"></i>Please upload your payment receipt here...
               </label>
-            <input type="file" id="receipt" name="receipt">
+            <input type="file" id="receipt" name="receipt" accept="application/pdf, image/jpeg, image/jpg, image/png">
             <img class="add" src="./assets/img/userDashboard/payment-plus.svg" alt="">
         </div>
-        <div >Your payment receipt must be in .jpg, .jpeg, .png, or .pdf format.<br>Max. file size is 5MB.
+        <div class="format">Your payment receipt must be in .jpg, .jpeg, .png, or .pdf format.<br>Max. file size is 5MB.
         </div>
         <div class="contact-wrapper">
             <div class="text-regular bold">Got a question? Don’t hesitate to contact us!</div>
@@ -111,9 +112,10 @@
 
     <div class="button-wrapper">
         <div class="back-button text-regular">Back</div>
-        <div class="logout-button text-regular button-orange">Submit</div>
+        <button class="logout-button text-regular button-orange">Submit</button>
     </div>
-
+    </form>
+    
     <script src="./assets/lib/jquery/jquery.min.js"></script>
     <script src="./assets/lib/jquery-ui/jquery-ui.js"></script>
     <script src="./js/pages/user-dashboard-payment.js"></script>
