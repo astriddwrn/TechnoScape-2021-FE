@@ -236,6 +236,7 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
     }
     .text-header{
         font-size: 2rem;
+        /* margin-bottom: 15px; */
     }
     .glass{
         background: none;
@@ -244,6 +245,7 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
     }
     .text-med-bold{
         font-size: 1.5rem;
+        margin-bottom: 15px;
     }
     .instruction .rekeningInfo div:first-child{
         margin-right: 30px;
