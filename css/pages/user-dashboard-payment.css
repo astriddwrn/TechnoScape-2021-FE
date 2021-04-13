@@ -184,7 +184,7 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
 }
 
 .errorBorder:not([type=radio]){
-    border-bottom: 2px solid #B34444;
+    border-bottom: 2px solid #ff6262;
 }
 
 .errorRed{
@@ -218,7 +218,7 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
     margin: 0 auto;
 }
 
-.button-wrapper div, button{
+.button-wrapper div, .button-wrapper button{
     padding: 15px 0;
     width: 200px;
 }
@@ -329,13 +329,14 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
         font-size: .8rem !important;
     }
     .button-wrapper{
-        width: 80vw;
+        width: 100%;
         justify-content: space-between;
         
     }
-    .button-wrapper div, button{
+    .button-wrapper div, .button-wrapper button{
         margin: 0 2vw;
         padding: 5px 0;
+        /* width: auto; */
     }
 
     .early .text-med-bold{
