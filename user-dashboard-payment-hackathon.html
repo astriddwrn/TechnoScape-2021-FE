@@ -9,36 +9,60 @@
 </head>
 <body>
 
-    <div class="text-orange text-header">Virtual Conference<br>Payment Page</div>
+    <div class="text-orange text-header">Hackathon<br>Payment Page</div>
 
     <div class="glass patch-glass section order">
         <div class="text-med-bold bold">Order Details</div>
         <div class="roww header">
-            <div class="text-main bold">Ticket</div>
+            <div class="text-main bold">Registration Type</div>
             <div class="text-main bold">Ticket price</div>
         </div>
         <div class="roww">
-            <div class="text-main bold">General</div>
-            <div class="text-regular">Rp30.000</div>
+            <div class="text-main bold">Early Bird</div>
+            <div class="text-regular">Rp85.000</div>
         </div>
         <div class="text-regular allEvent">All event pass</div>
-        <div class="roww">
-            <div class="text-main bold">Order ID</div>
-            <div class="text-regular">VC-BNCC-0001</div>
+    </div>
+
+    <div class="section early">
+        <div class="text-header">Early Bird Offer</div>
+        <div class="box">
+            <div class="text-regular">Binusian</div>
+            <div class="text-regular">Rp85.000</div>
         </div>
+        <div class="box">
+            <div class="text-regular">Non-Binusian</div>
+            <div class="text-regular">Rp105.000</div>
+        </div>
+        <div class="text-subheader">Registration period</div>
+        <div class="text-regular center">April 7, 2021 - May 7, 2021</div>
+        <div class="text-med-bold">XX days left until early bird offer closed</div>
     </div>
 
     <div class="glass patch-glass section instruction text-regular">
         <div class="text-med-bold bold">Payment Method Instruction</div>
         <div class="roww">
             <div>1.</div>
-            <div>5 April hingga 29 Mei 2021 Puku 23.59 WIB</div>
+            <div>
+                <div>Periode Registrasi</div> 
+                <div class="roww bullets">
+                    <div>-</div>
+                    <div>Early Bird (7 April 2021 hingga 7 Mei 2021):<br>
+                        Binusian: Rp. 85.000,-<br>
+                        Non-Binusian: Rp. 105.000,-</div>
+                </div>
+                <div class="roww">
+                    <div>-</div>
+                    <div>General (8 Mei 2021 hingga 20 June 2021):<br>
+                        Binusian: Rp. 100.000,-<br>
+                        Non-Binusian: Rp. 120.000</div>
+                </div>
+            </div>
         </div>
         <div class="roww">
             <div>2.</div>
             <div class="wrapper">
-                <div>Lakukan pembayaran biaya pendaftaran melalui QR code atau ke nomor rekening
-                    berikut:</div>
+                <div>Pembayaran Biaya Pendaftaran</div>
                 <div class="rekeningInfo">
                     <div>
                         <div>Nomor Rekening</div>
@@ -56,26 +80,38 @@
         </div>
         <div class="roww">
             <div>3.</div>
-            <div>Peserta mengunggah file bukti pembayaran dengan batas maksimum 5 mb dalam
-                bentuk .JPG, .JPEG, .PNG, atau .PDF.</div>
+            <div>
+                <div>Upload Bukti Pembayaran<br>
+                    Peserta mengisi data tim dan mengunggah file dengan batas maksimum 5 mb dalam
+                    bentuk .JPG, .JPEG, .PNG, atau .PDF  yang berisi berkas – berkas berikut:
+                </div>
+                <div class="roww bullets">
+                    <div>-</div> 
+                    <div>Identitas peserta, berupa Kartu Tanda Penduduk (KTP) atau kartu Pelajar bagi
+                        yang belum memiliki KTP, Binusian Card bagi Binusian, ataupun berkas lain yang
+                        dapat diverifikasi identitas sebagai warga negara yang sah
+                    </div>
+                </div>
+                <div class="roww bullets">
+                    <div>-</div> 
+                    <div>Curriculum Vitae (CV)</div>
+                </div>
+                <div class="roww bullets">
+                    <div>-</div> 
+                    <div>Bukti pembayaran</div>
+                </div>
+            </div>
+
         </div>
         <div class="roww">
             <div>4.</div>
-            <div>Calon peserta yang telah mengupload bukti pembayaran akan memiliki status
-                Pending dan akan diverifikasi oleh panitia dalam rentang waktu 24 jam. Apabila
-                calon peserta belum diverifikasi dalam rentang waktu tersebut, calon peserta dapat
-                menghubungi panitia melalui Contact Person.</div>
+            <div>Verifikasi Pembayaran<br>
+                Tim akan segera diverifikasi oleh panitia maksimal 48 jam. Apabila tim belum
+                diverifikasi melebihi 48 jam, tim dapat menghubungkan Contact Person. Tim yang
+                telah terverifikasi akan dinyatakan resmi terdaftar sebagai calon peserta Hackathon
+                4.0.</div>
         </div>
-        <div class="roww">
-            <div>5.</div>
-            <div>Pendaftar yang telah terverifikasi akan secara resmi terdaftar sebagai peserta
-                Virtual Conference.</div>
-        </div>
-        <div class="roww">
-            <div>6.</div>
-            <div>Setelah terverifikasi, peserta dapat melihat link Zoom Virtual Conference di
-                Dashboard - Schedule pada H-1 Virtual Conference.</div>
-        </div>
+        <div class="roww">Note : Bagi tim yang tidak terseleksi menjadi peserta Hackathon 4.0, biaya registrasi tim tersebut akan dikembalikan.</div>
     </div>
 
     <div class="section receipt">
@@ -87,7 +123,7 @@
             <label for="" class="text-regular">
                 <i class="fa fa-cloud-upload"></i>Please upload your payment receipt here...
               </label>
-            <input type="file" id="receipt" name="receipt" >
+            <input type="file" id="receipt" name="receipt"">
             <img class="add" src="./assets/img/userDashboard/payment-plus.svg" alt="">
         </div>
         <div class="format">Your payment receipt must be in .jpg, .jpeg, .png, or .pdf format.<br>Max. file size is 5MB.
@@ -112,10 +148,10 @@
 
     <div class="button-wrapper">
         <div class="back-button text-regular">Back</div>
-        <div class=" text-regular button-orange">Submit</div>
+        <button class="text-regular button-orange">Submit</button>
     </div>
     </form>
-
+    
     <script src="./assets/lib/jquery/jquery.min.js"></script>
     <script src="./assets/lib/jquery-ui/jquery-ui.js"></script>
     <script src="./js/pages/user-dashboard-payment.js"></script>

@@ -179,6 +179,18 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
     cursor: pointer !important;
 }
 
+.activeBorder:not([type=radio]){
+    border-bottom: 2px solid var(--pale-blue-light);
+}
+
+.errorBorder:not([type=radio]){
+    border-bottom: 2px solid #B34444;
+}
+
+.errorRed{
+    color: #B34444 !important;
+}
+
 .receipt .format{
     color: var(--white-dark);
 }
@@ -206,7 +218,7 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
     margin: 0 auto;
 }
 
-.button-wrapper div{
+.button-wrapper div, button{
     padding: 15px 0;
     width: 200px;
 }
@@ -257,6 +269,14 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
 
 .center{
     text-align: center;
+}
+
+/* HACKATHON */
+.early .box:nth-child(2){
+    margin-bottom: 10px !important;
+}
+.early .box:nth-child(3){
+    margin-top: 0 !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -313,7 +333,7 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
         justify-content: space-between;
         
     }
-    .button-wrapper div{
+    .button-wrapper div, button{
         margin: 0 2vw;
         padding: 5px 0;
     }
