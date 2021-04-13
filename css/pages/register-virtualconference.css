@@ -471,14 +471,6 @@ input[type="radio"]:checked:after {
   margin: 0 !important;
 }
 
-.errorMsg {
-  color: #b34444;
-  font-size: 1rem;
-  width: 100%;
-  margin: 0 !important;
-  /* margin-top: -15px; */
-}
-
 .valid {
   opacity: 1;
 }
@@ -613,6 +605,9 @@ input[type="radio"]:checked:after {
   .details p {
     font-size: 1rem;
   }
+  .vertline {
+    min-height: 7rem;
+  }
 }
 @media screen and (max-width: 992px) {
   form {
@@ -627,8 +622,12 @@ input[type="radio"]:checked:after {
   .section-4 .press {
     font-size: 2.5rem;
   }
+  .vertline {
+    min-height: 6rem;
+  }
 }
 @media screen and (max-width: 762px) {
+  
 }
 @media screen and (max-width: 576px) {
   .logo-ts img {
