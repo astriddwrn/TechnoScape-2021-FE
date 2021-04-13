@@ -40,52 +40,13 @@ $(document).ready(function(){
 
     $("form").validate({
         rules: {
-            name: {
-              required: true,
-              letters: true
-            },
-            placeBirth: {
-                required: true,
-                letters: true
-            },
-            dateBirth: {
-                required: true
-            },
-            gender: {
-                required: true
-            },
-            status: {
-                required: true
-            },
-            email: {
-              required: true,
-              emailPattern: true,
-            //   remote: php //ini buat unique
-            },
-            password: {
-                required: true,
-                passwordPattern: true
-            },
-            confirm: {
-                required: true,
-                equalTo : "#password"
-            },
-            whatsapp: {
-                required: true,
-                whatsappPattern: true,
-                // remote: php //ini buat unique
-            },
-            line: {
-                required: true,
-                // remote: php //ini buat unique
-            },
-            company: {
-                required: true
-            },
             cv: {
                 required: true,
                 extension: "pdf|jpg|jpeg|png",
                 fileSize: 5 * 1024 * 1024
+            },
+            status: {
+                required: true,  
             },
             id_card: {
                 required: true,
@@ -99,21 +60,6 @@ $(document).ready(function(){
 
           },
           messages: {
-            name: {
-                
-                letters: "Please specify your name (only letters and spaces are allowed)",
-                required: "Please input this field" 
-            },
-           placeBirth: {
-                required: "Please input this field",
-                letters: "Please specify your birth place (only letters and spaces are allowed)"
-            },
-            dateBirth: {
-                required: "Please input this field"
-            },
-            gender: {
-                required: "Please input this field"
-            },
             status: {
                 required: "Please input this field"
             },
@@ -196,74 +142,61 @@ $(document).ready(function(){
 
     
     $(".next1").click(function(){
-        $('form').valid();
-        var ariaInvalidNotFalse = $(".section-1 .valid");
-        if(ariaInvalidNotFalse.length < 3){
-            return
-        }
-        else{
-            $( ".section-1" ).animate({
-                opacity: 0,
-              }, 400, function() {
-                $( ".section-1" ).css("display", "none");
-                $( ".section-1" ).css("opacity", 0);
-                $( ".section-2" ).css("display", "block");
-    
-                $(".line1").animate({
-                    left:"0"
-                },400, function(){
-                    $(".ball2").animate({
-                        top:"0"
-                    },400);
+        $( ".section-1" ).animate({
+            opacity: 0,
+            }, 400, function() {
+            $( ".section-1" ).css("display", "none");
+            $( ".section-1" ).css("opacity", 0);
+            $( ".section-2" ).css("display", "block");
+
+            $(".line1").animate({
+                left:"0"
+            },400, function(){
+                $(".ball2").animate({
+                    top:"0"
+                },400);
+            });
+
+            $( ".section-2" ).animate({
+                opacity: 1,
+                }, 400, function() {
+                
+                $( ".section-2" ).css("opacity", 1);
                 });
-    
-                $( ".section-2" ).animate({
-                    opacity: 1,
-                  }, 400, function() {
-                    
-                    $( ".section-2" ).css("opacity", 1);
-                  });
-              });
-        }
+            });
     });
 
 
     $(".next2").click(function(){
-        $('form').valid();
-        var ariaInvalidNotFalse = $(".section-2 .valid");
-        if(ariaInvalidNotFalse.length<3){
-            return
-        }
-        else{
-            $( ".section-2" ).animate({
-                opacity: 0,
-              }, 400, function() {
-                $( ".section-2" ).css("display", "none");
-                $( ".section-2" ).css("opacity", 0);
-                $( ".section-3" ).css("display", "block");
-    
-                $(".line2").animate({
-                    left:"0"
-                },400, function(){
-                    $(".ball3").animate({
-                        top:"0"
-                    },400);
+        $( ".section-2" ).animate({
+            opacity: 0,
+            }, 400, function() {
+            $( ".section-2" ).css("display", "none");
+            $( ".section-2" ).css("opacity", 0);
+            $( ".section-3" ).css("display", "block");
+
+            $(".line2").animate({
+                left:"0"
+            },400, function(){
+                $(".ball3").animate({
+                    top:"0"
+                },400);
+            });
+
+            $( ".section-3" ).animate({
+                opacity: 1,
+                }, 400, function() {
+                
+                $( ".section-3" ).css("opacity", 1);
                 });
-    
-                $( ".section-3" ).animate({
-                    opacity: 1,
-                  }, 400, function() {
-                    
-                    $( ".section-3" ).css("opacity", 1);
-                  });
-              });
-        }
+            });
+        
     });
 
     $(".next3").click(function(){
         $('form').valid();
         var ariaInvalidNotFalse = $(".section-3 .valid");
-        if(ariaInvalidNotFalse.length<3){
+        if(ariaInvalidNotFalse.length<1){
             return
         }
         else{
