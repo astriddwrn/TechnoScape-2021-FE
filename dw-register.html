@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Workshop</title>
+    <link rel="stylesheet" href="css/pages/dw-regis.css" />
+  </head>
+  <body>
+    <div class="regis container">
+      <img class="mt-5" src="assets/img/TechnoScape_Horizontal.svg" alt="" />
+      <div class="board">
+        <h1 class="text-header text-center">
+          <span>Buy Developer</span> <br />
+          Workshop Ticket
+        </h1>
+        <div class="prog-bar">
+          <div class="point active" id="first"></div>
+          <div class="bar" id="second"></div>
+          <div class="point" id="second"></div>
+          <div class="bar" id="third"></div>
+          <div class="point" id="third"></div>
+          <div class="bar" id="fourth"></div>
+          <div class="point" id="fourth"></div>
+        </div>
+        <form action="">
+          <div class="part" id="first">
+            <div class="inp-area">
+              <label for="name">Full Name</label>
+              <div class="inp">
+                <img
+                  src="assets/img/developer-workshop/regis/user.svg"
+                  alt=""
+                />
+                <input value="Raymond" type="text" />
+              </div>
+            </div>
+            <div class="inp-area">
+              <label for="name">Place of Birth</label>
+              <div class="inp">
+                <img
+                  src="assets/img/developer-workshop/regis/location.svg"
+                  alt=""
+                />
+                <input value="Alam Lain" type="text" />
+              </div>
+            </div>
+            <div class="inp-area">
+              <label for="name">Place of Birth</label>
+              <div class="inp">
+                <img
+                  src="assets/img/developer-workshop/regis/calendar.svg"
+                  alt=""
+                />
+                <input
+                  value="12/12/2012"
+                  type="text"
+                  onfocus="(this.type='date')"
+                  onblur="(this.type='text')"
+                />
+              </div>
+            </div>
+            <div class="inp-area">
+              <img
+                src="assets/img/developer-workshop/regis/gender.svg"
+                alt=""
+              />
+              <label for="name">Gender</label>
+              <div
+                class="inp d-flex align-items-center"
+                style="border-bottom: none"
+              >
+                <div class="mr-3 inp-radio">
+                  <input type="radio" name="gender" id="" />
+                  <div><label for="">Male</label></div>
+                </div>
+                <div class="inp-radio">
+                  <input type="radio" name="gender" id="" />
+                  <div><label for="">Female</label></div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <div class="btn talk-btn" onclick="next(this)">Next</div>
+            </div>
+          </div>
+          <div class="part" id="second">
+            <div class="inp-area">
+              <label for="name">Email</label>
+              <div class="inp">
+                <img
+                  src="assets/img/developer-workshop/regis/mail.svg"
+                  alt=""
+                />
+                <input type="text" value="raymond@bncc.net" name="" id="" />
+              </div>
+            </div>
+            <div class="inp-area">
+              <label for="name">WhatsApp Number</label>
+              <div class="inp">
+                <img src="assets/img/developer-workshop/regis/wa.svg" alt="" />
+                <input type="text" value="0123456789" name="" id="" />
+              </div>
+            </div>
+            <div class="inp-area">
+              <label for="name">Line ID</label>
+              <div class="inp">
+                <img
+                  src="assets/img/developer-workshop/regis/line.svg"
+                  alt=""
+                />
+                <input type="text" value="raymond" name="" id="" />
+              </div>
+            </div>
+            <div class="inp-area">
+              <label for="name">Company/Institution</label>
+              <div class="inp">
+                <img
+                  src="assets/img/developer-workshop/regis/comp.svg"
+                  alt=""
+                />
+                <input type="text" value="BINUS" name="" id="" />
+              </div>
+            </div>
+            <div class="text-center">
+              <div class="btn talk-btn mx-2" id="back" onclick="back(this)">
+                Back
+              </div>
+              <div class="btn talk-btn mx-2" onclick="next(this)">Next</div>
+            </div>
+          </div>
+          <div class="part" id="third">
+            <h3 class="text-header text-center">Ticket Price</h3>
+            <div class="board w-100 text-white d-flex">
+              <div>
+                <h2 class="text-subheader">General</h2>
+                <p class="text-med-light">
+                  Registration period: 7 May - 9 June
+                </p>
+              </div>
+              <div class="text-subheader ml-auto">Rp45.000</div>
+            </div>
+            <h3 class="text-header text-center mb-5">
+              General Rules for Participants
+            </h3>
+            <div class="px-5">
+              <ul class="text-white text-med-light">
+                <li>
+                  Each participant is required to sign in the TechnoScape
+                  official account.
+                </li>
+                <li>
+                  Each participant is required to upload an updated CV during
+                  registration.
+                </li>
+                <li>Make payments according to the payment period.</li>
+                <li>
+                  If the number of participants has reached the target,
+                  Developer Workshop registration will be closed.
+                </li>
+                <li>
+                  For participants who have already made payments but the number
+                  of participants has reached the target, the registration fee
+                  will be returned.
+                </li>
+              </ul>
+            </div>
+            <div class="text-center">
+              <div class="btn talk-btn mx-2" id="back" onclick="back(this)">
+                Back
+              </div>
+              <div class="btn talk-btn mx-2" onclick="next(this)">Next</div>
+            </div>
+          </div>
+          <div class="part" id="fourth">
+            <div class="inp-area">
+              <label for="name">Company/Institution</label>
+              <div class="inp">
+                <img
+                  src="assets/img/developer-workshop/regis/comp.svg"
+                  alt=""
+                />
+                <label id="cv" class="ml-3 text-muted" for="cv-input">
+                  Please upload your CV here...
+                </label>
+                <label for="cv-input"> <div id="add-btn"></div></label>
+                <input
+                  class="d-none"
+                  type="file"
+                  name=""
+                  id="cv-input"
+                  oninput="fileInput(this)"
+                />
+              </div>
+              <p class="text-muted">
+                Your CV must be in .jpg, .jpeg, .png, or .pdf format. Max. file
+                size is 5MB.
+              </p>
+              <div class="text-center">
+                <div class="btn talk-btn mx-2" id="back" onclick="back(this)">
+                  Back
+                </div>
+                <div class="btn talk-btn mx-2">Checkout</div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="assets/lib/jquery/jquery.min.js"></script>
+  <script src="js/pages/dw-regis.js"></script>
+</html>
