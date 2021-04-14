@@ -106,6 +106,7 @@ $(document).ready(function(){
     }
 
 	function setDesc2(){
+		return
 		$(".highlights .description-container div").each(function(){
 			$(this).addClass("deactiveHighDesc");
 		});
@@ -125,7 +126,7 @@ $(document).ready(function(){
 	$(".highlights .glass").eq(indexLeft2).addClass("leftHigh");
 	$(".highlights .glass").eq(indexRight2).addClass("rightHigh");
 
-	$(setDesc2());
+	// $(setDesc2());
 
 	$(setDots2());
 
@@ -150,7 +151,7 @@ $(document).ready(function(){
 
             $(setSlidesNext2());
 
-			$(setDesc2());
+			// $(setDesc2());
 
             $(setDots2());
 	});
@@ -175,7 +176,7 @@ $(document).ready(function(){
 
 		$(setSlidesPrev2());
 
-		$(setDesc2());
+		// $(setDesc2());
 
 		$(setDots2());
 		
@@ -195,20 +196,20 @@ $(document).ready(function(){
     	cssEase: "ease-in-out"
 	});
 
-	$('.highlights .carousel-wrapper2').on('afterChange', function(event, slick, currentSlide){   
-		$(".highlights .description-container2 div").each(function(){
-			$(this).addClass("deactiveHighDesc");
-		});
-		setTimeout(function(){
-			$(".highlights .description-container2 div").eq(currentSlide).removeClass("deactiveHighDesc").addClass("activeHighDesc");
-		},300);
-	});
+	// $('.highlights .carousel-wrapper2').on('afterChange', function(event, slick, currentSlide){   
+	// 	$(".highlights .description-container2 div").each(function(){
+	// 		$(this).addClass("deactiveHighDesc");
+	// 	});
+	// 	setTimeout(function(){
+	// 		$(".highlights .description-container2 div").eq(currentSlide).removeClass("deactiveHighDesc").addClass("activeHighDesc");
+	// 	},300);
+	// });
 
 
 	// WHY YOU SHOULD JOIN
 	var indexBehind=2;
 	var indexMiddle=0;
-	var indexLeft=3;
+	var indexLeft=4;
 	var indexRight=1;
 
     function setSlidesNext(){
@@ -278,13 +279,13 @@ $(document).ready(function(){
         indexLeft+=1;
         indexRight+=1;
         
-        if(indexMiddle>3){
+        if(indexMiddle>4){
             indexMiddle=0;
         }
-        if(indexLeft>3){
+        if(indexLeft>4){
             indexLeft=0;
         }
-        if(indexRight>3){
+        if(indexRight>4){
             indexRight=0;
         }
            
@@ -304,13 +305,13 @@ $(document).ready(function(){
 			indexRight-=1;
 
 			if(indexMiddle<0){
-				indexMiddle=3;
+				indexMiddle=4;
 			}
 			if(indexLeft<0){
-				indexLeft=3;
+				indexLeft=4;
 			}
 			if(indexRight<0){
-				indexRight=3;
+				indexRight=4;
 			}
 
             $(setSlidesPrev());

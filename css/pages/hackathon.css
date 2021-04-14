@@ -179,23 +179,38 @@
   display: none;
 }
 
-.about .image-container img {
+.about .image-container {
   width: 100%;
+  height: 700px;
   max-width: 500px;
-  animation: float-about 4s ease-in-out infinite;
+  position: relative;
 }
 
-@keyframes float-about {
-  0% {
-    transform: translateY(0px);
-  }
+.about .image-container .first{
+  position: absolute;
+  top: 0;
+  right: 10%;
+  animation: float-from-top 4s ease-in-out infinite;
+}
 
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.about .image-container .second{
+  position: absolute;
+  top: 20%;
+  animation: float-from-bottom 4s ease-in-out infinite;
+}
+
+.about .image-container .third{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: float-from-top 4s ease-in-out infinite;
+}
+
+.about .image-container .fourth{
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  animation: float-from-bottom 4s ease-in-out infinite;
 }
 
 .about .email-button img {
@@ -554,12 +569,14 @@
   color: var(--white);
   margin: 0 auto;
   width: 550px;
-  text-align: center;
+  text-align: center !important;
 }
 
 .highlights .description-container div,
 .highlights .description-container2 div {
   position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 .activeHighDesc {
@@ -642,7 +659,6 @@
 }
 
 /* WHY YOU SHOULD JOIN */
-/* WHY YOU SHOULD JOIN */
 .join {
   width: 100%;
   padding: 100px 20px;
@@ -703,9 +719,6 @@
 }
 
 .join .glass .text {
-  /* width: 240px;
-	padding-left: 0.2em;
-	padding-right: 0.2em; */
   margin: 0em 0.7em;
   text-align: center;
   font-size: 0.6rem;
@@ -782,7 +795,6 @@
 }
 
 .join .glass2 {
-  /* width: 250px; */
   height: 500px;
   display: flex !important;
   flex-direction: column !important;
@@ -976,7 +988,7 @@
 
 .join .dots-container {
   margin: 0 auto;
-  width: 200px;
+  width: 250px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -998,7 +1010,7 @@
   transform: translate(-55%, 0);
   list-style: none;
   display: flex !important;
-  width: 250px;
+  width: 300px;
   justify-content: space-evenly;
 }
 
@@ -1755,23 +1767,50 @@
   margin: 2em 0;
 }
 
-.shareToFriend .image-container img {
-  width: 100%;
-  max-width: 500px;
-  animation: float-share 4s ease-in-out infinite;
+.shareToFriend .image-container{
+  width: 500px;
+  height: 700px;
+  position: relative;
 }
 
-@keyframes float-share {
-  0% {
-    transform: translateY(0px);
-  }
+.shareToFriend .image-container .first{
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 70%;
+  animation: float-from-top 4s ease-in-out infinite;
+}
 
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.shareToFriend .image-container .second{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 13%;
+  animation: float-from-bottom 4s ease-in-out infinite;
+}
+
+.shareToFriend .image-container .third{
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  width: 55%;
+  animation: float-from-top 4s ease-in-out infinite;
+}
+
+.shareToFriend .image-container .fourth{
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  width: 15%;
+  animation: float-from-bottom 4s ease-in-out infinite;
+}
+
+.shareToFriend .image-container .fifth{
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  width: 10%;
+  animation: float-from-top 4s ease-in-out infinite;
 }
 
 .shareToFriend-overlay {
@@ -2347,7 +2386,7 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    height: 900px;
+    height: 1000px;
   }
   .about .text1 {
     display: none;
@@ -2365,11 +2404,21 @@
   .about .text-container div:nth-child(3) {
     margin: 1rem 0 5rem 0;
   }
-  .about .image-container {
-    margin-bottom: 50px;
+  .about .image-container .first{
+    top: 0;
+    right: 10%;
   }
-  .about .image-container img {
-    height: 400px;
+  .about .image-container .second{
+    top: 25%;
+  }
+  .about .image-container .third{
+    top: 55%;
+    left: 60%;
+  }
+  .about .image-container .fourth{
+    position: absolute;
+    top: 75%;
+    left: 40%;
   }
   .about .email-button {
     margin: 50px 0 0 0;
@@ -2455,7 +2504,7 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    height: 900px;
+    height: 1000px;
   }
   .shareToFriend .text-container {
     text-align: center;
@@ -2468,10 +2517,9 @@
     margin: 1rem 0 5rem 0;
   }
   .shareToFriend .image-container {
-    margin-bottom: 50px;
-  }
-  .shareToFriend .image-container img {
-    height: 400px;
+    /* margin-bottom: 50px; */
+    height: 100%;
+    width: 500px;
   }
 
   .sponsor .box {
@@ -2685,6 +2733,14 @@
     width: 600px;
     padding: 100px 0;
   }
+  .shareToFriend .main-container{
+    height:900px;
+  }
+  .shareToFriend .image-container {
+    /* margin-bottom: 50px; */
+    height: 100%;
+    width: 450px;
+  }
 
   .sponsor .box {
     border: 2px solid rgba(255, 255, 255, 0.18);
@@ -2730,6 +2786,26 @@
   }
 }
 @media screen and (max-width: 762px) {
+  .about .main-container{
+    height: 1100px;
+  }
+  .about .image-container{
+    margin-bottom:30px;
+  }
+  .about .image-container .first{
+    top: 5%;
+    width: 55%;
+  }
+  .about .image-container .second{
+    width: 55%;
+  }
+  .about .image-container .third{
+    width: 30%;
+  }
+  .about .image-container .fourth{
+    top: 80%;
+  }
+
   .landing .hackathon-title {
     font-size: 4rem;
     letter-spacing: 0.3rem;
@@ -2960,8 +3036,13 @@
     font-size: 2.2rem;
   }
 
-  .shareToFriend .image-container img {
-    max-width: 500px;
+  .shareToFriend .main-container{
+    height: 850px;
+  }
+  .shareToFriend .image-container {
+    /* margin-bottom: 50px; */
+    height: 100%;
+    width: 350px;
   }
   .shareToFriend .text-container {
     max-width: 500px;
@@ -3107,8 +3188,10 @@
   .about .text-orange {
     font-size: 2.5rem;
   }
-  .about .image-container img {
-    max-width: 400px;
+  .about .image-container{
+    width: 400px;
+    margin-bottom: 30px;
+    height: 500px;
   }
   .about .text-container {
     max-width: 400px;
@@ -3344,8 +3427,14 @@
   .shareToFriend .text-orange {
     font-size: 2rem;
   }
-  .shareToFriend .image-container img {
-    max-width: 400px;
+  .shareToFriend .main-container{
+    height: 750px;
+  }
+  .shareToFriend .image-container {
+    /* margin-bottom: 50px; */
+    height: 100%;
+    width: 300px;
+    margin-bottom: 0;
   }
   .shareToFriend .text-container {
     max-width: 400px;
@@ -3430,8 +3519,10 @@
     bottom: -20px;
   }
 
-  .about .image-container img {
-    max-width: 350px;
+  .about .image-container{
+    width: 300px;
+    margin-bottom: 30px;
+    height: 350px;
   }
   .about .text-container {
     max-width: 300px;
@@ -3443,6 +3534,9 @@
     letter-spacing: 0.1em;
     color: white;
     text-align: center;
+  }
+  .about .email-button{
+    margin-top:0;
   }
 
   .highlights .carousel-wrapper2 {
@@ -3458,6 +3552,24 @@
   .join {
     padding: 100px 0;
   }
+  .join .second-container {
+    padding: 0px;
+    /* width: 300px; */
+  }
+  .join .carousel-wrapper2{
+    width:300px
+  }
+  .join .glass2 img{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .join .glass2 .title{
+    width: 80%;
+  }
+  .join .glass2 .text{
+    width: 90%;
+  }
+  
 
   .timeline-char {
     left: 75px;
@@ -3505,8 +3617,14 @@
   .shareToFriend .text-orange {
     font-size: 2rem;
   }
-  .shareToFriend .image-container img {
-    max-width: 350px;
+  .shareToFriend .main-container{
+    height: 700px;
+  }
+  .shareToFriend .image-container {
+    /* margin-bottom: 50px; */
+    height: 100%;
+    width: 250px;
+    margin-bottom: 0;
   }
   .shareToFriend .text-container {
     max-width: 350px;
@@ -3525,6 +3643,31 @@
   }
   .shareToFriend-overlay .socmed-container {
     width: 250px;
+  }
+
+  .sponsor .gold-container {
+    width: 300px;
+  }
+  .sponsor .gold-container img {
+    width: 80px;
+  }
+  .sponsor .silver-container {
+    width: 300px;
+  }
+  .sponsor .silver-container img {
+    width: 80px;
+  }
+  .medpar .text-orange {
+    font-size: 2.5rem;
+  }
+  .medpar .medpar-container {
+    width: 300px;
+  }
+  .medpar .box {
+    padding: 20px;
+  }
+  .medpar .box img {
+    width: 80px;
   }
 }
 
