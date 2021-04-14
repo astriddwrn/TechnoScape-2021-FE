@@ -55,8 +55,26 @@ a[href^="tel"]{
 	border-radius: 32px;
 }
 
+.right-container::-webkit-scrollbar
+{
+	width: 25px;
+	background: transparent;
+    border-radius: 50px;
+}
+
+.right-container::-webkit-scrollbar-thumb
+{
+	background-color: var(--white-dark);
+    /* border-radius: 100px; */
+    border: 9px solid transparent;
+    border-radius: 50px;
+    background-clip: padding-box; 
+}
+
+  
+
 body{
-    padding:20px;
+    padding:0 20px;
     display: grid;
     grid-template-areas: 'left right right right';
     grid-gap: 20px;
@@ -83,7 +101,9 @@ body{
 .left-menu{
     grid-area: left;
     width: 20vw;
-    min-height: 95vh;
+    min-height: 90vh;
+    margin: 5vh auto;
+    padding: 40px 0;
     
     display: flex;
     flex-direction: column;
@@ -112,7 +132,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin:15px 0;
+    margin:0px 0;
     margin-bottom: 30px !important;
 }
 
@@ -145,21 +165,15 @@ body{
     display: none;
 }
 
-/* .left-menu .lower-wrapper {
-    width:80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* margin: 0 auto; 
-} */
-
-
 .right-container{
     grid-area: right;
-    overflow: scroll;
+    overflow: auto;
     overflow-x: hidden;
-    padding: 10px 5%;
-    width: 75vw;
+    padding: 20px 5%;
+    width: 70vw;
+    height: 90vh;
+    margin: 5vh auto;
+    /* scrollbar-gutter: always; */
 }
 
 .right-container .text-orange{
@@ -329,15 +343,15 @@ body{
 }
 
 .task .registered .verified{
-    color: rgba(80, 191, 165, 1);
+    color: #28947b;
 }
 
 .task .registered .unverified{
-    color: rgba(181, 207, 252, 1);
+    color: #546c94;
 }
 
 .task .registered .rejected{
-    color: rgba(252, 93, 93, 1);
+    color: #ff6262;
 }
 
 .task .contact-wrapper{
@@ -765,6 +779,9 @@ body{
 
 
 @media screen and (max-width: 1200px) {
+    .left-menu .tab, .logout-tab{
+        width: 90%;
+    }
     .task .notRegistered .description-container img{
         width: 40%;
         margin-left: 10%;
@@ -777,10 +794,20 @@ body{
         /* padding-top: padding-top: 100px; ; */
         display: block;
     }
+    .right-container::-webkit-scrollbar
+    {
+        width: 5px;
+    }
+
+    .right-container::-webkit-scrollbar-thumb
+    {
+        border: 0px solid transparent;
+    }
     .menu-symbol-container{
         /* background-color: var(--blue-bg); */
         display: block;
         width: 100%;
+        
     }
     .menu-symbol{
         display: block;
@@ -795,10 +822,10 @@ body{
         right:0;
         border-radius: 0;
         z-index: 9999;
-        /* display: none; */
+        margin: 0;
     }
     .right-container{
-        /* padding: 0 10px; */
+        margin: 0;
         padding-top: 50px;
         min-height: 100vh;
         width: 100%;
