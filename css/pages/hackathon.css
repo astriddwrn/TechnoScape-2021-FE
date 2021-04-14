@@ -183,34 +183,13 @@
   width: 100%;
   height: 700px;
   max-width: 500px;
-  position: relative;
+  /* position: relative; */
+  
 }
 
-.about .image-container .first{
-  position: absolute;
-  top: 0;
-  right: 10%;
+.about .image-container img{
   animation: float-from-top 4s ease-in-out infinite;
-}
 
-.about .image-container .second{
-  position: absolute;
-  top: 20%;
-  animation: float-from-bottom 4s ease-in-out infinite;
-}
-
-.about .image-container .third{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  animation: float-from-top 4s ease-in-out infinite;
-}
-
-.about .image-container .fourth{
-  position: absolute;
-  top: 70%;
-  left: 30%;
-  animation: float-from-bottom 4s ease-in-out infinite;
 }
 
 .about .email-button img {
@@ -1770,46 +1749,10 @@
 .shareToFriend .image-container{
   width: 500px;
   height: 700px;
-  position: relative;
 }
 
-.shareToFriend .image-container .first{
-  position: absolute;
-  top: 0;
-  left: 40%;
-  width: 70%;
-  animation: float-from-top 4s ease-in-out infinite;
-}
-
-.shareToFriend .image-container .second{
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  width: 13%;
-  animation: float-from-bottom 4s ease-in-out infinite;
-}
-
-.shareToFriend .image-container .third{
-  position: absolute;
-  top: 35%;
-  left: 5%;
-  width: 55%;
-  animation: float-from-top 4s ease-in-out infinite;
-}
-
-.shareToFriend .image-container .fourth{
-  position: absolute;
-  top: 40%;
-  left: 80%;
-  width: 15%;
-  animation: float-from-bottom 4s ease-in-out infinite;
-}
-
-.shareToFriend .image-container .fifth{
-  position: absolute;
-  top: 60%;
-  left: 70%;
-  width: 10%;
+.shareToFriend .image-container img{
+  width: 100%;
   animation: float-from-top 4s ease-in-out infinite;
 }
 
@@ -2388,6 +2331,15 @@
     justify-content: center;
     height: 1000px;
   }
+  .about .image-container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  .about .image-container img{
+    width: 40vw;
+    margin-bottom: 0;
+  }
   .about .text1 {
     display: none;
   }
@@ -2403,22 +2355,6 @@
   }
   .about .text-container div:nth-child(3) {
     margin: 1rem 0 5rem 0;
-  }
-  .about .image-container .first{
-    top: 0;
-    right: 10%;
-  }
-  .about .image-container .second{
-    top: 25%;
-  }
-  .about .image-container .third{
-    top: 55%;
-    left: 60%;
-  }
-  .about .image-container .fourth{
-    position: absolute;
-    top: 75%;
-    left: 40%;
   }
   .about .email-button {
     margin: 50px 0 0 0;
@@ -2517,9 +2453,15 @@
     margin: 1rem 0 5rem 0;
   }
   .shareToFriend .image-container {
-    /* margin-bottom: 50px; */
+    display: flex;
+    justify-content: center;
     height: 100%;
-    width: 500px;
+    margin: 0 auto;
+    /* width: 300px; */
+  }
+  .shareToFriend .image-container img{
+    width: 40vw;
+    margin: 0 auto;
   }
 
   .sponsor .box {
@@ -2565,6 +2507,11 @@
 
   .wave-img {
     bottom: -70px;
+  }
+
+  .about .image-container img{
+    width: 50vw;
+    margin-bottom: 0;
   }
 
   .champion .box {
@@ -2737,9 +2684,12 @@
     height:900px;
   }
   .shareToFriend .image-container {
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px;
     height: 100%;
-    width: 450px;
+    width: 50vw;
+  }
+  .shareToFriend .image-container img{
+    /* width: 80%; */
   }
 
   .sponsor .box {
@@ -2786,25 +2736,7 @@
   }
 }
 @media screen and (max-width: 762px) {
-  .about .main-container{
-    height: 1100px;
-  }
-  .about .image-container{
-    margin-bottom:30px;
-  }
-  .about .image-container .first{
-    top: 5%;
-    width: 55%;
-  }
-  .about .image-container .second{
-    width: 55%;
-  }
-  .about .image-container .third{
-    width: 30%;
-  }
-  .about .image-container .fourth{
-    top: 80%;
-  }
+
 
   .landing .hackathon-title {
     font-size: 4rem;
@@ -2835,14 +2767,20 @@
     bottom: -45px;
   }
 
-  .about .image-container img {
-    max-width: 500px;
-  }
+
   .about .text-container {
     max-width: 500px;
   }
   .about .email-button {
     margin: 100px 0 0 0;
+  }
+  .about .image-container{
+    width: 70%;
+    margin-bottom:70px;
+    height: auto;
+  }
+  .about .image-container img{
+    width: 55vw;
   }
 
   .champion {
@@ -3040,9 +2978,10 @@
     height: 850px;
   }
   .shareToFriend .image-container {
-    /* margin-bottom: 50px; */
-    height: 100%;
-    width: 350px;
+    width: 60vw;
+  }
+  .shareToFriend .image-container img{
+    width: 50vw;
   }
   .shareToFriend .text-container {
     max-width: 500px;
@@ -3188,10 +3127,13 @@
   .about .text-orange {
     font-size: 2.5rem;
   }
-  .about .image-container{
+  /* .about .image-container{
     width: 400px;
     margin-bottom: 30px;
     height: 500px;
+  } */
+  .about .image-container img{
+    width: 300px;
   }
   .about .text-container {
     max-width: 400px;
@@ -3536,7 +3478,7 @@
     text-align: center;
   }
   .about .email-button{
-    margin-top:0;
+    margin-top:50px;
   }
 
   .highlights .carousel-wrapper2 {
