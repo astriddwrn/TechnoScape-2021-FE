@@ -25,6 +25,8 @@
 	--underline-blue: #5ea7ed;
 	/* hackathon */
 	--hackathon-landing-bg: linear-gradient(320.47deg, rgba(95, 168, 237, 0) 6.98%, rgba(114, 195, 204, 0.607292) 45.67%, #7ED5B7 78.01%);
+	--hackathon-footer: linear-gradient(140.23deg, rgba(95, 168, 237, 0) 6.98%, rgba(114, 195, 204, 0.607292) 45.67%, #7ED5B7 78.01%);
 	--hackathon-ball: linear-gradient(151.12deg, #5FA8ED 19.15%, #7ED5B7 91.38%);
 	--hackathon-modal: rgb(125,211,183);
+	
 }
