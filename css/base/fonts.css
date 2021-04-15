@@ -63,6 +63,11 @@
 	font-size: 1.25rem;
 }
 
+.text-med-bold {
+	font-family: "Inter-Bold";
+	font-size: 1.25rem;
+}
+
 @media screen and (max-width: 428px) {
 	.text-super {
 		font-size: 2.5rem;

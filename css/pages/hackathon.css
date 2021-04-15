@@ -210,8 +210,30 @@
 
 .champion .text-orange {
   width: fit-content;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 50px auto;
   text-align: center;
+}
+
+.champion .prizepoll{
+  border-radius: 20px;
+  background: radial-gradient(
+    88.77% 88.77% at 25.41% 9.11%,
+    rgba(255, 255, 255, 0.4) 0%,
+    #262859 100%
+  );
+  background-position: center;
+  backdrop-filter: blur(40px);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  padding: 5px;
 }
 
 .champion .main-container {
@@ -220,6 +242,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 1200px;
+  margin-top:50px;
 }
 
 .champion .box {
