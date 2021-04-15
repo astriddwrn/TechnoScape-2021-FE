@@ -29,7 +29,7 @@
   );
   backdrop-filter: blur(10px);
   border-radius: 32px;
-  width: 40vw;
+  width: 40rem;
   margin: 2rem 0;
   padding: 2rem;
   overflow: hidden;
@@ -88,7 +88,7 @@
 #second.part,
 #third.part,
 #fourth.part {
-  /* display: none; */
+  display: none;
 }
 
 .inp-area {
@@ -136,6 +136,10 @@
   margin-right: 10px;
   width: 20px;
   height: 20px;
+}
+
+.invalid-feedback {
+  display: block;
 }
 
 #add-btn {
@@ -213,4 +217,17 @@ li::marker {
 .btn#back {
   background: none;
   border: 1px solid white;
+}
+
+@media screen and (max-width: 768px) {
+  .board {
+    position: relative;
+    background-image: none;
+    backdrop-filter: blur(10px);
+    border-radius: 32px;
+    width: 40rem;
+    margin: 2rem 0;
+    padding: 2rem;
+    overflow: hidden;
+  }
 }

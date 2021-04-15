@@ -33,7 +33,7 @@
                   src="assets/img/developer-workshop/regis/user.svg"
                   alt=""
                 />
-                <input value="Raymond" type="text" />
+                <input value="Raymond" type="text" readonly />
               </div>
             </div>
             <div class="inp-area">
@@ -43,22 +43,17 @@
                   src="assets/img/developer-workshop/regis/location.svg"
                   alt=""
                 />
-                <input value="Alam Lain" type="text" />
+                <input value="Alam Lain" type="text" readonly />
               </div>
             </div>
             <div class="inp-area">
-              <label for="name">Place of Birth</label>
+              <label for="name">Date of Birth</label>
               <div class="inp">
                 <img
                   src="assets/img/developer-workshop/regis/calendar.svg"
                   alt=""
                 />
-                <input
-                  value="12/12/2012"
-                  type="text"
-                  onfocus="(this.type='date')"
-                  onblur="(this.type='text')"
-                />
+                <input value="12/12/2012" type="text" readonly />
               </div>
             </div>
             <div class="inp-area">
@@ -72,7 +67,7 @@
                 style="border-bottom: none"
               >
                 <div class="mr-3 inp-radio">
-                  <input type="radio" name="gender" id="" />
+                  <input type="radio" name="gender" id="" checked />
                   <div><label for="">Male</label></div>
                 </div>
                 <div class="inp-radio">
@@ -93,14 +88,20 @@
                   src="assets/img/developer-workshop/regis/mail.svg"
                   alt=""
                 />
-                <input type="text" value="raymond@bncc.net" name="" id="" />
+                <input
+                  type="text"
+                  value="raymond@bncc.net"
+                  name=""
+                  id=""
+                  readonly
+                />
               </div>
             </div>
             <div class="inp-area">
               <label for="name">WhatsApp Number</label>
               <div class="inp">
                 <img src="assets/img/developer-workshop/regis/wa.svg" alt="" />
-                <input type="text" value="0123456789" name="" id="" />
+                <input type="text" value="0123456789" name="" id="" readonly />
               </div>
             </div>
             <div class="inp-area">
@@ -110,7 +111,7 @@
                   src="assets/img/developer-workshop/regis/line.svg"
                   alt=""
                 />
-                <input type="text" value="raymond" name="" id="" />
+                <input type="text" value="raymond" name="" id="" readonly />
               </div>
             </div>
             <div class="inp-area">
@@ -120,7 +121,7 @@
                   src="assets/img/developer-workshop/regis/comp.svg"
                   alt=""
                 />
-                <input type="text" value="BINUS" name="" id="" />
+                <input type="text" value="BINUS" name="" id="" readonly />
               </div>
             </div>
             <div class="text-center">
@@ -175,24 +176,26 @@
           </div>
           <div class="part" id="fourth">
             <div class="inp-area">
-              <label for="name">Company/Institution</label>
+              <label for="name">CV</label>
               <div class="inp">
                 <img
                   src="assets/img/developer-workshop/regis/comp.svg"
                   alt=""
                 />
-                <label id="cv" class="ml-3 text-muted" for="cv-input">
-                  Please upload your CV here...
-                </label>
-                <label for="cv-input"> <div id="add-btn"></div></label>
                 <input
-                  class="d-none"
+                  class="d-none form-control"
                   type="file"
                   name=""
                   id="cv-input"
-                  oninput="fileInput(this)"
+                  oninput="validateInput(this)"
+                  required
                 />
+                <label id="cv" class="ml-3 text-muted" for="cv-input">
+                  Please upload your CV here...
+                </label>
+                <label for="cv-input"><div id="add-btn"></div></label>
               </div>
+              <div class="invalid-feedback"></div>
               <p class="text-muted">
                 Your CV must be in .jpg, .jpeg, .png, or .pdf format. Max. file
                 size is 5MB.
@@ -201,7 +204,13 @@
                 <div class="btn talk-btn mx-2" id="back" onclick="back(this)">
                   Back
                 </div>
-                <div class="btn talk-btn mx-2">Checkout</div>
+                <button
+                  type="submit"
+                  onclick="onFormSubmit()"
+                  class="btn talk-btn mx-2"
+                >
+                  Checkout
+                </button>
               </div>
             </div>
           </div>
