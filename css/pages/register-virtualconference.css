@@ -590,14 +590,14 @@ input[type="radio"]:checked:after {
   border-right: 3px solid rgba(255, 255, 255, 0.3);
 }
 
+.formpad {
+  padding: 0 0px;
+}
 
 /* div {
   border: 1px solid #d54d45;
 } */
 @media screen and (max-width: 1200px) {
-  form {
-    padding: 0 0px;
-  }
   .details h5 {
     font-size: 1.3rem;
   }
@@ -610,9 +610,6 @@ input[type="radio"]:checked:after {
   }
 }
 @media screen and (max-width: 992px) {
-  form {
-    padding: 0 0px;
-  }
   .details h5 {
     font-size: 1rem;
   }
@@ -641,7 +638,7 @@ input[type="radio"]:checked:after {
     margin-bottom: 35px;
   }
   form {
-    padding: 0 20px;
+    padding: 0 20px !important;
   }
   .ball {
     width: 20px;

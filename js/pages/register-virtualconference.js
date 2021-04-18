@@ -77,7 +77,8 @@ $(document).ready(function(){
                 $( ".section-3" ).css("display", "none");
                 $( ".section-3" ).css("opacity", 0);
                 $( ".section-4" ).css("display", "block");
-                
+                $("form").addClass("formpad");
+
                 $(".line3").animate({
                     left:"0"
                 },400, function(){
@@ -109,7 +110,8 @@ $(document).ready(function(){
                 $( ".section-4" ).css("display", "none");
                 $( ".section-4" ).css("opacity", 0);
                 $( ".section-3" ).css("display", "block");
-    
+                $("form").removeClass("formpad");
+
                 $(".ball4").animate({
                     top:"-160%"
                 },400, function(){
@@ -138,7 +140,8 @@ $(document).ready(function(){
                 $( ".section-3" ).css("display", "none");
                 $( ".section-3" ).css("opacity", 0);
                 $( ".section-2" ).css("display", "block");
-    
+                $("form").removeClass("formpad");
+
                 $(".ball3").animate({
                     top:"-160%"
                 },400, function(){
@@ -164,7 +167,8 @@ $(document).ready(function(){
                 $( ".section-4" ).css("display", "none");
                 $( ".section-4" ).css("opacity", 0);
                 $( ".section-2" ).css("display", "block");
-    
+                $("form").removeClass("formpad");
+
                 $(".ball4").animate({
                     top:"-160%"
                 },200, function(){
@@ -201,7 +205,8 @@ $(document).ready(function(){
                 $( ".section-2" ).css("display", "none");
                 $( ".section-2" ).css("opacity", 0);
                 $( ".section-1" ).css("display", "block");
-    
+                $("form").removeClass("formpad");
+
                 $(".ball2").animate({
                     top:"-160%"
                 },400, function(){
@@ -227,7 +232,8 @@ $(document).ready(function(){
                 $( ".section-3" ).css("display", "none");
                 $( ".section-3" ).css("opacity", 0);
                 $( ".section-1" ).css("display", "block");
-    
+                $("form").removeClass("formpad");
+
                 $(".ball3").animate({
                     top:"-160%"
                 },200, function(){
@@ -261,7 +267,8 @@ $(document).ready(function(){
                 $( ".section-4" ).css("display", "none");
                 $( ".section-4" ).css("opacity", 0);
                 $( ".section-1" ).css("display", "block");
-    
+                $("form").removeClass("formpad");
+
                 $(".ball4").animate({
                     top:"-160%"
                 },200, function(){
